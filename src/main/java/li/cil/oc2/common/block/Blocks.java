@@ -32,6 +32,7 @@ public final class Blocks {
     public static final RegistryObject<VxlanBlock> VXLAN_HUB = BLOCKS.register("vxlan_hub", VxlanBlock::new);
     public static final RegistryObject<PciCardCageBlock> PCI_CARD_CAGE = BLOCKS.register("pci_card_cage", PciCardCageBlock::new);
 
+    public static final RegistryObject<InternetGatewayBlock> INTERNET_GATEWAY = BLOCKS.register("internet_gateway", InternetGatewayBlock::new);
 
     ///////////////////////////////////////////////////////////////////
 

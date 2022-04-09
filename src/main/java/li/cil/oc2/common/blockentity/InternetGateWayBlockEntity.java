@@ -156,8 +156,6 @@ public class InternetGateWayBlockEntity extends ModBlockEntity implements Networ
         Level level = getLevel();
         if (level != null) {
             level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 2);
-            //setChanged();
-            LOGGER.info("Notified clients");
         }
     }
     @Override

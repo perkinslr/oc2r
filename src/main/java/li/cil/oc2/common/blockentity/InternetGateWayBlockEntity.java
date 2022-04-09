@@ -160,7 +160,6 @@ public class InternetGateWayBlockEntity extends ModBlockEntity implements Networ
             LOGGER.info("Notified clients");
         }
     }
-
     @Override
     public void sendEthernetFrame(byte[] frame) {
         LOGGER.trace("Got inbound packet");

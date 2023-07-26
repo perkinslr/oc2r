@@ -27,6 +27,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public final class RPCDeviceBusAdapter implements Steppable {
     private static final int DEFAULT_MAX_MESSAGE_SIZE = 4 * Constants.KILOBYTE;
     private static final byte[] MESSAGE_DELIMITER = "\0".getBytes();
+    private static final byte[] MESSAGE_DELIMITER2 = "\r".getBytes();
 
     public static final String ERROR_MESSAGE_TOO_LARGE = "message too large";
     public static final String ERROR_UNKNOWN_MESSAGE_TYPE = "unknown message type";
@@ -45,6 +46,7 @@ public final class RPCDeviceBusAdapter implements Steppable {
     private final Set<RPCDeviceList> mountedDevices = new HashSet<>();
     private final Lock pauseLock = new ReentrantLock();
     private boolean isPaused;
+    private boolean crmode = false;
 
     ///////////////////////////////////////////////////////////////////
 
@@ -241,7 +243,8 @@ public final class RPCDeviceBusAdapter implements Steppable {
         // the most simple and easy to maintain one I could think of.
         int value;
         while (receiveBuffer == null && synchronizedInvocation == null && (value = serialDevice.read()) >= 0) {
-            if (value == 0) {
+            if (value == 0 || value == 13) {
+                this.crmode = value == 13;
                 if (transmitBuffer.limit() > 0) {
                     transmitBuffer.flip();
                     if (transmitBuffer.hasRemaining()) {
@@ -396,14 +399,24 @@ public final class RPCDeviceBusAdapter implements Steppable {
         // In case we went through a reset and the VM was in the middle of reading
         // a message we inject a delimiter up front to cause the truncated message
         // to be discarded.
-        receiveBuffer.put(MESSAGE_DELIMITER);
+        if (this.crmode) {
+            receiveBuffer.put(MESSAGE_DELIMITER2);
+        }
+        else {
+            receiveBuffer.put(MESSAGE_DELIMITER);
+        }
 
         receiveBuffer.put(bytes);
 
         // We follow up each message with a delimiter, too, so the VM knows when the
         // message has been completed. This will lead to two delimiters between most
         // messages. The VM is expected to ignore such "empty" messages.
-        receiveBuffer.put(MESSAGE_DELIMITER);
+        if (this.crmode) {
+            receiveBuffer.put(MESSAGE_DELIMITER2);
+        }
+        else {
+            receiveBuffer.put(MESSAGE_DELIMITER);
+        }
 
         receiveBuffer.flip();
         this.receiveBuffer = receiveBuffer;

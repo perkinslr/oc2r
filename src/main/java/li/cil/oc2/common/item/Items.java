@@ -4,6 +4,7 @@ package li.cil.oc2.common.item;
 
 import li.cil.oc2.api.API;
 import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.Config;
 import li.cil.oc2.common.block.Blocks;
 import li.cil.oc2.common.bus.device.data.BlockDeviceDataRegistry;
 import li.cil.oc2.common.bus.device.data.FirmwareRegistry;
@@ -56,11 +57,11 @@ public final class Items {
         new MemoryItem(8 * Constants.MEGABYTE));
 
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_SMALL = register("hard_drive_small", () ->
-        new HardDriveItem(2 * Constants.MEGABYTE, DyeColor.LIGHT_GRAY));
+        new HardDriveItem(Config.diskSizeFactor, DyeColor.LIGHT_GRAY));
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_MEDIUM = register("hard_drive_medium", () ->
-        new HardDriveItem(4 * Constants.MEGABYTE, DyeColor.GREEN));
+        new HardDriveItem(2 * Config.diskSizeFactor, DyeColor.GREEN));
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_LARGE = register("hard_drive_large", () ->
-        new HardDriveItem(8 * Constants.MEGABYTE, DyeColor.CYAN));
+        new HardDriveItem(4 * Config.diskSizeFactor, DyeColor.CYAN));
     public static final RegistryObject<HardDriveWithExternalDataItem> HARD_DRIVE_CUSTOM = register("hard_drive_custom", () ->
         new HardDriveWithExternalDataItem(BlockDeviceDataRegistry.BUILDROOT.getId(), DyeColor.BROWN));
 
@@ -70,7 +71,7 @@ public final class Items {
         new FlashMemoryWithExternalDataItem(FirmwareRegistry.BUILDROOT.getId()));
 
     public static final RegistryObject<FloppyItem> FLOPPY = register("floppy", () ->
-        new FloppyItem(512 * Constants.KILOBYTE));
+        new FloppyItem(3 * 512 * Constants.KILOBYTE));
 
     public static final RegistryObject<Item> REDSTONE_INTERFACE_CARD = register("redstone_interface_card");
     public static final RegistryObject<Item> NETWORK_INTERFACE_CARD = register("network_interface_card", NetworkInterfaceCardItem::new);

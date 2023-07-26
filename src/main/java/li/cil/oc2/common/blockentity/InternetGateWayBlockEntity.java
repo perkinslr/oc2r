@@ -59,7 +59,7 @@ public class InternetGateWayBlockEntity extends ModBlockEntity implements Networ
         outboundQueue = new ArrayDeque<>();
         animProgress = new float[EMITTER_SIDE_PIXELS*EMITTER_SIDE_PIXELS];
         animReversed = new boolean[EMITTER_SIDE_PIXELS*EMITTER_SIDE_PIXELS];
-        internetState = EndTag.INSTANCE;
+        internetState = null;
         setNeedsLevelUnloadEvent();
     }
 

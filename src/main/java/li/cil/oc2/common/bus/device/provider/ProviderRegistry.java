@@ -42,6 +42,8 @@ public final class ProviderRegistry {
         ITEM_DEVICE_PROVIDERS.register("redstone_interface_card", RedstoneInterfaceCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("network_interface_card", NetworkInterfaceCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("network_tunnel_card", NetworkTunnelCardItemDeviceProvider::new);
+        ITEM_DEVICE_PROVIDERS.register("internet_card", InternetCardItemDeviceProvider::new);
+
         ITEM_DEVICE_PROVIDERS.register("file_import_export_card", FileImportExportCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("sound_card", SoundCardItemDeviceProvider::new);
 

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Ipv4SpaceTest {
     @Test
-    public void someRangesAndSubnetsTest() {
+    public void someRangesAndSubnetsTest() throws AddressParseException{
         final Ipv4Space ipv4Space = new Ipv4Space(Ipv4Space.Modes.ALLOWLIST);
         ipv4Space.put("127.0.1.1");
         ipv4Space.put("one.one.one.one");
@@ -29,7 +29,7 @@ public class Ipv4SpaceTest {
     }
 
     @Test
-    public void computeIpSpaceTest() {
+    public void computeIpSpaceTest() throws AddressParseException{
         final Ipv4Space space = InetUtils.computeIpSpace("127.0.0.0/8, 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 224.0.0.0/4", "  ");
         assertEquals("[172.16.0.0-172.31.255.255, 192.168.0.0-192.168.255.255, 224.0.0.0-239.255.255.255, 10.0.0.0-10.255.255.255, 100.64.0.0-100.127.255.255, 127.0.0.0-127.255.255.255]", space.toString());
         assertFalse(space.isAllowed(InetUtils.parseIpv4Address("192.168.1.1")));

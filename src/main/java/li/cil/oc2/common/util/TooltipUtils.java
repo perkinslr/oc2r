@@ -110,10 +110,10 @@ public final class TooltipUtils {
         if (stack.getItem() == Items.INTERNET_GATEWAY.get()) {
             if (Config.gatewayEnergyPerPacket > 0) {
                 final MutableComponent energy = withFormat(String.valueOf(Config.gatewayEnergyPerPacket), ChatFormatting.GREEN);
-                tooltip.add(withFormat(new TranslatableComponent(Constants.TOOLTIP_INTERNET_ENERGY_PER_PACKET, energy), ChatFormatting.GRAY));
+                tooltip.add(withFormat(Component.translatable(Constants.TOOLTIP_INTERNET_ENERGY_PER_PACKET, energy), ChatFormatting.GRAY));
             }
             if (!Config.internetCardEnabled) {
-                tooltip.add(withFormat(new TranslatableComponent(Constants.TOOLTIP_INTERNET_DISABLED), ChatFormatting.RED));
+                tooltip.add(withFormat(Component.translatable(Constants.TOOLTIP_INTERNET_DISABLED), ChatFormatting.RED));
             }
         }
     }

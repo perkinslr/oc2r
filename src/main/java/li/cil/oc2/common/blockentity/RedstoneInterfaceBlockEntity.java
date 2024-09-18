@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: MIT */
 
 package li.cil.oc2.common.blockentity;
-
+import com.dannyandson.tinypipes.api.IChanneledRedstone;
 import li.cil.oc2.api.bus.device.object.Callback;
 import li.cil.oc2.api.bus.device.object.DocumentedDevice;
 import li.cil.oc2.api.bus.device.object.NamedDevice;
@@ -17,18 +17,27 @@ import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
 
 import javax.annotation.Nullable;
-import java.util.Collection;
+import java.util.*;
 
 import static java.util.Collections.singletonList;
 
-public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice {
+public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice, IChanneledRedstone {
     private static final String OUTPUT_TAG_NAME = "output";
 
     private static final String GET_REDSTONE_INPUT = "getRedstoneInput";
     private static final String GET_REDSTONE_OUTPUT = "getRedstoneOutput";
     private static final String SET_REDSTONE_OUTPUT = "setRedstoneOutput";
+
+    private static final String GET_REDSTONE_CHANNEL_INPUT = "getChannelInput";
+    private static final String GET_REDSTONE_CHANNEL_OUTPUT = "getChannelOutput";
+    private static final String SET_REDSTONE_CHANNEL_OUTPUT = "setChannelOutput";
+
+
     private static final String SIDE = "side";
     private static final String VALUE = "value";
+
+    private HashMap<Direction, HashMap<Integer,Integer>> inputFrequencies = new HashMap<Direction, HashMap<Integer,Integer>>(6);
+    private HashMap<Direction, HashMap<Integer,Integer>> outputFrequencies = new HashMap<Direction, HashMap<Integer,Integer>>(6);
 
     ///////////////////////////////////////////////////////////////////
 
@@ -38,6 +47,32 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
 
     public RedstoneInterfaceBlockEntity(final BlockPos pos, final BlockState state) {
         super(BlockEntities.REDSTONE_INTERFACE.get(), pos, state);
+    }
+
+    public int getRedstone(Direction d, int freq) {
+        HashMap<Integer, Integer> sf = outputFrequencies.get(d);
+        if (sf == null) {
+            return 0;
+        }
+        return sf.getOrDefault(freq, 0);
+    }
+    public void setRedstone(Direction d, int freq, int value) {
+        HashMap<Integer, Integer> sf = inputFrequencies.get(d);
+        if (sf == null) {
+            sf = new HashMap<Integer , Integer>(16);
+            inputFrequencies.put(d, sf);
+        }
+        sf.put(freq, value);;
+
+    }
+
+    public int[] getChannels(Direction d) {
+        HashMap<Integer, Integer> sf = outputFrequencies.get(d);
+        if (sf == null) {
+            return new int[]{};
+        }
+        return sf.keySet().stream().mapToInt(Integer::intValue).toArray();
+
     }
 
     ///////////////////////////////////////////////////////////////////
@@ -62,6 +97,103 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
 
         return output[localDirection.get3DDataValue()];
     }
+
+    @Callback(name = "listFrequencies")
+    public String listFrequencies(Side side) {
+        if (side == null) throw new IllegalArgumentException();
+
+        if (level == null) {
+            return "[[],[]]";
+        }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = HorizontalBlockUtils.toGlobal(getBlockState(), side);
+        assert direction != null;
+
+
+        ArrayList<String> segments = new ArrayList<String>();
+
+        HashMap<Integer,Integer> hm = inputFrequencies.get(direction);
+        ArrayList<String> subsegments = new ArrayList<String>();
+        if (hm != null) {
+            for (int f: hm.keySet()) {
+                subsegments.add(""+f);
+            }
+        }
+        segments.add("["+String.join(", ", subsegments)+"]");
+
+        subsegments.clear();
+        hm = outputFrequencies.get(direction);
+        if (hm != null) {
+            for (int f: hm.keySet()) {
+                subsegments.add(""+f);
+            }
+        }
+        segments.add("["+String.join(", ", subsegments)+"]");
+        return "["+segments.get(0)+", "+segments.get(1)+"]";
+    }
+
+    @Callback(name = GET_REDSTONE_CHANNEL_INPUT)
+    public int getChannelInput(final Side side, int channel) {
+        if (side == null) throw new IllegalArgumentException();
+
+        if (level == null) {
+            return 0;
+        }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = HorizontalBlockUtils.toGlobal(getBlockState(), side);
+        assert direction != null;
+        HashMap<Integer,Integer> hm = inputFrequencies.get(direction);
+        if (hm == null) {
+            return 0;
+        }
+        return hm.getOrDefault(channel, 0);
+    }
+
+    @Callback(name = GET_REDSTONE_CHANNEL_OUTPUT)
+    public int getChannelOutput(final Side side, int channel) {
+            if (side == null) throw new IllegalArgumentException();
+
+            if (level == null) {
+                return 0;
+            }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = HorizontalBlockUtils.toGlobal(getBlockState(), side);
+        assert direction != null;
+        HashMap<Integer,Integer> hm = outputFrequencies.get(direction);
+        if (hm == null) {
+            return 0;
+        }
+        return hm.getOrDefault(channel, 0);
+    }
+
+    @Callback(name = SET_REDSTONE_CHANNEL_OUTPUT)
+    public void setChannelOutput(final Side side, int channel, int value) {
+        if (side == null) throw new IllegalArgumentException();
+
+        if (level == null) {
+            return;
+        }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = HorizontalBlockUtils.toGlobal(getBlockState(), side);
+        assert direction != null;
+        HashMap<Integer,Integer> hm = outputFrequencies.get(direction);
+        if (hm == null) {
+            hm = new HashMap<Integer,Integer>(16);
+            outputFrequencies.put(direction, hm);
+        }
+        hm.put(channel, value);
+        if (direction != null) {
+            notifyNeighbor(direction);
+        }
+
+        setChanged();
+
+    }
+
 
     @Callback(name = GET_REDSTONE_INPUT)
     public int getRedstoneInput(@Parameter(SIDE) @Nullable final Side side) {
@@ -119,6 +251,33 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
 
     @Override
     public void getDeviceDocumentation(final DeviceVisitor visitor) {
+        visitor.visitCallback(GET_REDSTONE_CHANNEL_INPUT)
+            .description("Get the current redstone level received on the specified channel and side. " +
+                "Note that if the current output level on the specified side is not " +
+                "zero, this will affect the measured level.\n" +
+                "Sides may be specified by name or zero-based index. Please note that " +
+                "the side depends on the orientation of the device.")
+            .returnValueDescription("the current received level on the specified side.")
+            .parameterDescription(SIDE, "the side to read the input level from.")
+            .parameterDescription("channel", "the channel to read the input level from.");
+
+
+        visitor.visitCallback(GET_REDSTONE_CHANNEL_OUTPUT)
+            .description("Get the current redstone level transmitted on the specified channel side. " +
+                "This will return the value last set via setRedstoneOutput().\n" +
+                "Sides may be specified by name or zero-based index. Please note that " +
+                "the side depends on the orientation of the device.")
+            .returnValueDescription("the current transmitted level on the specified side.")
+            .parameterDescription(SIDE, "the side to read the output level from.")
+            .parameterDescription("channel", "the channel to read the output level from.");
+        visitor.visitCallback(SET_REDSTONE_OUTPUT)
+            .description("Set the new redstone level transmitted on the specified side.\n" +
+                "Sides may be specified by name or zero-based index. Please note that " +
+                "the side depends on the orientation of the device.")
+            .parameterDescription(SIDE, "the side to write the output level to.")
+            .parameterDescription("channel", "the channel to write the output level to.")
+            .parameterDescription(VALUE, "the output level to set, will be clamped to [0, 15].");
+
         visitor.visitCallback(GET_REDSTONE_INPUT)
             .description("Get the current redstone level received on the specified side. " +
                 "Note that if the current output level on the specified side is not " +

@@ -48,6 +48,10 @@ final def hasGithubPackageCredentials =
         (System.getenv("GITHUB_ACTOR") && System.getenv("GITHUB_TOKEN"))
 
 repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
     mavenCentral()
     maven {
         url "https://cursemaven.com"
@@ -77,7 +81,10 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.19.2-43.2.10"
+
+    implementation fileTree(dir: 'libs', include: '*.jar')
+
+minecraft "net.minecraftforge:forge:1.19.2-43.2.10"
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
     // Specify the libs embedded in the library mod explicitly for local development, where

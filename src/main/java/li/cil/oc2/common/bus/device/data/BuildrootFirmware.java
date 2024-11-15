@@ -18,7 +18,6 @@ public final class BuildrootFirmware implements Firmware {
     public boolean run(final MemoryMap memory, final long startAddress) {
         try {
             MemoryMaps.store(memory, startAddress, Buildroot.getFirmware());
-            //MemoryMaps.store(memory, startAddress + 0x200000, BuildrootFirmware.class.getClassLoader().getResourceAsStream("generated/ociivrkernel.bin"));
             MemoryMaps.store(memory, startAddress + 0x200000, Buildroot.getLinuxImage());
             return true;
         } catch (final IOException e) {

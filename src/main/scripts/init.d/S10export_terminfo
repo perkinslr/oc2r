@@ -5,7 +5,7 @@ TERMINFO_PROFILE="/etc/profile.d/terminfo.sh"
 # Registers terminfo environment variables in global profile config if they don't exist yet
 start() {
     if [ ! -f $TERMINFO_PROFILE ]; then
-        echo "TERMINFO=/usr/lib/terminfo/v/vt100" >$TERMINFO_PROFILE
+        echo "TERMINFO=/usr/lib/terminfo/v/vt220" >$TERMINFO_PROFILE
         echo "COLUMNS=80" >>$TERMINFO_PROFILE
         echo "LINES=24" >>$TERMINFO_PROFILE
     fi

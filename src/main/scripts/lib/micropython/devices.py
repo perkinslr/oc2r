@@ -1,7 +1,7 @@
 import io
 import os
 import select
-import json
+import ujson as json
 
 
 class Device:

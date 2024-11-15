@@ -25,7 +25,6 @@ public final class BlockEntities {
     public static final RegistryObject<BlockEntityType<DiskDriveBlockEntity>> DISK_DRIVE = register(Blocks.DISK_DRIVE, DiskDriveBlockEntity::new);
     public static final RegistryObject<BlockEntityType<FlashMemoryFlasherBlockEntity>> FLASH_MEMORY_FLASHER = register(Blocks.FLASH_MEMORY_FLASHER, FlashMemoryFlasherBlockEntity::new);
     public static final RegistryObject<BlockEntityType<KeyboardBlockEntity>> KEYBOARD = register(Blocks.KEYBOARD, KeyboardBlockEntity::new);
-    public static final RegistryObject<BlockEntityType<MouseBlockEntity>> MOUSE = register(Blocks.KEYBOARD, MouseBlockEntity::new);
     public static final RegistryObject<BlockEntityType<NetworkConnectorBlockEntity>> NETWORK_CONNECTOR = register(Blocks.NETWORK_CONNECTOR, NetworkConnectorBlockEntity::new);
     public static final RegistryObject<BlockEntityType<NetworkHubBlockEntity>> NETWORK_HUB = register(Blocks.NETWORK_HUB, NetworkHubBlockEntity::new);
     public static final RegistryObject<BlockEntityType<NetworkSwitchBlockEntity>> NETWORK_SWITCH = register(Blocks.NETWORK_SWITCH, NetworkSwitchBlockEntity::new);

@@ -9,6 +9,7 @@ import li.cil.oc2.api.bus.device.provider.BlockDeviceQuery;
 import li.cil.oc2.api.bus.device.provider.ItemDeviceProvider;
 import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
 import li.cil.oc2.api.util.Invalidatable;
+import li.cil.oc2.common.bus.device.DeviceGroup;
 import li.cil.oc2.common.bus.device.provider.Providers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -62,8 +63,19 @@ public final class Devices {
         for (final BlockDeviceProvider provider : registry.getValues()) {
             final Invalidatable<Device> device = provider.getDevice(query);
             if (device.isPresent()) {
-                devices.add(device.mapWithDependency(d -> new BlockDeviceInfo(provider, d)));
+                if(device.get() instanceof DeviceGroup group)
+                {
+                    for(Device dev : group.getDevices())
+                    {
+                        Invalidatable<Device> de = Invalidatable.of(dev);
+                        devices.add(de.mapWithDependency(d -> new BlockDeviceInfo(provider, d)));
+                    }
+                }
+                else {
+                    devices.add(device.mapWithDependency(d -> new BlockDeviceInfo(provider, d)));
+                }
             }
+
         }
 
         return Optional.of(devices);

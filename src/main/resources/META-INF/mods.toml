@@ -4,40 +4,40 @@ issueTrackerURL = "https://github.com/fnuecke/oc2r/issues"
 license = "MIT"
 
 [[mods]]
-modId = "oc2r"
+modId = "oc2"
 version = "${file.jarVersion}"
-displayName = "OpenComputers II: Reimagined"
-authors = "North Western Development (Originally by Sangar)"
+displayName = "Libre Computers"
+authors = "Libre Computers and past groups (North Western Development (Originally by Sangar))"
 description = '''
 Modern computers for the modern player.
 
 This mod uses the Terminus Font under the Open Font License. The full license can be found in the JAR of this mod.
 '''
 
-[[dependencies.oc2r]]
+[[dependencies.oc2]]
 modId = "forge"
 mandatory = true
 versionRange = "[40.1.68,)"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.oc2r]]
+[[dependencies.oc2]]
 modId = "minecraft"
 mandatory = true
 versionRange = "1.20.1"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.oc2r]]
+[[dependencies.oc2]]
 modId = "sedna"
 mandatory = true
 versionRange = "[1.0.14,)"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.oc2r]]
+[[dependencies.oc2]]
 modId = "markdown_manual"
 mandatory = true
 versionRange = "[1.2.1,)"
 side = "CLIENT"
-[[dependencies.oc2r]]
+[[dependencies.oc2]]
 modId = "projectred_transmission"
 mandatory = false
 versionRange = "[4.19.0,)"

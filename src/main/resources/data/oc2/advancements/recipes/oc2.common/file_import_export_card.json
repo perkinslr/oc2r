@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "oc2r:memory_small"
+      "oc2:file_import_export_card"
     ]
   },
   "criteria": {
@@ -12,19 +12,7 @@
         "items": [
           {
             "items": [
-              "oc2r:computer"
-            ]
-          }
-        ]
-      }
-    },
-    "has_robot": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "oc2r:robot"
+              "oc2:computer"
             ]
           }
         ]
@@ -33,14 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "oc2r:memory_small"
+        "recipe": "oc2:file_import_export_card"
       }
     }
   },
   "requirements": [
     [
       "has_computer",
-      "has_robot",
       "has_the_recipe"
     ]
   ]

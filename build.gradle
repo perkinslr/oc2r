@@ -18,6 +18,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 apply from: 'minecraft.gradle'
+jarJar.enable()
 
 def getGitRef() {
     try {
@@ -54,6 +55,9 @@ repositories {
         url 'https://dvs1.progwml6.com/files/maven/'
         content { includeGroup 'mezz.jei' }
     }
+    flatDir {
+        dirs("libs")
+    }
 
 }
 
@@ -61,7 +65,10 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-
+    jarJar(group: 'libs', name: 'sedna-1.18.2-forge-1.0.14+21d424a', version: '[]') {
+        jarJar.pin(it, "")
+    }
+    implementation "curse.maven:sedna-511276:3885542"
     implementation fg.deobf("curse.maven:markdownmanual-502485:3738124")
 
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:9.7.0.180:api")
@@ -171,6 +178,7 @@ publishing {
             version = semver
             artifact jar
             artifact apiJar
+            jarJar.component(it)
         }
     }
     repositories {

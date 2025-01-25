@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:silicon"
+    }
+  },
+  "result": {
+    "item": "oc2:raw_silicon_wafer",
+    "count": 1
+  }
+}

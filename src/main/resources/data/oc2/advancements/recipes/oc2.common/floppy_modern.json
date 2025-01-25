@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "oc2:floppy_modern"
+    ]
+  },
+  "criteria": {
+    "has_disk_drive": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oc2:disk_drive"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oc2:floppy_modern"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_disk_drive",
+      "has_the_recipe"
+    ]
+  ]
+}

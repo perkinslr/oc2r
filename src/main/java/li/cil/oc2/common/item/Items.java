@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import li.cil.oc2.common.bus.device.data.FileSystems;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -64,8 +65,9 @@ public final class Items {
         new HardDriveItem(2 * Config.diskSizeFactor, DyeColor.GREEN));
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_LARGE = register("hard_drive_large", () ->
         new HardDriveItem(4 * Config.diskSizeFactor, DyeColor.CYAN));
-    public static final RegistryObject<HardDriveWithExternalDataItem> HARD_DRIVE_CUSTOM = register("hard_drive_custom", () ->
-        new HardDriveWithExternalDataItem(BlockDeviceDataRegistry.BUILDROOT.getId(), DyeColor.BROWN));
+    public static final RegistryObject<HardDriveWithExternalDataItem> HARD_DRIVE_CUSTOM = register
+        ("hard_drive_custom", () ->
+         new HardDriveWithExternalDataItem(FileSystems.getKeyByValue(FileSystems.getBlockByName("rootfs")), DyeColor.BROWN));
 
     public static final RegistryObject<FlashMemoryItem> FLASH_MEMORY = register("flash_memory", () ->
         new FlashMemoryItem(12 * Constants.MEGABYTE));

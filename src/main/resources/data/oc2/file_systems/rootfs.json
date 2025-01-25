@@ -1,0 +1,6 @@
+{
+  "name": "rootfs",
+  "type": "block",
+  "order": 1,
+  "location": "oc2:file_systems/rootfs.dsk"
+}

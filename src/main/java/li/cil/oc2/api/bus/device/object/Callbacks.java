@@ -99,7 +99,7 @@ public final class Callbacks {
         }
     }
 
-    private static final class ObjectRPCMethod extends AbstractRPCMethod {
+    public static final class ObjectRPCMethod extends AbstractRPCMethod {
         private final MethodHandle handle;
         private final String description;
         private final String returnValueDescription;

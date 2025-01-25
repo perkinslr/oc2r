@@ -21,6 +21,8 @@ public final class Config {
     @Path("energy.blocks") public static int chargerEnergyStorage = 10000;
     @Path("energy.blocks") public static int projectorEnergyPerTick = 20;
     @Path("energy.blocks") public static int projectorEnergyStorage = 2000;
+    @Path("energy.blocks") public static int monitorEnergyPerTick = 15;
+    @Path("energy.blocks") public static int monitorEnergyStorage = 2000;
     @Path("energy.blocks") public static int cardCageEnergyPerTick = 20;
     @Path("energy.blocks") public static int cardCageEnergyStorage = 2000;
     @Path("energy.blocks") public static int gatewayEnergyPerPacket = 20;
@@ -88,4 +90,9 @@ public final class Config {
     public static boolean gatewayUseEnergy() {
         return gatewayEnergyPerPacket > 0 && gatewayEnergyStorage > 0;
     }
+
+    public static boolean monitorsUseEnergy() {
+        return computerEnergyPerTick > 0 && computerEnergyStorage > 0;
+    }
+
 }

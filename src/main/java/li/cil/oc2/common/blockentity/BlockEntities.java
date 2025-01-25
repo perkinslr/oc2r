@@ -21,6 +21,7 @@ public final class BlockEntities {
     public static final RegistryObject<BlockEntityType<BusCableBlockEntity>> BUS_CABLE = register(Blocks.BUS_CABLE, BusCableBlockEntity::new);
     public static final RegistryObject<BlockEntityType<ChargerBlockEntity>> CHARGER = register(Blocks.CHARGER, ChargerBlockEntity::new);
     public static final RegistryObject<BlockEntityType<ComputerBlockEntity>> COMPUTER = register(Blocks.COMPUTER, ComputerBlockEntity::new);
+    public static final RegistryObject<BlockEntityType<MonitorBlockEntity>> MONITOR = register(Blocks.MONITOR, MonitorBlockEntity::new);
     public static final RegistryObject<BlockEntityType<CreativeEnergyBlockEntity>> CREATIVE_ENERGY = register(Blocks.CREATIVE_ENERGY, CreativeEnergyBlockEntity::new);
     public static final RegistryObject<BlockEntityType<DiskDriveBlockEntity>> DISK_DRIVE = register(Blocks.DISK_DRIVE, DiskDriveBlockEntity::new);
     public static final RegistryObject<BlockEntityType<FlashMemoryFlasherBlockEntity>> FLASH_MEMORY_FLASHER = register(Blocks.FLASH_MEMORY_FLASHER, FlashMemoryFlasherBlockEntity::new);

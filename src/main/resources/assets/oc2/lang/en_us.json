@@ -4,6 +4,8 @@
   "block.oc2.computer": "Computer",
   "block.oc2.computer.desc": "Runs software from Flash Memory and Hard Disks.",
   "block.oc2.computer.preconfigured": "Preconfigured Computer",
+  "block.oc2.monitor": "Monitor",
+  "block.oc2.monitor.desc": "A special framebuffer based monitor for your computer.",
   "block.oc2.bus_cable": "Bus Cable",
   "block.oc2.bus_cable.desc": "Connects Bus Interfaces.",
   "block.oc2.network_connector": "Network Connector",

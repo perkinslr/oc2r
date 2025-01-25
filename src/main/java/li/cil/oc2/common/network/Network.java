@@ -44,6 +44,8 @@ public final class Network {
         registerMessage(ComputerBusStateMessage.class, ComputerBusStateMessage::new, NetworkDirection.PLAY_TO_CLIENT);
         registerMessage(ComputerBootErrorMessage.class, ComputerBootErrorMessage::new, NetworkDirection.PLAY_TO_CLIENT);
         registerMessage(ComputerPowerMessage.class, ComputerPowerMessage::new, NetworkDirection.PLAY_TO_SERVER);
+        registerMessage(MonitorPowerMessage.class, MonitorPowerMessage::new, NetworkDirection.PLAY_TO_SERVER);
+        registerMessage(MonitorPowerMessageForwarded.class, MonitorPowerMessageForwarded::new, NetworkDirection.PLAY_TO_CLIENT);
         registerMessage(OpenComputerInventoryMessage.class, OpenComputerInventoryMessage::new, NetworkDirection.PLAY_TO_SERVER);
         registerMessage(OpenComputerTerminalMessage.class, OpenComputerTerminalMessage::new, NetworkDirection.PLAY_TO_SERVER);
 
@@ -78,11 +80,17 @@ public final class Network {
         registerMessage(NetworkInterfaceCardConfigurationMessage.class, NetworkInterfaceCardConfigurationMessage::new, NetworkDirection.PLAY_TO_SERVER);
         registerMessage(NetworkTunnelLinkMessage.class, NetworkTunnelLinkMessage::new, NetworkDirection.PLAY_TO_SERVER);
 
+        registerMessage(MonitorRequestFramebufferMessage.class, MonitorRequestFramebufferMessage::new, NetworkDirection.PLAY_TO_SERVER);
+        registerMessage(MonitorFramebufferMessage.class, MonitorFramebufferMessage::new, NetworkDirection.PLAY_TO_CLIENT);
+
         registerMessage(ProjectorRequestFramebufferMessage.class, ProjectorRequestFramebufferMessage::new, NetworkDirection.PLAY_TO_SERVER);
         registerMessage(ProjectorFramebufferMessage.class, ProjectorFramebufferMessage::new, NetworkDirection.PLAY_TO_CLIENT);
         registerMessage(ProjectorStateMessage.class, ProjectorStateMessage::new, NetworkDirection.PLAY_TO_CLIENT);
+        registerMessage(MonitorStateMessage.class, MonitorStateMessage::new, NetworkDirection.PLAY_TO_CLIENT);
 
         registerMessage(KeyboardInputMessage.class, KeyboardInputMessage::new, NetworkDirection.PLAY_TO_SERVER);
+
+        registerMessage(MonitorInputMessage.class, MonitorInputMessage::new, NetworkDirection.PLAY_TO_SERVER);
 
         registerMessage(MultipartMessage.class, MultipartMessage::new, NetworkDirection.PLAY_TO_SERVER);
 

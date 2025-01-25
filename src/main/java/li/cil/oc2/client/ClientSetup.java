@@ -43,6 +43,7 @@ public final class ClientSetup {
         BlockEntityRenderers.register(BlockEntities.DISK_DRIVE.get(), DiskDriveRenderer::new);
         BlockEntityRenderers.register(BlockEntities.CHARGER.get(), ChargerRenderer::new);
         BlockEntityRenderers.register(BlockEntities.PROJECTOR.get(), ProjectorRenderer::new);
+        BlockEntityRenderers.register(BlockEntities.MONITOR.get(), MonitorRenderer::new);
         BlockEntityRenderers.register(BlockEntities.INTERNET_GATEWAY.get(), InternetGateWayRenderer::new);
 
         event.enqueueWork(() -> {
@@ -51,6 +52,8 @@ public final class ClientSetup {
 
             MenuScreens.register(Containers.COMPUTER.get(), ComputerContainerScreen::new);
             MenuScreens.register(Containers.COMPUTER_TERMINAL.get(), ComputerTerminalScreen::new);
+            MenuScreens.register(Containers.MONITOR.get(), MonitorDisplayScreen::new);
+
             MenuScreens.register(Containers.ROBOT.get(), RobotContainerScreen::new);
             MenuScreens.register(Containers.ROBOT_TERMINAL.get(), RobotTerminalScreen::new);
             MenuScreens.register(Containers.NETWORK_TUNNEL.get(), NetworkTunnelScreen::new);

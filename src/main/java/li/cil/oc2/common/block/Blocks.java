@@ -20,6 +20,7 @@ public final class Blocks {
     public static final RegistryObject<BusCableBlock> BUS_CABLE = BLOCKS.register("bus_cable", BusCableBlock::new);
     public static final RegistryObject<ChargerBlock> CHARGER = BLOCKS.register("charger", ChargerBlock::new);
     public static final RegistryObject<ComputerBlock> COMPUTER = BLOCKS.register("computer", ComputerBlock::new);
+    public static final RegistryObject<MonitorBlock> MONITOR = BLOCKS.register("monitor", MonitorBlock::new);
     public static final RegistryObject<CreativeEnergyBlock> CREATIVE_ENERGY = BLOCKS.register("creative_energy", CreativeEnergyBlock::new);
     public static final RegistryObject<DiskDriveBlock> DISK_DRIVE = BLOCKS.register("disk_drive", DiskDriveBlock::new);
     public static final RegistryObject<FlashMemoryFlasherBlock> FLASH_MEMORY_FLASHER = BLOCKS.register("flash_memory_flasher", FlashMemoryFlasherBlock::new);

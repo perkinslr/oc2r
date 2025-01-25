@@ -8,6 +8,7 @@ public final class Textures {
     public static final Texture COMPUTER_CONTAINER_TEXTURE = new Texture("textures/gui/widget/computer_container.png", 176, 197);
     public static final Texture ROBOT_CONTAINER_TEXTURE = new Texture("textures/gui/widget/robot_container.png", 176, 197);
     public static final Texture TERMINAL_SCREEN_TEXTURE = new Texture("textures/gui/widget/terminal_screen.png", 336, 208);
+    public static final Texture MONITOR_SCREEN_TEXTURE = new Texture("textures/gui/widget/monitor_screen.png", 265, 208);
     public static final Texture BUS_INTERFACE_SCREEN_TEXTURE = new Texture("textures/gui/widget/bus_interface_screen.png", 240, 30);
     public static final Texture NETWORK_INTERFACE_CARD_SCREEN_TEXTURE = new Texture("textures/gui/widget/network_interface_card_screen.png", 176, 130);
     public static final Texture NETWORK_TUNNEL_SCREEN_TEXTURE = new Texture("textures/gui/widget/network_tunnel_screen.png", 176, 197);
@@ -21,6 +22,7 @@ public final class Textures {
     public static final Texture BLOCK_FACE_DISABLED_TEXTURE = new Texture("textures/gui/overlay/block_face_disabled.png", 16, 16);
 
     public static final Texture HOTBAR_TEXTURE = new Texture("textures/gui/widget/hotbar.png", 224, 26);
+    public static final Texture MONITOR_SIDEBAR_1_TEXTURE = new Texture("textures/gui/widget/monitor_sidebar_1.png", 19, 34);
     public static final Texture SIDEBAR_2_TEXTURE = new Texture("textures/gui/widget/sidebar_2.png", 19, 34);
     public static final Texture SIDEBAR_3_TEXTURE = new Texture("textures/gui/widget/sidebar_3.png", 19, 48);
 

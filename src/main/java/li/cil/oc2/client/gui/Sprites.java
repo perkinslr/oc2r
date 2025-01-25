@@ -10,6 +10,7 @@ public final class Sprites {
     public static final Sprite COMPUTER_CONTAINER = new Sprite(COMPUTER_CONTAINER_TEXTURE);
     public static final Sprite ROBOT_CONTAINER = new Sprite(ROBOT_CONTAINER_TEXTURE);
     public static final Sprite TERMINAL_SCREEN = new Sprite(TERMINAL_SCREEN_TEXTURE);
+    public static final Sprite MONITOR_SCREEN = new Sprite(MONITOR_SCREEN_TEXTURE);
     public static final Sprite BUS_INTERFACE_SCREEN = new Sprite(BUS_INTERFACE_SCREEN_TEXTURE);
     public static final Sprite NETWORK_INTERFACE_CARD_SCREEN = new Sprite(NETWORK_INTERFACE_CARD_SCREEN_TEXTURE);
     public static final Sprite NETWORK_TUNNEL_SCREEN = new Sprite(NETWORK_TUNNEL_SCREEN_TEXTURE);
@@ -20,6 +21,7 @@ public final class Sprites {
     public static final Sprite WARN_ICON = new Sprite(WARN_ICON_TEXTURE);
 
     public static final Sprite HOTBAR = new Sprite(HOTBAR_TEXTURE);
+    public static final Sprite MONITOR_SIDEBAR_1 = new Sprite(MONITOR_SIDEBAR_1_TEXTURE);
     public static final Sprite SIDEBAR_2 = new Sprite(SIDEBAR_2_TEXTURE);
     public static final Sprite SIDEBAR_3 = new Sprite(SIDEBAR_3_TEXTURE);
 

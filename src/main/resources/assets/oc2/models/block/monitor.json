@@ -1,0 +1,10 @@
+{
+  "parent": "block/block",
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "oc2:models/block/monitor.obj",
+  "textures": {
+    "texture0": "oc2:block/monitor/monitor",
+    "particle": "oc2:block/monitor/monitor"
+  }
+}

@@ -199,13 +199,6 @@ public final class ConfigManager {
         return new ConfigFieldPair<>(field, configValue, ResourceLocation::new);
     }
 
-    private static ConfigFieldPair<?> parseBooleanField(final Object instance, final Field field, final String path, final ForgeConfigSpec.Builder builder) throws IllegalAccessException {
-        final boolean defaultValue = (boolean) field.get(instance);
-
-        final ForgeConfigSpec.BooleanValue configValue = builder.define(path, defaultValue);
-
-        return new ConfigFieldPair<>(field, configValue);
-    }
 
     private static String getPath(@Nullable final String prefix, final Field field) {
         return (prefix != null ? prefix + "." : "") + field.getName();

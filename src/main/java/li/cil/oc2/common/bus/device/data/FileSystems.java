@@ -36,11 +36,27 @@ public final class FileSystems {
     private static final Logger LOGGER = LogManager.getLogger();
     private static final LayeredFileSystem LAYERED_FILE_SYSTEM = new LayeredFileSystem();
     private static final Map<ResourceLocation, BlockDeviceData> BLOCK_DEVICE_DATA = new HashMap<>();
+    private static final Map<String, BlockDeviceData> blocksByName = new HashMap<>();
+
+    public static ResourceManager _resourceManager = null;
 
     ///////////////////////////////////////////////////////////////////
 
     public static FileSystem getLayeredFileSystem() {
         return LAYERED_FILE_SYSTEM;
+    }
+
+    public static BlockDeviceData getBlockByName(String name) {
+        return blocksByName.get(name);
+    }
+
+    public static ResourceLocation getKeyByValue(BlockDeviceData value) {
+        for (Map.Entry<ResourceLocation, BlockDeviceData> entry : BLOCK_DEVICE_DATA.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
 
     public static Map<ResourceLocation, BlockDeviceData> getBlockData() {
@@ -75,6 +91,7 @@ public final class FileSystems {
     ///////////////////////////////////////////////////////////////////
 
     private static void reload(final ResourceManager resourceManager) {
+        _resourceManager = resourceManager;
         reset();
 
         LOGGER.info("Searching for datapack filesystems...");
@@ -132,6 +149,7 @@ public final class FileSystems {
 
                         LOGGER.info("  Adding block device [{}] with id [{}] and a size of [{}].", name, location, formatSize(data.getBlockDevice().getCapacity()));
                         BLOCK_DEVICE_DATA.put(location, data);
+                        blocksByName.put(name, data);
                     }
                     default -> LOGGER.error("Unsupported file system type [{}].", type);
                 }

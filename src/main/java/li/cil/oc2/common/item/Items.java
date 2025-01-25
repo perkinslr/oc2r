@@ -14,6 +14,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import li.cil.oc2.common.bus.device.data.FileSystems;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -62,11 +63,12 @@ public final class Items {
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_MEDIUM = register("hard_drive_medium", () ->
         new HardDriveItem(4 * Constants.MEGABYTE, DyeColor.GREEN));
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_LARGE = register("hard_drive_large", () ->
-        new HardDriveItem(8 * Constants.MEGABYTE, DyeColor.CYAN));
+        new HardDriveItem(4 * Constants.MEGABYTE, DyeColor.CYAN));
     public static final RegistryObject<HardDriveItem> HARD_DRIVE_EXTRA_LARGE = register("hard_drive_extra_large", () ->
         new HardDriveItem(16 * Constants.MEGABYTE, DyeColor.YELLOW));
-    public static final RegistryObject<HardDriveWithExternalDataItem> HARD_DRIVE_CUSTOM = register("hard_drive_custom", () ->
-        new HardDriveWithExternalDataItem(BlockDeviceDataRegistry.BUILDROOT.getId(), DyeColor.BROWN));
+    public static final RegistryObject<HardDriveWithExternalDataItem> HARD_DRIVE_CUSTOM = register
+        ("hard_drive_custom", () ->
+         new HardDriveWithExternalDataItem(FileSystems.getKeyByValue(FileSystems.getBlockByName("rootfs")), DyeColor.BROWN));
 
     public static final RegistryObject<CPUItem> CPU_TIER_1 = register("cpu_tier_1", () ->
         new CPUItem(25_000_000));

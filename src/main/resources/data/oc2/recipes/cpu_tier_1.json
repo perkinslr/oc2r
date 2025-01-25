@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "TST",
+    "CBC"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "C": {
+      "tag": "forge:ingots/copper"
+    },
+    "T": {
+      "item": "oc2:transistor"
+    },
+    "S": {
+      "item": "oc2:silicon_wafer"
+    },
+    "B": {
+      "item": "oc2:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2:cpu_tier_1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SQ ",
+    "QQ "
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:sand"
+    },
+    "Q": {
+      "tag": "forge:gems/quartz"
+    }
+  },
+  "result": {
+    "item": "oc2:silicon_blend",
+    "count": 4
+  }
+}

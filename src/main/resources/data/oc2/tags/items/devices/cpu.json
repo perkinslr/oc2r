@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oc2:cpu_tier_1",
+    "oc2:cpu_tier_2",
+    "oc2:cpu_tier_3",
+    "oc2:cpu_tier_4"
+  ]
+}

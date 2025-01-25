@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "TST",
+    "GBG"
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:gems/diamond"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "T": {
+      "item": "oc2:transistor"
+    },
+    "S": {
+      "item": "oc2:silicon_wafer"
+    },
+    "B": {
+      "item": "oc2:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2:cpu_tier_3"
+  }
+}

@@ -12,6 +12,7 @@ plugins {
 
 apply plugin: 'org.spongepowered.mixin'
 apply from: "minecraft.gradle"
+jarJar.enable()
 
 allprojects {
     gradle.projectsEvaluated {
@@ -96,6 +97,9 @@ dependencies {
         compileOnly "li.cil.sedna:sedna:2.0.8"
         compileOnly "li.cil.sedna:sedna-buildroot:0.0.8"
     }
+    jarJar(group: 'libs', name: 'sedna-1.18.2-forge-1.0.14+21d424a', version: '[]') {
+        jarJar.pin(it, "")
+    }
     implementation "curse.maven:sedna-511276:3885542"
     minecraftLibrary "org.apache.commons:commons-collections4:4.4"
 
@@ -126,6 +130,9 @@ task copyLicensesToResources(type: Copy) {
 
 processResources.dependsOn(packageScripts)
 processResources.dependsOn(copyLicensesToResources)
+
+tasks.named('jarJar'){
+}
 
 minecraft {
     mappings channel: "official", version: minecraft_version
@@ -218,6 +225,7 @@ publishing {
             version = semver
             artifact jar
             artifact apiJar
+            jarJar.component(it)
         }
     }
     repositories {

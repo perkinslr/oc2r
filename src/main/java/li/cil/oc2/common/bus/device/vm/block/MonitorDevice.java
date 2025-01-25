@@ -61,7 +61,6 @@ public final class MonitorDevice extends IdentityProxy<BlockEntity> implements V
 
     @Override
     public VMDeviceLoadResult mount(final VMContext context) {
-        System.out.println("mounting: "+context);
         if (!allocateDevice(context)) {
             System.out.println("fail66");
             return VMDeviceLoadResult.fail();
@@ -73,7 +72,6 @@ public final class MonitorDevice extends IdentityProxy<BlockEntity> implements V
             return VMDeviceLoadResult.fail();
         }
 
-        System.out.println("success");
         onMountedChanged.accept(true);
 
         return VMDeviceLoadResult.success();
@@ -131,7 +129,6 @@ public final class MonitorDevice extends IdentityProxy<BlockEntity> implements V
     ///////////////////////////////////////////////////////////////
 
     private boolean allocateDevice(final VMContext context) {
-        System.out.println("allocating");
         if (!context.getMemoryAllocator().claimMemory(Constants.PAGE_SIZE)) {
             return false;
         }

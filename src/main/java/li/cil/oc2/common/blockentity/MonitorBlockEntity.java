@@ -142,7 +142,6 @@ public final class MonitorBlockEntity extends ModBlockEntity implements Tickable
     }
 
     private void handleMountedChanged(final boolean value) {
-        System.out.println("145: "+value);
         updateMonitorState(value, hasEnergy);
     }
 

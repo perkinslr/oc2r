@@ -18,7 +18,7 @@ public final class ProviderRegistry {
 
     ///////////////////////////////////////////////////////////////////
 
-    private static final DeferredRegister<ItemDeviceProvider> ITEM_DEVICE_PROVIDERS = RegistryUtils.getInitializerFor(Registries.ITEM_DEVICE_PROVIDER);
+    public static final DeferredRegister<ItemDeviceProvider> ITEM_DEVICE_PROVIDERS = RegistryUtils.getInitializerFor(Registries.ITEM_DEVICE_PROVIDER);
     public static final Supplier<IForgeRegistry<ItemDeviceProvider>> ITEM_DEVICE_PROVIDER_REGISTRY = ITEM_DEVICE_PROVIDERS.makeRegistry(ItemDeviceProvider.class, RegistryBuilder::new);
 
     ///////////////////////////////////////////////////////////////////

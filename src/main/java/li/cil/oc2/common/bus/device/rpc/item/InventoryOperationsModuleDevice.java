@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: MIT */
 
 package li.cil.oc2.common.bus.device.rpc.item;
+import net.minecraftforge.fluids.FluidStack;
 
 import li.cil.oc2.api.bus.device.object.Callback;
 import li.cil.oc2.api.bus.device.object.Parameter;
@@ -18,6 +19,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemHandlerHelper;
+import net.minecraftforge.fluids.capability.IFluidHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 import javax.annotation.Nullable;
@@ -39,6 +41,39 @@ public final class InventoryOperationsModuleDevice extends AbstractItemRPCDevice
     }
 
     ///////////////////////////////////////////////////////////////////
+
+    @Callback
+    public int transfer(@Parameter("fromSide") final RobotOperationSide fromSide,
+                        @Parameter("toSide") final RobotOperationSide toSide,
+                        @Parameter("count") final int count,
+                        @Parameter("simulate") final boolean simulate) {
+        final Direction fromDirection = RobotOperationSide.toGlobal(entity, fromSide);
+        final Direction toDirection = RobotOperationSide.toGlobal(entity, toSide);
+        final BlockPos fromPos = entity.blockPosition().relative(fromDirection);
+        final BlockPos toPos = entity.blockPosition().relative(toDirection);
+        final BlockEntity fromBlockEntity = entity.level.getBlockEntity(fromPos);
+        final BlockEntity toBlockEntity = entity.level.getBlockEntity(toPos);
+        if (fromBlockEntity == null || toBlockEntity == null) {
+            return -1;
+        }
+
+        final Optional<IFluidHandler> fromCapability = fromBlockEntity.getCapability(Capabilities.fluidHandler(), fromDirection.getOpposite()).resolve();
+        final Optional<IFluidHandler> toCapability = toBlockEntity.getCapability(Capabilities.fluidHandler(), toDirection.getOpposite()).resolve();
+        if (!fromCapability.isPresent() || !toCapability.isPresent()) {
+            return -1;
+        }
+        // Simulate Pass!
+        FluidStack fromStack = fromCapability.get().drain(count, IFluidHandler.FluidAction.SIMULATE);
+        int realCount = toCapability.get().fill(fromStack, IFluidHandler.FluidAction.SIMULATE);
+        if (simulate) {
+            return realCount;
+        }
+
+        fromStack = fromCapability.get().drain(realCount, IFluidHandler.FluidAction.EXECUTE);
+        realCount = toCapability.get().fill(fromStack, IFluidHandler.FluidAction.EXECUTE);
+        return realCount;
+    }
+
 
     @Callback
     public void move(@Parameter("fromSlot") final int fromSlot,

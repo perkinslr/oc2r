@@ -21,6 +21,6 @@ public final class FluidHandlerBlockDeviceProvider extends AbstractBlockEntityCa
 
     @Override
     protected Invalidatable<Device> getBlockDevice(final BlockDeviceQuery query, final IFluidHandler value) {
-        return Invalidatable.of(new ObjectDevice(new FluidHandlerDevice(value)));
+        return Invalidatable.of(new ObjectDevice(new FluidHandlerDevice(value, query)));
     }
 }

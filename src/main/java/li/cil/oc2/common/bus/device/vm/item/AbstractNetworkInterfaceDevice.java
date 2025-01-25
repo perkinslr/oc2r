@@ -138,9 +138,15 @@ public abstract class AbstractNetworkInterfaceDevice extends IdentityProxy<ItemS
     private final class NetworkInterfaceImpl implements NetworkInterface {
         @Override
         public byte[] readEthernetFrame() {
-            if (device != null && isRunning) {
-                return device.readEthernetFrame();
-            } else {
+            try {
+                if (device != null && isRunning) {
+                    return device.readEthernetFrame();
+                } else {
+                    return null;
+                }
+
+            }
+            catch (java.lang.IndexOutOfBoundsException e) {
                 return null;
             }
         }

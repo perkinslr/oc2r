@@ -13,10 +13,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 public final class BlockEntityObjectDeviceProvider extends AbstractBlockEntityDeviceProvider<BlockEntity> {
     @Override
     public Invalidatable<Device> getBlockDevice(final BlockDeviceQuery query, final BlockEntity blockEntity) {
-        if (Callbacks.hasMethods(blockEntity)) {
-            return Invalidatable.of(new ObjectDevice(blockEntity));
-        } else {
-            return Invalidatable.empty();
-        }
+        return Invalidatable.of(new ObjectDevice(blockEntity));
+        
     }
 }

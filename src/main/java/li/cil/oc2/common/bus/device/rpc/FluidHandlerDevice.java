@@ -77,16 +77,13 @@ public final class FluidHandlerDevice extends IdentityProxy<IFluidHandler> imple
         final Direction direction = HorizontalBlockUtils.toGlobal(fromBlockEntity.getBlockState(), side);
         final BlockPos toPos = fromPos.relative(direction);
 
-        System.out.println("toPos: " + toPos);
         final BlockEntity toBlockEntity = this._query.get().getLevel().getBlockEntity(toPos);
 
 
         if (toBlockEntity != null) {
             final Optional<IFluidHandler> fromCapability = fromBlockEntity.getCapability(Capabilities.fluidHandler(), direction).resolve();
-            System.out.println("fromCapability: " + fromCapability);
 
             final Optional<IFluidHandler> toCapability = toBlockEntity.getCapability(Capabilities.fluidHandler(), direction.getOpposite()).resolve();
-            System.out.println("toCapability: " + toCapability);
             if (!fromCapability.isPresent() || !toCapability.isPresent()) {
                 return -4;
             }

@@ -17,7 +17,10 @@ plugins {
 
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
-apply from: 'minecraft.gradle'
+apply from: "minecraft.gradle"
+apply plugin: "java"
+jarJar.enable()
+
 
 def getGitRef() {
     try {
@@ -55,6 +58,9 @@ repositories {
         content { includeGroup 'mezz.jei' }
     }
 
+    flatDir {
+        dirs("libs")
+    }
 }
 
 dependencies {
@@ -71,6 +77,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     implementation files('libs/sedna.jar')
+    jarJar(group: 'libs', name: 'sedna', version: '[]') {
+        jarJar.pin(it, "")
+    }
 }
 
 task packageScripts(type: Zip) {
@@ -87,6 +96,9 @@ task copyLicensesToResources(type: Copy) {
 
 processResources.dependsOn(packageScripts)
 processResources.dependsOn(copyLicensesToResources)
+
+tasks.named('jarJar'){
+}
 
 minecraft {
     mappings channel: 'official', version: minecraft_version
@@ -171,6 +183,7 @@ publishing {
             version = semver
             artifact jar
             artifact apiJar
+            jarJar.component(it)
         }
     }
     repositories {

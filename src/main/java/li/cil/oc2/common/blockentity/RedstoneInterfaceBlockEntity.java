@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: MIT */
 
 package li.cil.oc2.common.blockentity;
+import li.cil.oc2.api.util.*;
 import com.dannyandson.tinypipes.api.IChanneledRedstone;
 import li.cil.oc2.api.bus.device.object.Callback;
 import li.cil.oc2.api.bus.device.object.DocumentedDevice;
@@ -15,13 +16,15 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
-
+import li.cil.oc2.api.bus.device.rpc.*;
 import javax.annotation.Nullable;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import java.util.*;
 
 import static java.util.Collections.singletonList;
 
-public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice, IChanneledRedstone {
+public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice, IChanneledRedstone, RPCEventSource {
     private static final String OUTPUT_TAG_NAME = "output";
 
     private static final String GET_REDSTONE_INPUT = "getRedstoneInput";
@@ -38,6 +41,8 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
 
     private HashMap<Direction, HashMap<Integer,Integer>> inputFrequencies = new HashMap<Direction, HashMap<Integer,Integer>>(6);
     private HashMap<Direction, HashMap<Integer,Integer>> outputFrequencies = new HashMap<Direction, HashMap<Integer,Integer>>(6);
+
+    private final HashMap<IEventSink, UUID> subscribers = new HashMap();
 
     ///////////////////////////////////////////////////////////////////
 
@@ -311,5 +316,41 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
 
         level.updateNeighborsAt(getBlockPos(), getBlockState().getBlock());
         level.updateNeighborsAt(getBlockPos().relative(direction), getBlockState().getBlock());
+    }
+
+    @Override
+    public void subscribe(IEventSink sink, UUID myid) {
+        subscribers.put(sink, myid);
+    }
+    @Override
+    public void unsubscribe(IEventSink sink) {
+        subscribers.remove(sink);
+    }
+
+    public void neighborChanged(BlockPos fromPos) {
+        int sl = 0;
+        if (level == null) {
+            return;
+        }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = Side.relativeDirection(fromPos, pos);
+        assert direction != null;
+
+        final ChunkPos chunkPos = new ChunkPos(fromPos);
+        if (!level.hasChunk(chunkPos.x, chunkPos.z)) {
+            sl = 0;
+        }
+
+        sl = level.getSignal(fromPos, direction);
+        JsonObject msg = new JsonObject();
+        msg.addProperty("event", "redstone");
+        msg.addProperty("side", ""+direction);
+        msg.addProperty("level", sl);
+
+        System.out.println("updating redstone interface block with level: "+sl);
+        for (var subscriber : subscribers.entrySet()) {
+            subscriber.getKey().postEvent(subscriber.getValue(), msg);
+        }
     }
 }

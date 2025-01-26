@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public record RPCDeviceList(ArrayList<RPCDevice> devices) implements RPCDevice {
+    public ArrayList<RPCDevice> getDevices() {
+        return devices;
+    }
     @Override
     public List<String> getTypeNames() {
         return devices.stream()

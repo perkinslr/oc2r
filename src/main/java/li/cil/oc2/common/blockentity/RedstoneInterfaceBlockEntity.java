@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: MIT */
 
 package li.cil.oc2.common.blockentity;
-
+import li.cil.oc2.api.util.*;
 import li.cil.oc2.api.bus.device.object.Callback;
 import li.cil.oc2.api.bus.device.object.DocumentedDevice;
 import li.cil.oc2.api.bus.device.object.NamedDevice;
@@ -16,14 +16,16 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.fml.ModList;
-
-import javax.annotation.Nullable;
 import java.util.Collection;
-
+import net.minecraftforge.fml.ModList;
+import java.util.*;
+import javax.annotation.Nullable;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import li.cil.oc2.api.bus.device.rpc.*;
 import static java.util.Collections.singletonList;
 
-public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice {
+public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice, RPCEventSource {
     private static final String OUTPUT_TAG_NAME = "output";
     private static final String BUNDLED_TAG_NAME = "bundled";
 
@@ -38,6 +40,8 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
     private static final String VALUE = "value";
     private static final String VALUES = "values";
     private static final String COLOUR = "colour";
+
+    private final HashMap<IEventSink, UUID> subscribers = new HashMap();
 
     ///////////////////////////////////////////////////////////////////
 
@@ -283,5 +287,40 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
     public byte[] getBundledSignal(Direction direction) {
         final int index = direction.get3DDataValue();
         return this.bundled_output[index];
+
+    @Override
+    public void subscribe(IEventSink sink, UUID myid) {
+        subscribers.put(sink, myid);
+    }
+    @Override
+    public void unsubscribe(IEventSink sink) {
+        subscribers.remove(sink);
+    }
+
+    public void neighborChanged(BlockPos fromPos) {
+        int sl = 0;
+        if (level == null) {
+            return;
+        }
+
+        final BlockPos pos = getBlockPos();
+        final Direction direction = Side.relativeDirection(fromPos, pos);
+        assert direction != null;
+
+        final ChunkPos chunkPos = new ChunkPos(fromPos);
+        if (!level.hasChunk(chunkPos.x, chunkPos.z)) {
+            sl = 0;
+        }
+
+        sl = level.getSignal(fromPos, direction);
+        JsonObject msg = new JsonObject();
+        msg.addProperty("event", "redstone");
+        msg.addProperty("side", ""+direction);
+        msg.addProperty("level", sl);
+
+        System.out.println("updating redstone interface block with level: "+sl);
+        for (var subscriber : subscribers.entrySet()) {
+            subscriber.getKey().postEvent(subscriber.getValue(), msg);
+        }
     }
 }

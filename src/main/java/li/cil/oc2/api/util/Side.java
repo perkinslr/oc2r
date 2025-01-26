@@ -3,6 +3,8 @@
 package li.cil.oc2.api.util;
 
 import net.minecraft.core.Direction;
+import net.minecraft.core.Vec3i;
+import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
@@ -72,5 +74,35 @@ public enum Side {
     @Override
     public String toString() {
         return base != null ? base.toString() : super.toString();
+    }
+
+    public static Direction relativeDirection(BlockPos from, BlockPos to) {
+        int dx = to.getX() - from.getX();
+        int dy = to.getY() - from.getY();
+        int dz = to.getZ() - from.getZ();
+        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > Math.abs(dz)) {
+            if (dx > 0) {
+                return Direction.EAST;
+            }
+            else {
+                return Direction.WEST;
+            }
+        }
+        else if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > Math.abs(dz)) {
+            if (dy > 0) {
+                return Direction.UP;
+            }
+            else {
+                return Direction.DOWN;
+            }
+        }
+        else {
+            if (dz > 0) {
+                return Direction.SOUTH;
+            }
+            else {
+                return Direction.NORTH;
+            }
+        }
     }
 }

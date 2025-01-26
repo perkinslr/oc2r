@@ -97,6 +97,9 @@ public final class RPCDeviceBusAdapter implements Steppable, IEventSink {
     }
 
     public void disposeDevices() {
+        for (RPCEventSource res: subscriptions) {
+            res.unsubscribe(this);
+        }
         unmountDevices();
 
         unmountedDevices.forEach(RPCDeviceList::dispose);

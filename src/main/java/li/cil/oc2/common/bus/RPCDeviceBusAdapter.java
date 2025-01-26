@@ -4,6 +4,7 @@ package li.cil.oc2.common.bus;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import li.cil.ceres.api.Serialized;
 import li.cil.oc2.api.bus.DeviceBusController;
 import li.cil.oc2.api.bus.device.Device;
@@ -15,7 +16,7 @@ import li.cil.oc2.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
 import li.cil.oc2.common.serialization.gson.*;
 import li.cil.sedna.api.device.Steppable;
 import li.cil.sedna.api.device.serial.SerialDevice;
-
+import li.cil.oc2.api.bus.device.object.*;
 import javax.annotation.Nullable;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
@@ -24,13 +25,13 @@ import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public final class RPCDeviceBusAdapter implements Steppable {
+public final class RPCDeviceBusAdapter implements Steppable, IEventSink {
     private static final int DEFAULT_MAX_MESSAGE_SIZE = 4 * Constants.KILOBYTE;
     private static final byte[] MESSAGE_DELIMITER = "\0".getBytes();
     private static final byte[] MESSAGE_DELIMITER2 = "\r".getBytes();
 
     public static final String ERROR_MESSAGE_TOO_LARGE = "message too large";
-    public static final String ERROR_UNKNOWN_MESSAGE_TYPE = "unknown message type";
+    public static final String ERROR_UNKNOWN_MESSAGE_TYPE = "unknown message type: ";
     public static final String ERROR_UNKNOWN_DEVICE = "unknown device";
     public static final String ERROR_UNKNOWN_METHOD = "unknown method";
     public static final String ERROR_INVALID_PARAMETER_SIGNATURE = "invalid parameter signature";
@@ -47,6 +48,7 @@ public final class RPCDeviceBusAdapter implements Steppable {
     private final Lock pauseLock = new ReentrantLock();
     private boolean isPaused;
     private boolean crmode = false;
+    private final ArrayList<RPCEventSource> subscriptions = new ArrayList<>();
 
     ///////////////////////////////////////////////////////////////////
 
@@ -305,10 +307,72 @@ public final class RPCDeviceBusAdapter implements Steppable {
                         writeError("missing invocation data");
                     }
                 }
-                default -> writeError(ERROR_UNKNOWN_MESSAGE_TYPE);
+                case Message.MESSAGE_TYPE_SUBSCRIBE -> {
+                    if (message.data != null) {
+                        subscribe((UUID)message.data);
+                    } else {
+                        writeError("missing invocation data");
+                    }
+                }
+                case Message.MESSAGE_TYPE_UNSUBSCRIBE -> {
+                    if (message.data != null) {
+                        unsubscribe((UUID)message.data);
+                    } else {
+                        writeError("missing invocation data");
+                    }
+                }
+
+                default -> writeError(ERROR_UNKNOWN_MESSAGE_TYPE + message.type);
             }
         } catch (final Throwable e) {
             writeError(e.getMessage());
+        }
+    }
+
+    @Override
+    public void postEvent(UUID deviceid, JsonElement msg) {
+        writeMessage(Message.MESSAGE_TYPE_EVENT, new Object[]{deviceid, msg});
+    }
+
+    private void subscribe(final UUID deviceId) {
+        RPCDeviceList devices = devicesById.get(deviceId);
+        if (devices != null) {
+            for (RPCDevice device : devices.getDevices()) {
+                if (device instanceof ObjectDevice od) {
+                    RPCEventSource res = od.asEventSource();
+                    if (res != null) {
+                        res.subscribe(this, deviceId);
+                        subscriptions.add(res);
+                        return;
+                    }
+                }
+                if (device instanceof RPCEventSource res) {
+                    res.subscribe(this, deviceId);
+                    subscriptions.add(res);
+                    return;
+                }
+            }
+            writeError("device does not support subscriptions");
+        }
+        else {
+            writeError("unknown device");
+        }
+    }
+    private void unsubscribe(final UUID deviceId) {
+        RPCDeviceList devices = devicesById.get(deviceId);
+        if (devices != null) {
+            for (RPCDevice device : devices.getDevices()) {
+                if (device instanceof RPCEventSource res) {
+                    res.unsubscribe(this);
+                    subscriptions.remove(res);
+                }
+                else {
+                    writeError("device does not support subscriptions");
+                }
+            }
+        }
+        else {
+            writeError("unknown device");
         }
     }
 
@@ -434,9 +498,12 @@ public final class RPCDeviceBusAdapter implements Steppable {
         public static final String MESSAGE_TYPE_METHODS = "methods";
         public static final String MESSAGE_TYPE_RESULT = "result";
         public static final String MESSAGE_TYPE_ERROR = "error";
+        public static final String MESSAGE_TYPE_EVENT = "event";
 
         // VM -> Device
         public static final String MESSAGE_TYPE_INVOKE_METHOD = "invoke";
+        public static final String MESSAGE_TYPE_SUBSCRIBE = "subscribe";
+        public static final String MESSAGE_TYPE_UNSUBSCRIBE = "unsubscribe";
     }
 
     @Serialized

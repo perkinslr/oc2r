@@ -304,7 +304,7 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         }
 
         final BlockPos pos = getBlockPos();
-        final Direction direction = Side.relativeDirection(fromPos, pos);
+        final Direction direction = Side.relativeDirection(pos, fromPos);
         assert direction != null;
 
         final ChunkPos chunkPos = new ChunkPos(fromPos);

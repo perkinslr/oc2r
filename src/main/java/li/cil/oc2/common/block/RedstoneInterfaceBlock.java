@@ -2,6 +2,7 @@
 
 package li.cil.oc2.common.block;
 
+import net.minecraft.world.level.Level;
 import li.cil.oc2.common.blockentity.BlockEntities;
 import li.cil.oc2.common.blockentity.RedstoneInterfaceBlockEntity;
 import net.minecraft.core.BlockPos;
@@ -64,6 +65,12 @@ public final class RedstoneInterfaceBlock extends HorizontalDirectionalBlock imp
     @Override
     public int getDirectSignal(final BlockState state, final BlockGetter level, final BlockPos pos, final Direction side) {
         return getSignal(state, level, pos, side);
+    }
+
+    @Override
+    public void neighborChanged(BlockState state, Level worldIn, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
+        RedstoneInterfaceBlockEntity ribe = (RedstoneInterfaceBlockEntity) worldIn.getBlockEntity(pos);
+        ribe.neighborChanged(fromPos);
     }
 
     ///////////////////////////////////////////////////////////////////

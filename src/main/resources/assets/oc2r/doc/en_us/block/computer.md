@@ -1,5 +1,5 @@
 # Computer
-![1 + 1 = 10](block:oc2r:computer)
+![1 + 1 = 10](block:oc2:computer)
 
 Computers provide a basis for building hardware capable of running an operating system or low-level software.
 

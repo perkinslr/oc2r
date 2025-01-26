@@ -10,19 +10,19 @@
       "tag": "forge:ingots/iron"
     },
     "C": {
-      "item": "oc2r:network_connector"
+      "item": "oc2:network_connector"
     },
     "X": {
-      "item": "oc2r:bus_interface"
+      "item": "oc2:bus_interface"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:network_hub"
+    "item": "oc2:network_hub"
   }
 }

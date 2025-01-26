@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.common.util.LazyOptionalUtils;
-import li.cil.oc2r.common.util.ServerScheduler;
+import li.cil.oc2.common.util.LazyOptionalUtils;
+import li.cil.oc2.common.util.ServerScheduler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.entity.BlockEntity;

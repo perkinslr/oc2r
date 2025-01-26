@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm.event;
+package li.cil.oc2.api.bus.device.vm.event;
 
 /**
  * Fired when the VM is paused, typically before state is persisted.

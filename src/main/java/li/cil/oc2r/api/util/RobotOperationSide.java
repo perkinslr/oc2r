@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.util;
+package li.cil.oc2.api.util;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.Entity;

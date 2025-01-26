@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.data;
+package li.cil.oc2.data;
 
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.tags.BlockTags;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.tags.BlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -14,7 +14,7 @@ import javax.annotation.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static li.cil.oc2r.common.tags.ItemTags.*;
+import static li.cil.oc2.common.tags.ItemTags.*;
 
 public final class ModItemTagsProvider extends ItemTagsProvider {
     public ModItemTagsProvider(

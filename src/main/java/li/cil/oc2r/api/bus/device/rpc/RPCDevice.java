@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.rpc;
+package li.cil.oc2.api.bus.device.rpc;
 
-import li.cil.oc2r.api.bus.DeviceBus;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.DeviceBus;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
 
 import java.util.List;
 
@@ -47,8 +47,8 @@ import java.util.List;
  * </pre>
  *
  * @see ObjectDevice
- * @see li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider
- * @see li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider
+ * @see li.cil.oc2.api.bus.device.provider.BlockDeviceProvider
+ * @see li.cil.oc2.api.bus.device.provider.ItemDeviceProvider
  */
 public interface RPCDevice extends Device {
     /**

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.audio;
+package li.cil.oc2.client.audio;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvent;

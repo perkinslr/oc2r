@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc.item;
+package li.cil.oc2.common.bus.device.rpc.item;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.DocumentedDevice;
-import li.cil.oc2r.api.bus.device.object.Parameter;
-import li.cil.oc2r.api.capabilities.TerminalUserProvider;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.ExportedFileMessage;
-import li.cil.oc2r.common.network.message.RequestImportedFileMessage;
-import li.cil.oc2r.common.network.message.ServerCanceledImportFileMessage;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.DocumentedDevice;
+import li.cil.oc2.api.bus.device.object.Parameter;
+import li.cil.oc2.api.capabilities.TerminalUserProvider;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.ExportedFileMessage;
+import li.cil.oc2.common.network.message.RequestImportedFileMessage;
+import li.cil.oc2.common.network.message.ServerCanceledImportFileMessage;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.StringUtil;
 import net.minecraft.world.entity.player.Player;

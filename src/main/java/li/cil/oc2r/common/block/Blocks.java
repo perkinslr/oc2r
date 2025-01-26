@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.block;
+package li.cil.oc2.common.block;
 
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;

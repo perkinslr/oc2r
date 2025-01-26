@@ -1,5 +1,5 @@
 # 总线线缆
-![Party Bus](block:oc2r:bus_cable)
+![Party Bus](block:oc2:bus_cable)
 
 总线线缆将 [总线接口](bus_interface.md) 连接到计算机。
 

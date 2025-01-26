@@ -1,5 +1,5 @@
 # 网络连接口
-![数据必须流动](block:oc2r:network_connector)
+![数据必须流动](block:oc2:network_connector)
 
 网络连接口是构建连接不同 [计算机](computer.md) 的网络的基本组成部分。使用 [网线](../item/network_cable.md) 将连接口相互连接。
 

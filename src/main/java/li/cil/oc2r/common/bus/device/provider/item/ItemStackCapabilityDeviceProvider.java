@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.provider.item;
+package li.cil.oc2.common.bus.device.provider.item;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.common.capabilities.Capabilities;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.common.capabilities.Capabilities;
 
 import java.util.Optional;
 

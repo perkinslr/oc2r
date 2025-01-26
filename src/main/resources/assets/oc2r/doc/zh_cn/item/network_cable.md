@@ -1,5 +1,5 @@
 # 网线
-![什么猫!?](item:oc2r:network_cable)
+![什么猫!?](item:oc2:network_cable)
 
 网线连接一对[网络连接口](../block/network_connector.md)。这使得便捷地跨越较大距离成为可能。要放置网线，请依次使用它连接两个网络连接口。
 

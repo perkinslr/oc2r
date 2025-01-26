@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.api.bus.DeviceBus;
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.client.model.BusCableBakedModel;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.block.BusCableBlock;
-import li.cil.oc2r.common.bus.AbstractBlockDeviceBusElement;
-import li.cil.oc2r.common.bus.device.rpc.TypeNameRPCDevice;
-import li.cil.oc2r.common.bus.device.util.BlockDeviceInfo;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.BusCableFacadeMessage;
-import li.cil.oc2r.common.network.message.BusInterfaceNameMessage;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.LevelUtils;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.util.ServerScheduler;
+import li.cil.oc2.api.bus.DeviceBus;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.client.model.BusCableBakedModel;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.block.BusCableBlock;
+import li.cil.oc2.common.bus.AbstractBlockDeviceBusElement;
+import li.cil.oc2.common.bus.device.rpc.TypeNameRPCDevice;
+import li.cil.oc2.common.bus.device.util.BlockDeviceInfo;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.BusCableFacadeMessage;
+import li.cil.oc2.common.network.message.BusInterfaceNameMessage;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.LevelUtils;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.util.ServerScheduler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.BlockModelShaper;
 import net.minecraft.client.resources.model.BakedModel;
@@ -47,7 +47,7 @@ import java.util.HashSet;
 import java.util.Objects;
 
 import static java.util.Objects.requireNonNull;
-import static li.cil.oc2r.client.model.BusCableBakedModel.*;
+import static li.cil.oc2.client.model.BusCableBakedModel.*;
 
 public final class BusCableBlockEntity extends ModBlockEntity {
     public enum FacadeType {

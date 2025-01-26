@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.entity;
+package li.cil.oc2.common.entity;
 
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

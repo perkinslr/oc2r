@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer;
+package li.cil.oc2.client.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
 import org.joml.Matrix4f;
-import li.cil.oc2r.common.block.BusCableBlock;
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.integration.Wrenches;
+import li.cil.oc2.common.block.BusCableBlock;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.integration.Wrenches;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;

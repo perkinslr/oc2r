@@ -1,5 +1,5 @@
 # Redstone Interface
-![Everything Red](block:oc2r:redstone_interface)
+![Everything Red](block:oc2:redstone_interface)
 
 The redstone interface provides an omnidirectional bus to receive and emit redstone signals.
 

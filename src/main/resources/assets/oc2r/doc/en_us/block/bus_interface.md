@@ -1,5 +1,5 @@
 # Bus Interface
-![Plug and play](item:oc2r:bus_interface)
+![Plug and play](item:oc2:bus_interface)
 
 Bus interfaces connect external devices to [computers](computer.md). This includes explicit device blocks, such as the [redstone interface](redstone_interface.md). Some generic functionality blocks of blocks is also available, such as information on energy storage.
 

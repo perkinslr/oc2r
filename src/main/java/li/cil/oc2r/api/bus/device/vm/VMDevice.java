@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm;
+package li.cil.oc2.api.bus.device.vm;
 
-import li.cil.oc2r.api.bus.DeviceBus;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
-import li.cil.oc2r.api.bus.device.vm.context.InterruptAllocator;
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.bus.DeviceBus;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.vm.context.InterruptAllocator;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 
 /**
@@ -47,8 +47,8 @@ import li.cil.sedna.api.device.MemoryMappedDevice;
  * Note that if any other {@link VMDevice} fails mounting, all mounted devices
  * will immediately unmounted and disposed.
  *
- * @see li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider
- * @see li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider
+ * @see li.cil.oc2.api.bus.device.provider.BlockDeviceProvider
+ * @see li.cil.oc2.api.bus.device.provider.ItemDeviceProvider
  */
 public interface VMDevice extends Device {
     /**

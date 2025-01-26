@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer;
+package li.cil.oc2.client.renderer;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -16,14 +16,14 @@ import com.mojang.blaze3d.vertex.*;
 import com.mojang.math.Axis;
 import org.joml.Matrix3f;
 import org.joml.Matrix4f;
-import li.cil.oc2r.common.block.ProjectorBlock;
-import li.cil.oc2r.common.blockentity.ProjectorBlockEntity;
-import li.cil.oc2r.common.bus.device.vm.block.ProjectorDevice;
-import li.cil.oc2r.common.ext.MinecraftExt;
-import li.cil.oc2r.common.mixin.LevelRendererMixin;
-import li.cil.oc2r.common.util.FakePlayerUtils;
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.scale.Yuv420jToRgb;
+import li.cil.oc2.common.block.ProjectorBlock;
+import li.cil.oc2.common.blockentity.ProjectorBlockEntity;
+import li.cil.oc2.common.bus.device.vm.block.ProjectorDevice;
+import li.cil.oc2.common.ext.MinecraftExt;
+import li.cil.oc2.common.mixin.LevelRendererMixin;
+import li.cil.oc2.common.util.FakePlayerUtils;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.scale.Yuv420jToRgb;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

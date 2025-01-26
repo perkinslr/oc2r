@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.managed;
+package li.cil.oc2.common.vm.context.managed;
 
-import li.cil.oc2r.api.bus.device.vm.context.MemoryRangeAllocator;
-import li.cil.oc2r.common.vm.context.MemoryRangeManager;
+import li.cil.oc2.api.bus.device.vm.context.MemoryRangeAllocator;
+import li.cil.oc2.common.vm.context.MemoryRangeManager;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 
 import java.util.ArrayList;

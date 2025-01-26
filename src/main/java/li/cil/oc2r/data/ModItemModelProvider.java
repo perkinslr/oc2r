@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.data;
+package li.cil.oc2.data;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.entity.Entities;
-import li.cil.oc2r.common.item.Items;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.entity.Entities;
+import li.cil.oc2.common.item.Items;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

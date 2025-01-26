@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.client.audio;
+package li.cil.oc2.client.audio;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

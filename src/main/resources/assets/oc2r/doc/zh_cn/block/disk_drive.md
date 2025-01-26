@@ -1,5 +1,5 @@
 # 磁盘驱动器
-![旋转一下](block:oc2r:disk_drive)
+![旋转一下](block:oc2:disk_drive)
 
 磁盘驱动器提供了快速媒体交换的选项。与 [硬盘](../item/hard_drive.md) 不同，[软盘](../item/floppy.md) 可以在运行时添加和移除。
 

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item.crafting;
+package li.cil.oc2.common.item.crafting;
 
 import com.google.gson.JsonObject;
-import li.cil.oc2r.common.integration.Wrenches;
+import li.cil.oc2.common.integration.Wrenches;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;

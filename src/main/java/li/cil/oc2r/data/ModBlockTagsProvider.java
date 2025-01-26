@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.data;
+package li.cil.oc2.data;
 
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.BlockTagsProvider;
@@ -12,8 +12,8 @@ import javax.annotation.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static li.cil.oc2r.common.block.Blocks.*;
-import static li.cil.oc2r.common.tags.BlockTags.*;
+import static li.cil.oc2.common.block.Blocks.*;
+import static li.cil.oc2.common.tags.BlockTags.*;
 
 public final class ModBlockTagsProvider extends BlockTagsProvider {
     public ModBlockTagsProvider(final PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable final ExistingFileHelper existingFileHelper) {

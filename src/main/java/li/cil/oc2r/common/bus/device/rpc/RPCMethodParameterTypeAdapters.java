@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc;
+package li.cil.oc2.common.bus.device.rpc;
 
 import com.google.gson.GsonBuilder;
-import li.cil.oc2r.api.imc.RPCMethodParameterTypeAdapter;
-import li.cil.oc2r.common.serialization.gson.DirectionJsonSerializer;
-import li.cil.oc2r.common.serialization.gson.ItemStackJsonSerializer;
+import li.cil.oc2.api.imc.RPCMethodParameterTypeAdapter;
+import li.cil.oc2.common.serialization.gson.DirectionJsonSerializer;
+import li.cil.oc2.common.serialization.gson.ItemStackJsonSerializer;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
 

@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264;
+package li.cil.oc2.jcodec.codecs.h264;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils.MvList2D;
-import li.cil.oc2r.jcodec.codecs.h264.decode.DeblockerInput;
-import li.cil.oc2r.jcodec.codecs.h264.decode.FrameReader;
-import li.cil.oc2r.jcodec.codecs.h264.decode.SliceDecoder;
-import li.cil.oc2r.jcodec.codecs.h264.decode.SliceReader;
-import li.cil.oc2r.jcodec.codecs.h264.decode.deblock.DeblockingFilter;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.*;
-import li.cil.oc2r.jcodec.common.IntObjectMap;
-import li.cil.oc2r.jcodec.common.VideoDecoder;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils.MvList2D;
+import li.cil.oc2.jcodec.codecs.h264.decode.DeblockerInput;
+import li.cil.oc2.jcodec.codecs.h264.decode.FrameReader;
+import li.cil.oc2.jcodec.codecs.h264.decode.SliceDecoder;
+import li.cil.oc2.jcodec.codecs.h264.decode.SliceReader;
+import li.cil.oc2.jcodec.codecs.h264.decode.deblock.DeblockingFilter;
+import li.cil.oc2.jcodec.codecs.h264.io.model.*;
+import li.cil.oc2.jcodec.common.IntObjectMap;
+import li.cil.oc2.jcodec.common.VideoDecoder;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.*;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

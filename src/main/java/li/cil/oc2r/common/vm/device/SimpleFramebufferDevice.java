@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.device;
+package li.cil.oc2.common.vm.device;
 
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.scale.RgbToYuv420j;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.scale.RgbToYuv420j;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 import li.cil.sedna.api.memory.MemoryAccessException;
 import li.cil.sedna.utils.DirectByteBufferUtils;

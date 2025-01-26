@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device;
+package li.cil.oc2.common.bus.device;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.device.DeviceType;
-import li.cil.oc2r.common.bus.device.util.DeviceTypeImpl;
-import li.cil.oc2r.common.tags.ItemTags;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.device.DeviceType;
+import li.cil.oc2.common.bus.device.util.DeviceTypeImpl;
+import li.cil.oc2.common.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -16,7 +16,7 @@ import net.minecraftforge.registries.RegistryBuilder;
 
 import java.util.function.Supplier;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class DeviceTypes {
     private static final DeferredRegister<DeviceType> DEVICE_TYPES = DeferredRegister.create(DeviceType.REGISTRY, API.MOD_ID);

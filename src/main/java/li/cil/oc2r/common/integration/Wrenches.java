@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.integration;
+package li.cil.oc2.common.integration;
 
-import li.cil.oc2r.common.tags.ItemTags;
+import li.cil.oc2.common.tags.ItemTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 

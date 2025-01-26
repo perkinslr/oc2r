@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm.context;
+package li.cil.oc2.api.bus.device.vm.context;
 
-import li.cil.oc2r.api.bus.DeviceBus;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.DeviceBus;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
 import li.cil.sedna.api.device.InterruptController;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 import li.cil.sedna.api.memory.MemoryMap;

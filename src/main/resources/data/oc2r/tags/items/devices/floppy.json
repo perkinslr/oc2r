@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "oc2r:floppy",
-    "oc2r:floppy_modern"
+    "oc2:floppy",
+    "oc2:floppy_modern"
   ]
 }

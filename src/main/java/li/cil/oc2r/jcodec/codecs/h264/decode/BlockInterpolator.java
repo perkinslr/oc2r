@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 import static java.lang.System.arraycopy;
 

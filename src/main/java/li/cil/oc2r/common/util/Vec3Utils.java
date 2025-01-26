@@ -1,4 +1,4 @@
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.phys.Vec3;

@@ -1,6 +1,6 @@
-package li.cil.oc2r.common.integration.util;
+package li.cil.oc2.common.integration.util;
 
-import li.cil.oc2r.common.integration.projectred.BundledCableHandler;
+import li.cil.oc2.common.integration.projectred.BundledCableHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;

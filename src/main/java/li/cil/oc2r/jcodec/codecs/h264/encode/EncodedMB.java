@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.encode;
+package li.cil.oc2.jcodec.codecs.h264.encode;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

@@ -1,5 +1,5 @@
 # Charger
-![Codename: Leeroy](block:oc2r:charger)
+![Codename: Leeroy](block:oc2:charger)
 
 The charger transfers energy from a connected power source to energy consumers on top of it.
 

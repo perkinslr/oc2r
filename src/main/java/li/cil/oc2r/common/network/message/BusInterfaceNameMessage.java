@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.network.MessageUtils;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.network.MessageUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization.ceres;
+package li.cil.oc2.common.serialization.ceres;
 
 import com.google.gson.JsonArray;
 import li.cil.ceres.Ceres;
-import li.cil.oc2r.common.vm.context.global.MemoryRangeList;
+import li.cil.oc2.common.vm.context.global.MemoryRangeList;
 import li.cil.sedna.api.memory.MemoryRange;
 import net.minecraft.network.chat.Component;
 

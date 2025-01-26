@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
 import li.cil.ceres.api.Serialized;
-import li.cil.oc2r.api.bus.device.vm.event.VMInitializationException;
-import li.cil.oc2r.api.bus.device.vm.event.VMInitializingEvent;
-import li.cil.oc2r.api.bus.device.vm.event.VMResumedRunningEvent;
-import li.cil.oc2r.api.bus.device.vm.event.VMSynchronizeEvent;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.RPCDeviceBusAdapter;
-import li.cil.oc2r.common.vm.context.global.GlobalVMContext;
+import li.cil.oc2.api.bus.device.vm.event.VMInitializationException;
+import li.cil.oc2.api.bus.device.vm.event.VMInitializingEvent;
+import li.cil.oc2.api.bus.device.vm.event.VMResumedRunningEvent;
+import li.cil.oc2.api.bus.device.vm.event.VMSynchronizeEvent;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.RPCDeviceBusAdapter;
+import li.cil.oc2.common.vm.context.global.GlobalVMContext;
 import li.cil.sedna.riscv.R5Board;
 import net.minecraft.network.chat.Component;
 

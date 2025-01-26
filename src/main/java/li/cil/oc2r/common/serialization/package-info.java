@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.common.serialization;
+package li.cil.oc2.common.serialization;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

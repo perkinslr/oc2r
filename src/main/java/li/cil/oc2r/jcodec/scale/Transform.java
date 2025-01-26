@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.scale;
+package li.cil.oc2.jcodec.scale;
 
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 /**
  * This class is part of JCodec ( www.jcodec.org )

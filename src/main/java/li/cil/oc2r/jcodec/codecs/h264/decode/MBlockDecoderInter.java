@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils.MvList;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.Frame;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils.MvList;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.codecs.h264.io.model.Frame;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.*;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Utils.Mv.*;
-import static li.cil.oc2r.jcodec.codecs.h264.decode.MBlockDecoderUtils.*;
-import static li.cil.oc2r.jcodec.codecs.h264.decode.PredictionMerger.mergePrediction;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Utils.Mv.*;
+import static li.cil.oc2.jcodec.codecs.h264.decode.MBlockDecoderUtils.*;
+import static li.cil.oc2.jcodec.codecs.h264.decode.PredictionMerger.mergePrediction;
 
 /**
  * A decoder for Inter 16x16, 16x8 and 8x16 macroblocks

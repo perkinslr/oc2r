@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.entity.robot;
+package li.cil.oc2.common.entity.robot;
 
-import li.cil.oc2r.common.entity.Entities;
-import li.cil.oc2r.common.entity.Robot;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.util.NBTUtils;
-import li.cil.oc2r.common.util.TickUtils;
+import li.cil.oc2.common.entity.Entities;
+import li.cil.oc2.common.entity.Robot;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.util.NBTUtils;
+import li.cil.oc2.common.util.TickUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

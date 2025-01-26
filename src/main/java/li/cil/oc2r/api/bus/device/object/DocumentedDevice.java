@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.object;
+package li.cil.oc2.api.bus.device.object;
 
 /**
  * This interface is used to declare callback documentation on targets of an {@link ObjectDevice}.

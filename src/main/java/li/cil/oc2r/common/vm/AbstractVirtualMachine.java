@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
 import li.cil.ceres.api.Serialized;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.vm.FirmwareLoader;
-import li.cil.oc2r.api.bus.device.vm.VMDeviceLoadResult;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.bus.RPCDeviceBusAdapter;
-import li.cil.oc2r.common.bus.device.rpc.item.CPUItemDevice;
-import li.cil.oc2r.common.serialization.NBTSerialization;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.util.NBTUtils;
-import li.cil.oc2r.common.util.TickUtils;
-import li.cil.oc2r.common.vm.context.global.GlobalVMContext;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.vm.FirmwareLoader;
+import li.cil.oc2.api.bus.device.vm.VMDeviceLoadResult;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.bus.RPCDeviceBusAdapter;
+import li.cil.oc2.common.bus.device.rpc.item.CPUItemDevice;
+import li.cil.oc2.common.serialization.NBTSerialization;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.util.NBTUtils;
+import li.cil.oc2.common.util.TickUtils;
+import li.cil.oc2.common.vm.context.global.GlobalVMContext;
 import li.cil.sedna.api.memory.MemoryAccessException;
 import li.cil.sedna.riscv.R5Board;
 import net.minecraft.nbt.CompoundTag;

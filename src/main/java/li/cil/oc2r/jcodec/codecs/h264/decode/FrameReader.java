@@ -1,25 +1,25 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.common.biari.MDecoder;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.MapManager;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.codecs.h264.io.CABAC;
-import li.cil.oc2r.jcodec.codecs.h264.io.CAVLC;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.NALUnit;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.PictureParameterSet;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SeqParameterSet;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
-import li.cil.oc2r.jcodec.common.IntObjectMap;
-import li.cil.oc2r.jcodec.common.io.BitReader;
+import li.cil.oc2.jcodec.codecs.common.biari.MDecoder;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.MapManager;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.codecs.h264.io.CABAC;
+import li.cil.oc2.jcodec.codecs.h264.io.CAVLC;
+import li.cil.oc2.jcodec.codecs.h264.io.model.NALUnit;
+import li.cil.oc2.jcodec.codecs.h264.io.model.PictureParameterSet;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SeqParameterSet;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.common.IntObjectMap;
+import li.cil.oc2.jcodec.common.io.BitReader;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Utils.unescapeNAL;
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.NALUnitType.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Utils.unescapeNAL;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.NALUnitType.*;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

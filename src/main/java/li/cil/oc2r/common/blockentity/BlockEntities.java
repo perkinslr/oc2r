@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.block.Blocks;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;

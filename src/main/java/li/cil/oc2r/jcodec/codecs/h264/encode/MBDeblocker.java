@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.encode;
+package li.cil.oc2.jcodec.codecs.h264.encode;
 
-import li.cil.oc2r.jcodec.codecs.h264.decode.deblock.DeblockingFilter;
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.h264.decode.deblock.DeblockingFilter;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 import static java.lang.Math.abs;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.QP_SCALE_CR;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.QP_SCALE_CR;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

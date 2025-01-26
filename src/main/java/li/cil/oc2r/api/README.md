@@ -1,6 +1,6 @@
 # The OpenComputer II API
 
-Welcome to the API of `oc2r`, fellow developer! This document will hopefully provide a sufficient overview of what
+Welcome to the API of `oc2`, fellow developer! This document will hopefully provide a sufficient overview of what
 integrations this API allows, and how to best implement them. The primary purpose of the API is to allow other mods to
 implement their own devices, to be used by the computers in this mod.
 
@@ -150,15 +150,15 @@ In this example, a device is made available for a custom `BlockEntity`.
 Using capabilities:
 
 ```java
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.fml.ModList;
-import li.cil.oc2r.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.Device;
 
 class ModBlockEntity extends BlockEntity {
     public int getMagicValue() {
@@ -167,7 +167,7 @@ class ModBlockEntity extends BlockEntity {
 
     @Override
     public <T> LazyOptional<T> getCapability(Capability<T> cap, @Nullable Direction side) {
-        if (ModList.get().isLoaded("oc2r")) {
+        if (ModList.get().isLoaded("oc2")) {
             // Note: you can also store this and invalidate the capability to remove the
             // device/trigger the device bus to scan for changes in available devices.
             LazyOptional<T> device = getDeviceCapability();
@@ -212,7 +212,7 @@ class Integration {
 Using the `Callback` annotation in the `BlockEntity` (hard dependency):
 
 ```java
-import li.cil.oc2r.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.Callback;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
 class ModBlockEntity extends BlockEntity {
@@ -229,14 +229,14 @@ devices to third-party `BlockEntities`.
 ### Block Device for a Third-Party `BlockEntity`
 
 In this example, a simple device providing a single method, `squareRoot`, is made available for the `FurnaceBlockEntity`
-. As long as the registration of the `BlockDeviceProvider` is gated behind a check, whether `oc2r` is present, this is a
+. As long as the registration of the `BlockDeviceProvider` is gated behind a check, whether `oc2` is present, this is a
 soft dependency.
 
 Using `ObjectDevice`:
 
 ```java
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
 class MyCalculatorDevice {
@@ -264,14 +264,14 @@ class ModDeviceProvider extends ForgeRegistryEntry<BlockDeviceProvider> implemen
 Using the `RPCDevice` and `RPCMethods` interfaces directly:
 
 ```java
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceQuery;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethod;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethodGroup;
-import li.cil.oc2r.api.bus.device.rpc.RPCParameter;
-import li.cil.oc2r.api.util.Invalidatable;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceQuery;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCMethod;
+import li.cil.oc2.api.bus.device.rpc.RPCMethodGroup;
+import li.cil.oc2.api.bus.device.rpc.RPCParameter;
+import li.cil.oc2.api.util.Invalidatable;
 import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 
 import java.util.Collections;
@@ -333,7 +333,7 @@ class ModDeviceProvider extends ForgeRegistryEntry<BlockDeviceProvider> implemen
 Shared device provider registration:
 
 ```java
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 
@@ -341,7 +341,7 @@ class Providers {
     static final DeferredRegister<BlockDeviceProvider> BLOCK_DEVICE_PROVIDERS =
             DeferredRegister.create(BlockDeviceProvider.class, "my_mod_id");
 
-    // Called from mod initialization, if oc2r is present.
+    // Called from mod initialization, if oc2 is present.
     static void initialize() {
         BLOCK_DEVICE_PROVIDERS.register("my_calculator_device", ModDeviceProvider::new);
 

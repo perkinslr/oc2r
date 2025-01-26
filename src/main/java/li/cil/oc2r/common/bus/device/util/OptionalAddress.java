@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.util;
+package li.cil.oc2.common.bus.device.util;
 
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 
 import java.util.OptionalLong;

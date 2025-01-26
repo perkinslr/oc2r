@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "oc2r:block/cable_base"
+        "model": "oc2:block/cable_base"
       }
     },
     {
@@ -11,7 +11,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link",
+        "model": "oc2:block/cable_link",
         "x": -90,
         "y": 270
       }
@@ -22,7 +22,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug",
+        "model": "oc2:block/cable_plug",
         "x": -90,
         "y": 270
       }
@@ -33,7 +33,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link",
+        "model": "oc2:block/cable_link",
         "x": 90,
         "y": 270
       }
@@ -44,7 +44,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug",
+        "model": "oc2:block/cable_plug",
         "x": 90,
         "y": 270
       }
@@ -55,7 +55,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link",
+        "model": "oc2:block/cable_link",
         "y": 180
       }
     },
@@ -65,7 +65,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug",
+        "model": "oc2:block/cable_plug",
         "y": 180
       }
     },
@@ -75,7 +75,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link"
+        "model": "oc2:block/cable_link"
       }
     },
     {
@@ -84,7 +84,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug"
+        "model": "oc2:block/cable_plug"
       }
     },
     {
@@ -93,7 +93,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link",
+        "model": "oc2:block/cable_link",
         "y": 90
       }
     },
@@ -103,7 +103,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug",
+        "model": "oc2:block/cable_plug",
         "y": 90
       }
     },
@@ -113,7 +113,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_link",
+        "model": "oc2:block/cable_link",
         "y": 270
       }
     },
@@ -123,7 +123,7 @@
         "has_facade": "false"
       },
       "apply": {
-        "model": "oc2r:block/cable_plug",
+        "model": "oc2:block/cable_plug",
         "y": 270
       }
     }

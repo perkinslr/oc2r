@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus;
+package li.cil.oc2.common.bus;
 
-import li.cil.oc2r.api.bus.BlockDeviceBusElement;
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.common.util.ChunkLocation;
-import li.cil.oc2r.common.util.ChunkUtils;
-import li.cil.oc2r.common.util.ServerScheduler;
+import li.cil.oc2.api.bus.BlockDeviceBusElement;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.common.util.ChunkLocation;
+import li.cil.oc2.common.util.ChunkUtils;
+import li.cil.oc2.common.util.ServerScheduler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.LevelAccessor;

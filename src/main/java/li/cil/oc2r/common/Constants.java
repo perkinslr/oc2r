@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common;
+package li.cil.oc2.common;
 
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.core.Direction;
 
-import static li.cil.oc2r.common.util.TranslationUtils.key;
+import static li.cil.oc2.common.util.TranslationUtils.key;
 
 public final class Constants {
     public static final int KILOBYTE = 1024;

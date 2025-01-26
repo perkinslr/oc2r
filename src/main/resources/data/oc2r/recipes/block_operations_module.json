@@ -6,7 +6,7 @@
   ],
   "key": {
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "P": {
       "item": "minecraft:diamond_pickaxe"
@@ -15,10 +15,10 @@
       "tag": "forge:ingots/gold"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:block_operations_module"
+    "item": "oc2:block_operations_module"
   }
 }

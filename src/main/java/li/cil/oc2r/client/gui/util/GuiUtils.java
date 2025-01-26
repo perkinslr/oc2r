@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui.util;
+package li.cil.oc2.client.gui.util;
 
-import li.cil.oc2r.api.bus.device.DeviceType;
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.client.gui.widget.Sprite;
-import li.cil.oc2r.common.container.DeviceTypeSlotItemHandler;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.api.bus.device.DeviceType;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.client.gui.widget.Sprite;
+import li.cil.oc2.common.container.DeviceTypeSlotItemHandler;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -17,7 +17,7 @@ import net.minecraft.world.inventory.Slot;
 
 import java.util.*;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class GuiUtils {
     private static final Map<DeviceType, Component> WARNING_BY_DEVICE_TYPE = Util.make(() -> {

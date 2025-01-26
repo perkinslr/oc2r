@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.entity.model;
+package li.cil.oc2.client.renderer.entity.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.entity.Robot;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.entity.Robot;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;

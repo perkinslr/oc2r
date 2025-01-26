@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.provider;
+package li.cil.oc2.api.bus.device.provider;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
-import li.cil.oc2r.api.util.Invalidatable;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.util.Invalidatable;
 import net.minecraft.nbt.CompoundTag;
 
 /**
@@ -21,7 +21,7 @@ import net.minecraft.nbt.CompoundTag;
  * previous scan.
  * <p>
  * This is also required to avoid device duplication when a device is connected to a
- * {@link li.cil.oc2r.api.bus.DeviceBus} more than once. An example where this can occur are
+ * {@link li.cil.oc2.api.bus.DeviceBus} more than once. An example where this can occur are
  * blocks that expose the same device on all sides having connected cabling adjacent to more
  * than one face.
  * <p>
@@ -39,9 +39,9 @@ import net.minecraft.nbt.CompoundTag;
  * }
  * </pre>
  *
- * @see li.cil.oc2r.api.bus.device.rpc.RPCDevice
- * @see li.cil.oc2r.api.bus.device.object.ObjectDevice
- * @see li.cil.oc2r.api.bus.device.vm.VMDevice
+ * @see li.cil.oc2.api.bus.device.rpc.RPCDevice
+ * @see li.cil.oc2.api.bus.device.object.ObjectDevice
+ * @see li.cil.oc2.api.bus.device.vm.VMDevice
  * @see BlockDeviceQuery
  */
 public interface BlockDeviceProvider {

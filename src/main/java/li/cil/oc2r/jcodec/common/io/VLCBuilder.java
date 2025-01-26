@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common.io;
+package li.cil.oc2.jcodec.common.io;
 
 import it.unimi.dsi.fastutil.ints.Int2IntArrayMap;
-import li.cil.oc2r.jcodec.common.IntArrayList;
+import li.cil.oc2.jcodec.common.IntArrayList;
 
 
 /**

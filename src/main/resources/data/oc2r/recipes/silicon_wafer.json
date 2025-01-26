@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "oc2r:raw_silicon_wafer"
+    "item": "oc2:raw_silicon_wafer"
   },
-  "result": "oc2r:silicon_wafer",
+  "result": "oc2:silicon_wafer",
   "experience": 0.1,
   "cookingtime": 200
 }

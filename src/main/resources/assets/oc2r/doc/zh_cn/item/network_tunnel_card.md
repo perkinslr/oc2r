@@ -1,5 +1,5 @@
 # 网络频道卡
-![频道视野？](item:oc2r:network_tunnel_card)
+![频道视野？](item:oc2:network_tunnel_card)
 
 网络频道卡允许[计算机](../block/computer.md)向与该卡连接的另一个频道设备（频道卡和[频道模块](network_tunnel_module.md)）发送和接收消息。
 

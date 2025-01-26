@@ -1,25 +1,25 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.client.renderer.MonitorGUIRenderer;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.block.MonitorBlock;
-import li.cil.oc2r.common.bus.device.DeviceGroup;
-import li.cil.oc2r.common.bus.device.vm.block.KeyboardDevice;
-import li.cil.oc2r.common.bus.device.vm.block.MonitorDevice;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.container.MonitorDisplayContainer;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.network.MonitorLoadBalancer;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.*;
-import li.cil.oc2r.common.vm.device.SimpleFramebufferDevice;
-import li.cil.oc2r.jcodec.codecs.h264.H264Decoder;
-import li.cil.oc2r.jcodec.codecs.h264.H264Encoder;
-import li.cil.oc2r.jcodec.codecs.h264.encode.CQPRateControl;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.client.renderer.MonitorGUIRenderer;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.block.MonitorBlock;
+import li.cil.oc2.common.bus.device.DeviceGroup;
+import li.cil.oc2.common.bus.device.vm.block.KeyboardDevice;
+import li.cil.oc2.common.bus.device.vm.block.MonitorDevice;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.container.MonitorDisplayContainer;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.network.MonitorLoadBalancer;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.*;
+import li.cil.oc2.common.vm.device.SimpleFramebufferDevice;
+import li.cil.oc2.jcodec.codecs.h264.H264Decoder;
+import li.cil.oc2.jcodec.codecs.h264.H264Encoder;
+import li.cil.oc2.jcodec.codecs.h264.encode.CQPRateControl;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -40,8 +40,8 @@ import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
-import static li.cil.oc2r.common.bus.device.vm.block.MonitorDevice.HEIGHT;
-import static li.cil.oc2r.common.bus.device.vm.block.MonitorDevice.WIDTH;
+import static li.cil.oc2.common.bus.device.vm.block.MonitorDevice.HEIGHT;
+import static li.cil.oc2.common.bus.device.vm.block.MonitorDevice.WIDTH;
 
 public final class MonitorBlockEntity extends ModBlockEntity implements TickableBlockEntity {
     @FunctionalInterface

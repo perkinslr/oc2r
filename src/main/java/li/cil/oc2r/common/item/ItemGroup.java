@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.block.ComputerBlock;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.block.ComputerBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

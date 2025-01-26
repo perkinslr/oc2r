@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.item;
+package li.cil.oc2.client.item;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.item.Items;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.item.Items;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 

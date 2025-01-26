@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
-import li.cil.oc2r.common.container.RobotTerminalContainer;
+import li.cil.oc2.common.container.RobotTerminalContainer;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.network.chat.Component;

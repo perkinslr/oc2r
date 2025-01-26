@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.managed;
+package li.cil.oc2.common.vm.context.managed;
 
-import li.cil.oc2r.api.bus.device.vm.context.InterruptAllocator;
-import li.cil.oc2r.common.vm.context.InterruptManager;
-import li.cil.oc2r.common.vm.context.InterruptValidator;
+import li.cil.oc2.api.bus.device.vm.context.InterruptAllocator;
+import li.cil.oc2.common.vm.context.InterruptManager;
+import li.cil.oc2.common.vm.context.InterruptValidator;
 
 import java.util.BitSet;
 import java.util.OptionalInt;

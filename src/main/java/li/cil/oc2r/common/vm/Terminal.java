@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
 import org.joml.Matrix4f;
 import it.unimi.dsi.fastutil.bytes.ByteArrayFIFOQueue;
 import li.cil.ceres.api.Serialized;
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.ShaderInstance;

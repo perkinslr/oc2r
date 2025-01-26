@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.integration.jei;
+package li.cil.oc2.common.integration.jei;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.client.gui.AbstractMachineInventoryScreen;
-import li.cil.oc2r.client.gui.AbstractMachineTerminalScreen;
-import li.cil.oc2r.common.block.ComputerBlock;
+import li.cil.oc2.api.API;
+import li.cil.oc2.client.gui.AbstractMachineInventoryScreen;
+import li.cil.oc2.client.gui.AbstractMachineTerminalScreen;
+import li.cil.oc2.common.block.ComputerBlock;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;

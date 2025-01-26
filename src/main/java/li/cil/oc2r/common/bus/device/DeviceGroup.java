@@ -1,7 +1,7 @@
-package li.cil.oc2r.common.bus.device;
+package li.cil.oc2.common.bus.device;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.common.bus.device.util.IdentityProxy;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.common.bus.device.util.IdentityProxy;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
 import java.util.*;

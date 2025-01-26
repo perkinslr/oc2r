@@ -1,5 +1,5 @@
 # Floppy
-![It's not the floppy that bends](item:oc2r:floppy)
+![It's not the floppy that bends](item:oc2:floppy)
 
 Floppy disks are removable media. This means they can be inserted and removed from [disk drives](../block/disk_drive.md) without the [computer](../block/disk_drive.md) using the disk drive having to reboot to use them.
 

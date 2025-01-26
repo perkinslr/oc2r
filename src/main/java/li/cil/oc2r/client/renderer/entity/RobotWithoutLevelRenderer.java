@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.entity;
+package li.cil.oc2.client.renderer.entity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import li.cil.oc2r.client.renderer.entity.model.RobotModel;
+import li.cil.oc2.client.renderer.entity.model.RobotModel;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;

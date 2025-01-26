@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.audio;
+package li.cil.oc2.client.audio;
 
-import li.cil.oc2r.common.util.TickUtils;
+import li.cil.oc2.common.util.TickUtils;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;

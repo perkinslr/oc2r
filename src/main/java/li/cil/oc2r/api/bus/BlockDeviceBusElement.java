@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus;
+package li.cil.oc2.api.bus;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;

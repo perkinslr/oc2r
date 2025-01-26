@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common.io;
+package li.cil.oc2.jcodec.common.io;
 
 import java.nio.ByteBuffer;
 

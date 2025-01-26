@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.mixin;
+package li.cil.oc2.common.mixin;
 
-import li.cil.oc2r.common.util.ChunkUtils;
+import li.cil.oc2.common.util.ChunkUtils;
 import net.minecraft.server.level.ServerChunkCache;
 import net.minecraft.world.level.chunk.ChunkSource;
 import org.spongepowered.asm.mixin.Mixin;

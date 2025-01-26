@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

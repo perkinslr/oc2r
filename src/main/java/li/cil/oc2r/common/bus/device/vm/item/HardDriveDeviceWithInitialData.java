@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.vm.item;
+package li.cil.oc2.common.bus.device.vm.item;
 
 import com.google.common.io.ByteStreams;
-import li.cil.oc2r.common.util.BlockLocation;
+import li.cil.oc2.common.util.BlockLocation;
 import li.cil.sedna.api.device.BlockDevice;
 import li.cil.sedna.device.block.ByteBufferBlockDevice;
 import net.minecraft.world.item.ItemStack;

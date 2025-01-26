@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc.item;
+package li.cil.oc2.common.bus.device.rpc.item;
 
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.Parameter;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.util.BlockLocation;
-import li.cil.oc2r.common.util.TickUtils;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.Parameter;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.util.BlockLocation;
+import li.cil.oc2.common.util.TickUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;

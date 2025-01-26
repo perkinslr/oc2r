@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.encode;
+package li.cil.oc2.jcodec.codecs.h264.encode;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.CAVLC;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.codecs.h264.io.CAVLC;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
 
 import static java.lang.System.arraycopy;
 

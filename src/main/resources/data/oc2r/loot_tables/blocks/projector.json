@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oc2r:projector"
+          "name": "oc2:projector"
         }
       ],
       "conditions": [

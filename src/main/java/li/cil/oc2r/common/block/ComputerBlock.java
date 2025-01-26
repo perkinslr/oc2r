@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.block;
+package li.cil.oc2.common.block;
 
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.api.capabilities.RedstoneEmitter;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.blockentity.BlockEntities;
-import li.cil.oc2r.common.blockentity.ComputerBlockEntity;
-import li.cil.oc2r.common.blockentity.TickableBlockEntity;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.integration.Wrenches;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.util.NBTUtils;
-import li.cil.oc2r.common.util.TooltipUtils;
-import li.cil.oc2r.common.util.VoxelShapeUtils;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.api.capabilities.RedstoneEmitter;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.blockentity.BlockEntities;
+import li.cil.oc2.common.blockentity.ComputerBlockEntity;
+import li.cil.oc2.common.blockentity.TickableBlockEntity;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.integration.Wrenches;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.util.NBTUtils;
+import li.cil.oc2.common.util.TooltipUtils;
+import li.cil.oc2.common.util.VoxelShapeUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -47,10 +47,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 
-import static li.cil.oc2r.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
-import static li.cil.oc2r.common.Constants.ITEMS_TAG_NAME;
-import static li.cil.oc2r.common.util.NBTUtils.makeInventoryTag;
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
+import static li.cil.oc2.common.Constants.ITEMS_TAG_NAME;
+import static li.cil.oc2.common.util.NBTUtils.makeInventoryTag;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class ComputerBlock extends HorizontalDirectionalBlock implements EntityBlock {
     // We bake the "screen" indent on the front into the collision shape, to prevent stuff being

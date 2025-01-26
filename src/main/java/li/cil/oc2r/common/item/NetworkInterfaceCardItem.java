@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.client.gui.NetworkInterfaceCardScreen;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.NBTTagIds;
+import li.cil.oc2.client.gui.NetworkInterfaceCardScreen;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.NBTTagIds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Direction;
@@ -24,8 +24,8 @@ import javax.annotation.Nullable;
 import java.util.Arrays;
 import java.util.List;
 
-import static li.cil.oc2r.common.util.TextFormatUtils.withFormat;
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TextFormatUtils.withFormat;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class NetworkInterfaceCardItem extends ModItem {
     private static final String SIDE_CONFIGURATION_TAG_NAME = "sides";

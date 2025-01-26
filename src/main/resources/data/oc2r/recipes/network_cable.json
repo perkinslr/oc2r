@@ -13,11 +13,11 @@
       "tag": "forge:glass"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     }
   },
   "result": {
-    "item": "oc2r:network_cable",
+    "item": "oc2:network_cable",
     "count": 8
   }
 }

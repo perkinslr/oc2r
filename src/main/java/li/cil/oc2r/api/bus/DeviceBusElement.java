@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus;
+package li.cil.oc2.api.bus;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
 import net.minecraftforge.common.util.LazyOptional;
 
 import java.util.Collection;

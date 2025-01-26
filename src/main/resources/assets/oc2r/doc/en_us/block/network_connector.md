@@ -1,5 +1,5 @@
 # Network Connector
-![The data must flow](block:oc2r:network_connector)
+![The data must flow](block:oc2:network_connector)
 
 The network connector is a fundamental part for building a network connecting different [computers](computer.md). Use [network cables](../item/network_cable.md) to connect connectors with each other.
 

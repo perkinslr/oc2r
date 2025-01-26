@@ -33,7 +33,7 @@ def getGitRef() {
 }
 
 version = "${semver}+${getGitRef()}"
-group = "li.cil.oc2r"
+group = "li.cil.oc2"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -136,7 +136,7 @@ System.setProperty("line.separator", "\n")
 
 task packageScripts(type: Zip) {
     archiveFileName = "scripts.zip"
-    destinationDirectory = file("$buildDir/resources/main/data/oc2r/file_systems")
+    destinationDirectory = file("$buildDir/resources/main/data/oc2/file_systems")
     from "src/main/scripts"
     filter { line -> line }
 }
@@ -164,7 +164,7 @@ minecraft {
             property "forge.logging.console.level", "debug"
 
             mods {
-                oc2r {
+                oc2 {
                     source sourceSets.main
                 }
             }
@@ -172,30 +172,30 @@ minecraft {
 
         client {
             workingDirectory project.file("runclient")
-            property "forge.enabledGameTestNamespaces", "oc2r"
+            property "forge.enabledGameTestNamespaces", "oc2"
         }
 
         server {
             workingDirectory project.file("run")
-            property "forge.enabledGameTestNamespaces", "oc2r"
+            property "forge.enabledGameTestNamespaces", "oc2"
             arg "--nogui"
         }
 
         gameTestServer {
             workingDirectory project.file('run')
-            property "forge.enabledGameTestNamespaces", "oc2r"
+            property "forge.enabledGameTestNamespaces", "oc2"
         }
 
         data {
             workingDirectory project.file("run")
-            args "--mod", "oc2r", "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources")
+            args "--mod", "oc2", "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources")
         }
     }
 }
 
 mixin {
-    add sourceSets.main, "mixins.oc2r.refmap.json"
-    config "mixins.oc2r.json"
+    add sourceSets.main, "mixins.oc2.refmap.json"
+    config "mixins.oc2.json"
 
 //    quiet
 }
@@ -212,14 +212,14 @@ jar {
     manifest {
         attributes([
             "FMLAT"                   : "accesstransformer.cfg",
-            "Specification-Title"     : "oc2r",
+            "Specification-Title"     : "oc2",
             "Specification-Vendor"    : "North Western Development (Originally by Sangar)",
             "Specification-Version"   : "1",
             "Implementation-Title"    : project.name,
             "Implementation-Version"  : "${semver}",
             "Implementation-Vendor"   : "North Western Development (Originally by Sangar)",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            "MixinConfigs"            : "mixins.oc2r.json",
+            "MixinConfigs"            : "mixins.oc2.json",
             "ContainedDeps"           : "commons-collections4-4.4.jar"
         ])
     }
@@ -229,7 +229,7 @@ task apiJar(type: Jar) {
     archiveClassifier.set("api")
     from sourceSets.main.allSource
     from sourceSets.main.output
-    include "li/cil/oc2r/api/**"
+    include "li/cil/oc2/api/**"
 }
 
 artifacts {

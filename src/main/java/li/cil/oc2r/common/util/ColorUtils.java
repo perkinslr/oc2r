@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
 public final class ColorUtils {
     public static int textureDiffuseColorsToRGB(final float[] colors) {

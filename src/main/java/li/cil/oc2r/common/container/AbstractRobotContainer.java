@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.entity.Robot;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.OpenRobotInventoryMessage;
-import li.cil.oc2r.common.network.message.OpenRobotTerminalMessage;
-import li.cil.oc2r.common.network.message.RobotPowerMessage;
-import li.cil.oc2r.common.network.message.RobotTerminalInputMessage;
-import li.cil.oc2r.common.vm.Terminal;
-import li.cil.oc2r.common.vm.VirtualMachine;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.entity.Robot;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.OpenRobotInventoryMessage;
+import li.cil.oc2.common.network.message.OpenRobotTerminalMessage;
+import li.cil.oc2.common.network.message.RobotPowerMessage;
+import li.cil.oc2.common.network.message.RobotTerminalInputMessage;
+import li.cil.oc2.common.vm.Terminal;
+import li.cil.oc2.common.vm.VirtualMachine;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.MenuType;
 

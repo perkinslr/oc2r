@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer;
+package li.cil.oc2.client.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import li.cil.oc2r.common.util.Vec3Utils;
+import li.cil.oc2.common.util.Vec3Utils;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.blockentity.NetworkConnectorBlockEntity;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.blockentity.NetworkConnectorBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;

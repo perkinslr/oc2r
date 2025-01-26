@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "oc2r:computer",
-    "oc2r:redstone_interface",
-    "oc2r:disk_drive",
-    "oc2r:projector",
-    "#oc2r:devices/memory",
-    "#oc2r:devices/hard_drive",
-    "#oc2r:devices/flash_memory",
-    "#oc2r:devices/card",
-    "#oc2r:devices/robot_module",
-    "#oc2r:devices/floppy",
-    "#oc2r:devices/cpu"
+    "oc2:computer",
+    "oc2:redstone_interface",
+    "oc2:disk_drive",
+    "oc2:projector",
+    "#oc2:devices/memory",
+    "#oc2:devices/hard_drive",
+    "#oc2:devices/flash_memory",
+    "#oc2:devices/card",
+    "#oc2:devices/robot_module",
+    "#oc2:devices/floppy",
+    "#oc2:devices/cpu"
   ]
 }

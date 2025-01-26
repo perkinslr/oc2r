@@ -25,7 +25,7 @@ The directory structure for this, when not using zipped datapacks, would then lo
     - my_data_pack/
         - pack.mcmeta
         - data/
-            - oc2r/
+            - oc2/
                 - file_systems/
                     - my_block_descriptor.json
                     - my_block.ext2
@@ -46,7 +46,7 @@ Example:
 ```json
 {
     "type": "layer",
-    "location": "oc2r:file_systems/my_layer.zip"
+    "location": "oc2:file_systems/my_layer.zip"
 }
 ```
 
@@ -64,6 +64,6 @@ Example:
 {
     "type": "block",
     "name": "My Disk Image",
-    "location": "oc2r:file_systems/my_block.ext2"
+    "location": "oc2:file_systems/my_block.ext2"
 }
 ```

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import li.cil.oc2r.common.container.RobotInventoryContainer;
+import li.cil.oc2.common.container.RobotInventoryContainer;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;

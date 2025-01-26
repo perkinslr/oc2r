@@ -1,5 +1,5 @@
 # 闪存刷新器
-![在你眼前闪烁](block:oc2r:flash_memory_flasher)
+![在你眼前闪烁](block:oc2:flash_memory_flasher)
 
 闪存刷新器提供了一种将自定义编译的固件刷新到计算机的闪存芯片上的方法。
 

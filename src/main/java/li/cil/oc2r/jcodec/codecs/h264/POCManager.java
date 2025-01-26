@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264;
+package li.cil.oc2.jcodec.codecs.h264;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.model.NALUnit;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.RefPicMarking.InstrType;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.RefPicMarking.Instruction;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.codecs.h264.io.model.NALUnit;
+import li.cil.oc2.jcodec.codecs.h264.io.model.RefPicMarking.InstrType;
+import li.cil.oc2.jcodec.codecs.h264.io.model.RefPicMarking.Instruction;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
 
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.NALUnitType.IDR_SLICE;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.NALUnitType.IDR_SLICE;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

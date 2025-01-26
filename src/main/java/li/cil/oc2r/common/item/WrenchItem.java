@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.common.tags.BlockTags;
+import li.cil.oc2.common.tags.BlockTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.core.BlockPos;

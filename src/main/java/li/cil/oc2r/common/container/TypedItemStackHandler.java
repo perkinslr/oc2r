@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;

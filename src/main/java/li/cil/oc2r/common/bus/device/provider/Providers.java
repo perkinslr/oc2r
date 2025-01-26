@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.provider;
+package li.cil.oc2.common.bus.device.provider;
 
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceProvider;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.function.BiConsumer;

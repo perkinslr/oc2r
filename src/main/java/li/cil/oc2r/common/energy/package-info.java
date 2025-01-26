@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.common.energy;
+package li.cil.oc2.common.energy;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

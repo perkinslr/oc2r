@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.common.network.Network;
+import li.cil.oc2.common.network.Network;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 import org.apache.commons.lang3.NotImplementedException;

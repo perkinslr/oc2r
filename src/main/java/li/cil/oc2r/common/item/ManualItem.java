@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
 import li.cil.manual.api.ManualModel;
 import li.cil.manual.api.ManualScreenStyle;
 import li.cil.manual.api.ManualStyle;
 import li.cil.manual.api.prefab.item.AbstractManualItem;
-import li.cil.oc2r.client.manual.Manuals;
-import li.cil.oc2r.client.manual.ModManualScreenStyle;
-import li.cil.oc2r.client.manual.ModManualStyle;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.client.manual.Manuals;
+import li.cil.oc2.client.manual.ModManualScreenStyle;
+import li.cil.oc2.client.manual.ModManualStyle;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

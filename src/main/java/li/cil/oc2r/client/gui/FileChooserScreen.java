@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.vertex.Tesselator;
 import net.minecraft.ChatFormatting;
@@ -25,7 +25,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class FileChooserScreen extends Screen {
     private static final Logger LOGGER = LogManager.getLogger();

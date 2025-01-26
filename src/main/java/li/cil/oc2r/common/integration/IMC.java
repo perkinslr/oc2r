@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.integration;
+package li.cil.oc2.common.integration;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.imc.RPCMethodParameterTypeAdapter;
-import li.cil.oc2r.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.imc.RPCMethodParameterTypeAdapter;
+import li.cil.oc2.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
 import net.minecraft.Util;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;

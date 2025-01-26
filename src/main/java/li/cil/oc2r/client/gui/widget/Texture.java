@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui.widget;
+package li.cil.oc2.client.gui.widget;
 
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.resources.ResourceLocation;
 
 public final class Texture {

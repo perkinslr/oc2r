@@ -1,5 +1,5 @@
 # Memory
-![Random Access Memories](item:oc2r:memory_large)
+![Random Access Memories](item:oc2:memory_large)
 
 The random access memory (RAM) device provides working memory to [computers](../block/computer.md) and [robots](robot.md).
 

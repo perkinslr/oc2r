@@ -1,5 +1,5 @@
 # Network Interface Card
-![Talk to strangers](item:oc2r:network_interface_card)
+![Talk to strangers](item:oc2:network_interface_card)
 
 The network interface card (NIC) allows [computers](../block/computer.md) to send messages to and receive messages from [network connectors](../block/network_connector.md) attached to the computer.
 

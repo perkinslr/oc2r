@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.common.model.Picture;
 
-import static li.cil.oc2r.jcodec.codecs.h264.decode.MBlockDecoderUtils.collectPredictors;
-import static li.cil.oc2r.jcodec.codecs.h264.decode.MBlockDecoderUtils.saveVectIntra;
+import static li.cil.oc2.jcodec.codecs.h264.decode.MBlockDecoderUtils.collectPredictors;
+import static li.cil.oc2.jcodec.codecs.h264.decode.MBlockDecoderUtils.saveVectIntra;
 
 /**
  * A decoder for Intra PCM macroblocks

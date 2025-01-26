@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus;
+package li.cil.oc2.common.bus;
 
-import li.cil.oc2r.api.bus.BlockDeviceBusElement;
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceQuery;
-import li.cil.oc2r.api.util.Invalidatable;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.device.provider.Providers;
-import li.cil.oc2r.common.bus.device.rpc.TypeNameRPCDevice;
-import li.cil.oc2r.common.bus.device.util.BlockDeviceInfo;
-import li.cil.oc2r.common.bus.device.util.Devices;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.util.LevelUtils;
+import li.cil.oc2.api.bus.BlockDeviceBusElement;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceQuery;
+import li.cil.oc2.api.util.Invalidatable;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.device.provider.Providers;
+import li.cil.oc2.common.bus.device.rpc.TypeNameRPCDevice;
+import li.cil.oc2.common.bus.device.util.BlockDeviceInfo;
+import li.cil.oc2.common.bus.device.util.Devices;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.util.LevelUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +28,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import javax.annotation.Nullable;
 import java.util.*;
 
-import static li.cil.oc2r.common.util.RegistryUtils.optionalKey;
+import static li.cil.oc2.common.util.RegistryUtils.optionalKey;
 
 public abstract class AbstractBlockDeviceBusElement extends AbstractGroupingDeviceBusElement<AbstractBlockDeviceBusElement.BlockEntry, BlockDeviceQuery> implements BlockDeviceBusElement {
     public AbstractBlockDeviceBusElement() {

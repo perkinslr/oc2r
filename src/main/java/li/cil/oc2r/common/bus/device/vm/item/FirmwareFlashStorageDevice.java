@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.vm.item;
+package li.cil.oc2.common.bus.device.vm.item;
 
 import com.google.common.eventbus.Subscribe;
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.data.Firmware;
-import li.cil.oc2r.api.bus.device.vm.FirmwareLoader;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
-import li.cil.oc2r.api.bus.device.vm.VMDeviceLoadResult;
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
-import li.cil.oc2r.api.bus.device.vm.event.VMInitializationException;
-import li.cil.oc2r.api.bus.device.vm.event.VMInitializingEvent;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.device.util.IdentityProxy;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.data.Firmware;
+import li.cil.oc2.api.bus.device.vm.FirmwareLoader;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.vm.VMDeviceLoadResult;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.bus.device.vm.event.VMInitializationException;
+import li.cil.oc2.api.bus.device.vm.event.VMInitializingEvent;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.device.util.IdentityProxy;
 import li.cil.sedna.api.memory.MemoryMap;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

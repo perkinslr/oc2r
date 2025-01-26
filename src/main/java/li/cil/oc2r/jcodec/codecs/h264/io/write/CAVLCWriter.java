@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.io.write;
+package li.cil.oc2.jcodec.codecs.h264.io.write;
 
-import li.cil.oc2r.jcodec.common.io.BitWriter;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.common.io.BitWriter;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

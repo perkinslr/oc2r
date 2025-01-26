@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
-import li.cil.oc2r.api.bus.device.DeviceType;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.block.EnergyConsumingBlock;
-import li.cil.oc2r.common.bus.device.util.Devices;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.tags.ItemTags;
+import li.cil.oc2.api.bus.device.DeviceType;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.block.EnergyConsumingBlock;
+import li.cil.oc2.common.bus.device.util.Devices;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.tags.ItemTags;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.StringSplitter;
@@ -31,8 +31,8 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import static li.cil.oc2r.common.Constants.*;
-import static li.cil.oc2r.common.util.TextFormatUtils.withFormat;
+import static li.cil.oc2.common.Constants.*;
+import static li.cil.oc2.common.util.TextFormatUtils.withFormat;
 
 @SuppressWarnings("UnstableApiUsage")
 public final class TooltipUtils {

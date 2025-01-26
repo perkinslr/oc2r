@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc.block;
+package li.cil.oc2.common.bus.device.rpc.block;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.object.Callbacks;
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceQuery;
-import li.cil.oc2r.api.util.Invalidatable;
-import li.cil.oc2r.common.bus.device.provider.util.AbstractBlockDeviceProvider;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.object.Callbacks;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceQuery;
+import li.cil.oc2.api.util.Invalidatable;
+import li.cil.oc2.common.bus.device.provider.util.AbstractBlockDeviceProvider;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;

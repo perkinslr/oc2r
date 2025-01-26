@@ -8,11 +8,11 @@
       "item": "minecraft:clay_ball"
     },
     {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     }
   ],
   "result": {
-    "item": "oc2r:circuit_board",
+    "item": "oc2:circuit_board",
     "count": 6
   }
 }

@@ -1,5 +1,5 @@
 # 网络频道模块
-![频道视野？](item:oc2r:network_tunnel_module)
+![频道视野？](item:oc2:network_tunnel_module)
 
 网络频道模块允许[机器人](robot.md)向与该模块连接的另一个频道设备（频道模块和[频道卡](network_tunnel_card.md)）发送和接收消息。
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common;
+package li.cil.oc2.jcodec.common;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

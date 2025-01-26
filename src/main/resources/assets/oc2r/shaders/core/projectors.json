@@ -4,8 +4,8 @@
     "srcrgb": "srcalpha",
     "dstrgb": "1-srcalpha"
   },
-  "vertex": "oc2r:projectors",
-  "fragment": "oc2r:projectors",
+  "vertex": "oc2:projectors",
+  "fragment": "oc2:projectors",
   "attributes": ["Position", "UV0"],
   "samplers": [
     {"name": "MainCameraDepth"},

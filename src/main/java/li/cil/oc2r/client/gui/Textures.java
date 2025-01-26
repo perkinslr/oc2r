@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
-import li.cil.oc2r.client.gui.widget.Texture;
+import li.cil.oc2.client.gui.widget.Texture;
 
 public final class Textures {
     public static final Texture COMPUTER_CONTAINER_TEXTURE = new Texture("textures/gui/widget/computer_container.png", 176, 197);

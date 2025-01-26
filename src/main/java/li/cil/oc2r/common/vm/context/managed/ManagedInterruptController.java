@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.managed;
+package li.cil.oc2.common.vm.context.managed;
 
-import li.cil.oc2r.common.vm.context.InterruptValidator;
+import li.cil.oc2.common.vm.context.InterruptValidator;
 import li.cil.sedna.api.device.InterruptController;
 
 public final class ManagedInterruptController implements InterruptController {

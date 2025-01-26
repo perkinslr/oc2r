@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;

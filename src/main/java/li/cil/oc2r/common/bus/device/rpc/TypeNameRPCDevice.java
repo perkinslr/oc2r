@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc;
+package li.cil.oc2.common.bus.device.rpc;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethodGroup;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCMethodGroup;
 
 import java.util.List;
 

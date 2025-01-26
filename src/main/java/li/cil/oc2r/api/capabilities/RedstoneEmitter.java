@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.capabilities;
+package li.cil.oc2.api.capabilities;
 
 /**
  * This interface may be provided as a capability by item components to signal

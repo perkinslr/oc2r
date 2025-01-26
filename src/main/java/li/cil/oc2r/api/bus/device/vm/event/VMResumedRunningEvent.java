@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm.event;
+package li.cil.oc2.api.bus.device.vm.event;
 
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
 
 /**
  * Fired when the VM resumed running, either when first starting up, when resuming after

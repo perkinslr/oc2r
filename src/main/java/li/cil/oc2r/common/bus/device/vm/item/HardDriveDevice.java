@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.vm.item;
+package li.cil.oc2.common.bus.device.vm.item;
 
-import li.cil.oc2r.common.serialization.BlobStorage;
-import li.cil.oc2r.common.util.BlockLocation;
-import li.cil.oc2r.common.util.SoundEvents;
-import li.cil.oc2r.common.util.ThrottledSoundEmitter;
+import li.cil.oc2.common.serialization.BlobStorage;
+import li.cil.oc2.common.util.BlockLocation;
+import li.cil.oc2.common.util.SoundEvents;
+import li.cil.oc2.common.util.ThrottledSoundEmitter;
 import li.cil.sedna.device.block.ByteBufferBlockDevice;
 import net.minecraft.world.item.ItemStack;
 

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common;
+package li.cil.oc2.common;
 
-import li.cil.oc2r.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
-import li.cil.oc2r.common.integration.IMC;
-import li.cil.oc2r.common.integration.Integrations;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.util.ServerScheduler;
-import li.cil.oc2r.common.vxlan.TunnelManager;
+import li.cil.oc2.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
+import li.cil.oc2.common.integration.IMC;
+import li.cil.oc2.common.integration.Integrations;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.util.ServerScheduler;
+import li.cil.oc2.common.vxlan.TunnelManager;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 

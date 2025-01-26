@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.blockentity;
+package li.cil.oc2.client.renderer.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -8,11 +8,11 @@ import com.mojang.math.Axis;
 import org.joml.Matrix4f;
 import org.joml.Quaternionf;
 import org.joml.Vector4f;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.client.renderer.ModRenderType;
-import li.cil.oc2r.client.renderer.ProjectorDepthRenderer;
-import li.cil.oc2r.common.block.ProjectorBlock;
-import li.cil.oc2r.common.blockentity.ProjectorBlockEntity;
+import li.cil.oc2.api.API;
+import li.cil.oc2.client.renderer.ModRenderType;
+import li.cil.oc2.client.renderer.ProjectorDepthRenderer;
+import li.cil.oc2.common.block.ProjectorBlock;
+import li.cil.oc2.common.blockentity.ProjectorBlockEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

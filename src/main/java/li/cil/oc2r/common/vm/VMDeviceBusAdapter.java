@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
-import li.cil.oc2r.api.bus.device.vm.VMDeviceLoadResult;
-import li.cil.oc2r.common.vm.context.global.GlobalVMContext;
-import li.cil.oc2r.common.vm.context.managed.ManagedVMContext;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.vm.VMDeviceLoadResult;
+import li.cil.oc2.common.vm.context.global.GlobalVMContext;
+import li.cil.oc2.common.vm.context.managed.ManagedVMContext;
 
 import java.util.ArrayList;
 import java.util.Collection;

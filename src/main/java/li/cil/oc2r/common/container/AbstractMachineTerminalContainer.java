@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.common.vm.Terminal;
+import li.cil.oc2.common.vm.Terminal;
 import net.minecraft.world.inventory.MenuType;
 
 import java.nio.ByteBuffer;

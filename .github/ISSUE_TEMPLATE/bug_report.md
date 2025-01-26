@@ -39,7 +39,7 @@ If applicable, add screenshots to help explain your problem.
 **Versions (please complete the following information):**
  - Minecraft: [e.g. 1.18.2]
  - Forge: [e.g. 40.0.40]
- - oc2r: [e.g. 0.1.7]
+ - oc2: [e.g. 0.1.7]
 
 **Additional context**
 Add any other context about the problem here.

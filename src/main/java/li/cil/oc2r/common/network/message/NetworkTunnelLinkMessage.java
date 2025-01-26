@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.common.container.NetworkTunnelContainer;
+import li.cil.oc2.common.container.NetworkTunnelContainer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.inventory.AbstractContainerMenu;

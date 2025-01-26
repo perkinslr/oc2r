@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.blockentity.NetworkConnectorBlockEntity;
-import li.cil.oc2r.common.blockentity.NetworkConnectorBlockEntity.ConnectionResult;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.blockentity.NetworkConnectorBlockEntity;
+import li.cil.oc2.common.blockentity.NetworkConnectorBlockEntity.ConnectionResult;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;

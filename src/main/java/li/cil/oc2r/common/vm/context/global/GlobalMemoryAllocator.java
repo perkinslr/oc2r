@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.global;
+package li.cil.oc2.common.vm.context.global;
 
-import li.cil.oc2r.api.bus.device.vm.context.MemoryAllocator;
-import li.cil.oc2r.common.vm.Allocator;
+import li.cil.oc2.api.bus.device.vm.context.MemoryAllocator;
+import li.cil.oc2.common.vm.Allocator;
 
 import java.util.ArrayList;
 import java.util.UUID;

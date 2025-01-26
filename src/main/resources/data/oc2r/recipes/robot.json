@@ -16,23 +16,23 @@
       "item": "minecraft:piston"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:robot",
+    "item": "oc2:robot",
     "nbt": {
-      "oc2r": {
+      "oc2": {
         "items": {
-          "translation{key='gui.oc2r.device_type.flash_memory', args=[]}": {
+          "translation{key='gui.oc2.device_type.flash_memory', args=[]}": {
             "Items": [
               {
                 "Slot": 0,
                 "Count": 1,
-                "id": "oc2r:flash_memory_custom"
+                "id": "oc2:flash_memory_custom"
               }
             ],
             "Size": 1

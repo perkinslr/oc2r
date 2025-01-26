@@ -1,5 +1,5 @@
 # 方块操作模块
-![快速破坏和替换](item:oc2r:block_operations_module)
+![快速破坏和替换](item:oc2:block_operations_module)
 
 方块操作模块为 [机器人](robot.md) 提供了在世界中破坏和放置方块的能力。
 

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus;
+package li.cil.oc2.common.bus;
 
-import li.cil.oc2r.api.bus.DeviceBusController;
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.common.util.Event;
-import li.cil.oc2r.common.util.LazyOptionalUtils;
-import li.cil.oc2r.common.util.ParameterizedEvent;
-import li.cil.oc2r.common.util.TickUtils;
+import li.cil.oc2.api.bus.DeviceBusController;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.common.util.Event;
+import li.cil.oc2.common.util.LazyOptionalUtils;
+import li.cil.oc2.common.util.ParameterizedEvent;
+import li.cil.oc2.common.util.TickUtils;
 import net.minecraftforge.common.util.LazyOptional;
 
 import java.time.Duration;

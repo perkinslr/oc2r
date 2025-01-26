@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.util;
+package li.cil.oc2.api.util;
 
 import net.minecraft.core.Direction;
 
@@ -9,7 +9,7 @@ import javax.annotation.Nullable;
 /**
  * This enum indicates a side of a block device.
  * <p>
- * It is intended to be used by {@link li.cil.oc2r.api.bus.device.rpc.RPCDevice} APIs,
+ * It is intended to be used by {@link li.cil.oc2.api.bus.device.rpc.RPCDevice} APIs,
  * providing both convenience for the caller by providing a range of aliases, and also
  * stability, in case Mojang decide to rename the enum fields of the {@link Direction}
  * enum at some time in the future.

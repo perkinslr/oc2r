@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc.item;
+package li.cil.oc2.common.bus.device.rpc.item;
 
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.DocumentedDevice;
-import li.cil.oc2r.api.bus.device.object.Parameter;
-import li.cil.oc2r.api.capabilities.RedstoneEmitter;
-import li.cil.oc2r.api.util.Side;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.util.HorizontalBlockUtils;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.DocumentedDevice;
+import li.cil.oc2.api.bus.device.object.Parameter;
+import li.cil.oc2.api.capabilities.RedstoneEmitter;
+import li.cil.oc2.api.util.Side;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.util.HorizontalBlockUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

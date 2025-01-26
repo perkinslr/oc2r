@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.provider;
+package li.cil.oc2.api.bus.device.provider;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
 import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;
@@ -36,9 +36,9 @@ import java.util.Optional;
  * }
  * </pre>
  *
- * @see li.cil.oc2r.api.bus.device.rpc.RPCDevice
- * @see li.cil.oc2r.api.bus.device.object.ObjectDevice
- * @see li.cil.oc2r.api.bus.device.vm.VMDevice
+ * @see li.cil.oc2.api.bus.device.rpc.RPCDevice
+ * @see li.cil.oc2.api.bus.device.object.ObjectDevice
+ * @see li.cil.oc2.api.bus.device.vm.VMDevice
  * @see ItemDeviceQuery
  */
 public interface ItemDeviceProvider {

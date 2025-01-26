@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;

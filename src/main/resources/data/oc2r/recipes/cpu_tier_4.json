@@ -13,16 +13,16 @@
       "tag": "forge:ingots/gold"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "S": {
-      "item": "oc2r:silicon_wafer"
+      "item": "oc2:silicon_wafer"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:cpu_tier_4"
+    "item": "oc2:cpu_tier_4"
   }
 }

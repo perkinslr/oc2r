@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.color;
+package li.cil.oc2.client.renderer.color;
 
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.util.ItemStackUtils;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.util.ItemStackUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;
 import net.minecraft.core.BlockPos;

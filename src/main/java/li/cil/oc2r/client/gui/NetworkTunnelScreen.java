@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import li.cil.oc2r.client.gui.widget.ImageButton;
-import li.cil.oc2r.common.container.NetworkTunnelContainer;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.NetworkTunnelLinkMessage;
+import li.cil.oc2.client.gui.widget.ImageButton;
+import li.cil.oc2.common.container.NetworkTunnelContainer;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.NetworkTunnelLinkMessage;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class NetworkTunnelScreen extends AbstractModContainerScreen<NetworkTunnelContainer> {
     private static final int LINK_BUTTON_LEFT = 48;

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network;
+package li.cil.oc2.common.network;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
-import li.cil.oc2r.common.network.message.MonitorFramebufferMessage;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.network.message.MonitorFramebufferMessage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.phys.Vec3;

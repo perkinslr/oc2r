@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.common.item.NetworkTunnelItem;
-import li.cil.oc2r.common.tags.ItemTags;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.common.item.NetworkTunnelItem;
+import li.cil.oc2.common.tags.ItemTags;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;

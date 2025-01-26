@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.capabilities;
+package li.cil.oc2.api.capabilities;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.ItemDevice;
 
 import javax.annotation.Nullable;
 

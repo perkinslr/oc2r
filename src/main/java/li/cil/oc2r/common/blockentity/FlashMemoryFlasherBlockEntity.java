@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.block.FlashMemoryFlasherBlock;
-import li.cil.oc2r.common.bus.device.vm.block.FlashMemoryFlasherContainer;
-import li.cil.oc2r.common.bus.device.vm.block.FlashMemoryFlasherDevice;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.container.TypedItemStackHandler;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.FirmwareFlasherMessage;
-import li.cil.oc2r.common.tags.ItemTags;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.LocationSupplierUtils;
-import li.cil.oc2r.common.util.SoundEvents;
-import li.cil.oc2r.common.util.ThrottledSoundEmitter;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.block.FlashMemoryFlasherBlock;
+import li.cil.oc2.common.bus.device.vm.block.FlashMemoryFlasherContainer;
+import li.cil.oc2.common.bus.device.vm.block.FlashMemoryFlasherDevice;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.container.TypedItemStackHandler;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.FirmwareFlasherMessage;
+import li.cil.oc2.common.tags.ItemTags;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.LocationSupplierUtils;
+import li.cil.oc2.common.util.SoundEvents;
+import li.cil.oc2.common.util.ThrottledSoundEmitter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

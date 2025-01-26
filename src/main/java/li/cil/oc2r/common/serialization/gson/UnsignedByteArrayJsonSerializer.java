@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization.gson;
+package li.cil.oc2.common.serialization.gson;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

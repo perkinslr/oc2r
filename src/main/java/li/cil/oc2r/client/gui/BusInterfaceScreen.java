@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import li.cil.oc2r.client.gui.widget.ImageButton;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.BusInterfaceNameMessage;
+import li.cil.oc2.client.gui.widget.ImageButton;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.BusInterfaceNameMessage;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
@@ -18,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.phys.Vec3;
 import org.lwjgl.glfw.GLFW;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class BusInterfaceScreen extends Screen {
     private static final int TEXT_LEFT = 9;

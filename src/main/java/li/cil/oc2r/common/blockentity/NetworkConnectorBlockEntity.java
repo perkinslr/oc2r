@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.api.capabilities.NetworkInterface;
-import li.cil.oc2r.client.renderer.NetworkCableRenderer;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.block.NetworkConnectorBlock;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.NetworkConnectorConnectionsMessage;
-import li.cil.oc2r.common.util.*;
+import li.cil.oc2.api.capabilities.NetworkInterface;
+import li.cil.oc2.client.renderer.NetworkCableRenderer;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.block.NetworkConnectorBlock;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.NetworkConnectorConnectionsMessage;
+import li.cil.oc2.common.util.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

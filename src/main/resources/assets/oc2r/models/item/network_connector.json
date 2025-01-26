@@ -1,5 +1,5 @@
 {
-  "parent": "oc2r:block/network_connector",
+  "parent": "oc2:block/network_connector",
   "display": {
     "gui": {
       "rotation": [

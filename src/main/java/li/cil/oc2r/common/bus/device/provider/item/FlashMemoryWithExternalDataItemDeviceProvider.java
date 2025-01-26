@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.provider.item;
+package li.cil.oc2.common.bus.device.provider.item;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.data.Firmware;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.common.bus.device.provider.util.AbstractItemDeviceProvider;
-import li.cil.oc2r.common.bus.device.vm.item.FirmwareFlashStorageDevice;
-import li.cil.oc2r.common.item.FlashMemoryWithExternalDataItem;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.data.Firmware;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.common.bus.device.provider.util.AbstractItemDeviceProvider;
+import li.cil.oc2.common.bus.device.vm.item.FirmwareFlashStorageDevice;
+import li.cil.oc2.common.item.FlashMemoryWithExternalDataItem;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.Optional;

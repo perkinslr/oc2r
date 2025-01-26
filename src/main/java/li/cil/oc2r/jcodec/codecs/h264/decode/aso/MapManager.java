@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode.aso;
+package li.cil.oc2.jcodec.codecs.h264.decode.aso;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.model.PictureParameterSet;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SeqParameterSet;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.codecs.h264.io.model.PictureParameterSet;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SeqParameterSet;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

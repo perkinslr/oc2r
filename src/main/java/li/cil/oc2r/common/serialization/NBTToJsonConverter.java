@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization;
+package li.cil.oc2.common.serialization;
 
 import com.google.gson.*;
-import li.cil.oc2r.common.util.NBTTagIds;
+import li.cil.oc2.common.util.NBTTagIds;
 import net.minecraft.nbt.*;
 
 import javax.annotation.Nullable;

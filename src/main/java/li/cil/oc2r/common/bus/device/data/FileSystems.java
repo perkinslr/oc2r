@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.data;
+package li.cil.oc2.common.bus.device.data;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 import it.unimi.dsi.fastutil.objects.Object2IntArrayMap;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.device.data.BlockDeviceData;
-import li.cil.oc2r.common.vm.fs.LayeredFileSystem;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.device.data.BlockDeviceData;
+import li.cil.oc2.common.vm.fs.LayeredFileSystem;
 import li.cil.sedna.fs.FileSystem;
 import li.cil.sedna.fs.ZipStreamFileSystem;
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +29,7 @@ import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-import static li.cil.oc2r.common.util.TextFormatUtils.formatSize;
+import static li.cil.oc2.common.util.TextFormatUtils.formatSize;
 
 @Mod.EventBusSubscriber(modid = API.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class FileSystems {

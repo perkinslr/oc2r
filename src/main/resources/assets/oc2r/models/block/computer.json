@@ -1,11 +1,11 @@
 {
   "parent": "block/block",
   "textures": {
-    "atlas0": "oc2r:block/computer/computer_atlas0",
-    "atlas1": "oc2r:block/computer/computer_atlas1",
-    "atlas2": "oc2r:block/computer/computer_atlas2",
-    "atlas3": "oc2r:block/computer/computer_atlas3",
-    "atlas4": "oc2r:block/computer/computer_atlas4",
+    "atlas0": "oc2:block/computer/computer_atlas0",
+    "atlas1": "oc2:block/computer/computer_atlas1",
+    "atlas2": "oc2:block/computer/computer_atlas2",
+    "atlas3": "oc2:block/computer/computer_atlas3",
+    "atlas4": "oc2:block/computer/computer_atlas4",
     "particle": "#atlas0"
   },
   "elements": [

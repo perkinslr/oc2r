@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.blockentity;
+package li.cil.oc2.client.renderer.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.world.item.ItemDisplayContext;
-import li.cil.oc2r.common.block.DiskDriveBlock;
-import li.cil.oc2r.common.blockentity.DiskDriveBlockEntity;
+import li.cil.oc2.common.block.DiskDriveBlock;
+import li.cil.oc2.common.blockentity.DiskDriveBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;

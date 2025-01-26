@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "#oc2r:tool_materials/wood",
-    "#oc2r:tool_materials/stone",
-    "#oc2r:tool_materials/iron",
-    "#oc2r:tool_materials/gold",
-    "#oc2r:tool_materials/diamond",
-    "#oc2r:tool_materials/netherite"
+    "#oc2:tool_materials/wood",
+    "#oc2:tool_materials/stone",
+    "#oc2:tool_materials/iron",
+    "#oc2:tool_materials/gold",
+    "#oc2:tool_materials/diamond",
+    "#oc2:tool_materials/netherite"
   ]
 }

@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.io;
+package li.cil.oc2.jcodec.codecs.h264.io;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.decode.CAVLCReader;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SeqParameterSet;
-import li.cil.oc2r.jcodec.common.io.BitReader;
-import li.cil.oc2r.jcodec.common.io.BitWriter;
-import li.cil.oc2r.jcodec.common.io.VLC;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.decode.CAVLCReader;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SeqParameterSet;
+import li.cil.oc2.jcodec.common.io.BitReader;
+import li.cil.oc2.jcodec.common.io.BitWriter;
+import li.cil.oc2.jcodec.common.io.VLC;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

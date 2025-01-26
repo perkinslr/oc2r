@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.data;
+package li.cil.oc2.data;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.item.crafting.RecipeSerializers;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.item.crafting.RecipeSerializers;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;

@@ -1,5 +1,5 @@
 # 物品栏操作模块
-![你的就是我的](item:oc2r:inventory_operations_module)
+![你的就是我的](item:oc2:inventory_operations_module)
 
 物品栏操作模块为[机器人](robot.md)提供了从世界中的物品栏插入和提取物品的能力。它支持方块和实体的物品栏。
 

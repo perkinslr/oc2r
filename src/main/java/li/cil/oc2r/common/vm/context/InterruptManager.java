@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context;
+package li.cil.oc2.common.vm.context;
 
 import java.util.BitSet;
 

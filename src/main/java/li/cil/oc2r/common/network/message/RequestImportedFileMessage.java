@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.client.gui.FileChooserScreen;
-import li.cil.oc2r.common.bus.device.rpc.item.FileImportExportCardItemDevice;
-import li.cil.oc2r.common.network.Network;
+import li.cil.oc2.client.gui.FileChooserScreen;
+import li.cil.oc2.common.bus.device.rpc.item.FileImportExportCardItemDevice;
+import li.cil.oc2.common.network.Network;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.TextColor;
@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class RequestImportedFileMessage extends AbstractMessage {
     private static final Logger LOGGER = LogManager.getLogger();

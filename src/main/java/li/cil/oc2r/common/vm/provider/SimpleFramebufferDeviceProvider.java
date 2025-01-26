@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.provider;
+package li.cil.oc2.common.vm.provider;
 
-import li.cil.oc2r.common.vm.device.SimpleFramebufferDevice;
+import li.cil.oc2.common.vm.device.SimpleFramebufferDevice;
 import li.cil.sedna.api.device.Device;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 import li.cil.sedna.api.devicetree.DevicePropertyNames;

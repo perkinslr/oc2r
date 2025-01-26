@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api;
+package li.cil.oc2.api;
 
 import com.google.gson.GsonBuilder;
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethod;
-import li.cil.oc2r.api.imc.RPCMethodParameterTypeAdapter;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.rpc.RPCMethod;
+import li.cil.oc2.api.imc.RPCMethodParameterTypeAdapter;
 
 import java.lang.reflect.Type;
 
 public final class API {
-    public static final String MOD_ID = "oc2r";
+    public static final String MOD_ID = "oc2";
 
     ///////////////////////////////////////////////////////////////////
 

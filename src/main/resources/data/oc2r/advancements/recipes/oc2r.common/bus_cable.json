@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "oc2r:bus_cable"
+      "oc2:bus_cable"
     ]
   },
   "criteria": {
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "oc2r:transistor"
+              "oc2:transistor"
             ]
           }
         ]
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "oc2r:bus_cable"
+        "recipe": "oc2:bus_cable"
       }
     }
   },

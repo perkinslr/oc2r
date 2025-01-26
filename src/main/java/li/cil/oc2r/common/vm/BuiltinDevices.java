@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
 import li.cil.ceres.api.Serialized;
-import li.cil.oc2r.common.bus.device.data.FileSystems;
-import li.cil.oc2r.common.vm.context.global.GlobalVMContext;
+import li.cil.oc2.common.bus.device.data.FileSystems;
+import li.cil.oc2.common.vm.context.global.GlobalVMContext;
 import li.cil.sedna.api.Interrupt;
 import li.cil.sedna.api.device.MemoryMappedDevice;
 import li.cil.sedna.device.rtc.GoldfishRTC;

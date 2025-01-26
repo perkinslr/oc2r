@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oc2r:network_connector"
+          "name": "oc2:network_connector"
         }
       ],
       "conditions": [

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm;
+package li.cil.oc2.api.bus.device.vm;
 
 /**
  * This interface serves as a marker for devices that load firmware.

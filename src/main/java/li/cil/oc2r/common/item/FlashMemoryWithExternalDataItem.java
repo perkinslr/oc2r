@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.api.bus.device.data.Firmware;
-import li.cil.oc2r.common.bus.device.data.FirmwareRegistry;
-import li.cil.oc2r.common.util.ItemStackUtils;
+import li.cil.oc2.api.bus.device.data.Firmware;
+import li.cil.oc2.common.bus.device.data.FirmwareRegistry;
+import li.cil.oc2.common.util.ItemStackUtils;
 import net.minecraft.ResourceLocationException;
 import net.minecraft.Util;
 import net.minecraft.network.chat.Component;

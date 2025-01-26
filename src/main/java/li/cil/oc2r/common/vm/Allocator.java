@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.Config;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.Config;
 import net.minecraftforge.event.server.ServerStoppedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

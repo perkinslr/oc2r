@@ -13,11 +13,11 @@
       "tag": "forge:ingots/gold"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     }
   },
   "result": {
-    "item": "oc2r:bus_cable",
+    "item": "oc2:bus_cable",
     "count": 16
   }
 }

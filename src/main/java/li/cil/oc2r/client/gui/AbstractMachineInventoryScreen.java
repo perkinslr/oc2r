@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.client.gui.util.GuiUtils;
-import li.cil.oc2r.client.gui.widget.ImageButton;
-import li.cil.oc2r.client.gui.widget.ToggleImageButton;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.container.AbstractMachineTerminalContainer;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.client.gui.util.GuiUtils;
+import li.cil.oc2.client.gui.widget.ImageButton;
+import li.cil.oc2.client.gui.widget.ToggleImageButton;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.container.AbstractMachineTerminalContainer;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static li.cil.oc2r.common.util.TextFormatUtils.withFormat;
+import static li.cil.oc2.common.util.TextFormatUtils.withFormat;
 
 @OnlyIn(Dist.CLIENT)
 public abstract class AbstractMachineInventoryScreen<T extends AbstractMachineTerminalContainer> extends AbstractModContainerScreen<T> {

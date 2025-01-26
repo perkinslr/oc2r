@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.common.network;
+package li.cil.oc2.common.network;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

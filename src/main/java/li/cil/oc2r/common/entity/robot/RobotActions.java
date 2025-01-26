@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.entity.robot;
+package li.cil.oc2.common.entity.robot;
 
-import li.cil.oc2r.common.entity.Robot;
+import li.cil.oc2.common.entity.Robot;
 import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;

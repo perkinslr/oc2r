@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
 import com.mojang.authlib.GameProfile;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.Config;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.Config;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;

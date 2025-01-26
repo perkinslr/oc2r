@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
-import li.cil.oc2r.common.blockentity.KeyboardBlockEntity;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.KeyboardInputMessage;
+import li.cil.oc2.common.blockentity.KeyboardBlockEntity;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.KeyboardInputMessage;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.MouseHandler;
 import net.minecraft.client.gui.GuiGraphics;
@@ -27,7 +27,7 @@ public final class KeyboardScreen extends Screen {
     private static final float ARM_SWING_RATE = 0.8f;
     private static final int BORDER_COLOR = 0xFFFFFFFF;
 
-    private static final MutableComponent CLOSE_INFO = Component.translatable("gui.oc2r.keyboard.close_info");
+    private static final MutableComponent CLOSE_INFO = Component.translatable("gui.oc2.keyboard.close_info");
 
     ///////////////////////////////////////////////////////////////////
 

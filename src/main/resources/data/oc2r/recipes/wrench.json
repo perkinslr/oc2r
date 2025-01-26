@@ -10,10 +10,10 @@
       "tag": "forge:ingots/iron"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     }
   },
   "result": {
-    "item": "oc2r:wrench"
+    "item": "oc2:wrench"
   }
 }

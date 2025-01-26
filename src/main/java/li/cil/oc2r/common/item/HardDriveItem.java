@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.util.ColorUtils;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.util.ColorUtils;
 import net.minecraft.Util;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;

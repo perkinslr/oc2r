@@ -1,5 +1,5 @@
 # Robot
-![I, for one, welcome our new robot overlords](item:oc2r:robot)
+![I, for one, welcome our new robot overlords](item:oc2:robot)
 
 Robots are essentially mobile [computers](../block/computer.md). Due to their non-stationary nature, there is some behavior that differs from regular computers. They cannot connect to [bus interfaces](../block/bus_interface.md). Instead of card devices, they support module devices. These are specialized devices taking into account the robots' mobility.
 

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization.ceres;
+package li.cil.oc2.common.serialization.ceres;
 
 import li.cil.ceres.api.DeserializationVisitor;
 import li.cil.ceres.api.SerializationException;
 import li.cil.ceres.api.SerializationVisitor;
 import li.cil.ceres.api.Serializer;
-import li.cil.oc2r.common.vm.context.global.MemoryRangeList;
+import li.cil.oc2.common.vm.context.global.MemoryRangeList;
 import li.cil.sedna.api.memory.MemoryRange;
 
 import javax.annotation.Nullable;

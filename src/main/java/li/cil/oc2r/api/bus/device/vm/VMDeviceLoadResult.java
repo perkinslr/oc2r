@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm;
+package li.cil.oc2.api.bus.device.vm;
 
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
 import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;

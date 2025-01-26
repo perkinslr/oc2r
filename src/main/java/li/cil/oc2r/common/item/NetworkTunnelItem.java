@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.common.container.NetworkTunnelContainer;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.TextFormatUtils;
+import li.cil.oc2.common.container.NetworkTunnelContainer;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.TextFormatUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static li.cil.oc2r.common.util.TranslationUtils.key;
+import static li.cil.oc2.common.util.TranslationUtils.key;
 
 public final class NetworkTunnelItem extends ModItem {
     private static final String TUNNEL_ID_TAG_NAME = "tunnel";

@@ -9,16 +9,16 @@
       "tag": "forge:ingots/iron"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "Q": {
       "tag": "forge:gems/quartz"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:floppy"
+    "item": "oc2:floppy"
   }
 }

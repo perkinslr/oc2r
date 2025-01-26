@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.vm.context;
+package li.cil.oc2.api.bus.device.vm.context;
 
 /**
  * A memory allocator used to ensure sandbox limits when loading devices.

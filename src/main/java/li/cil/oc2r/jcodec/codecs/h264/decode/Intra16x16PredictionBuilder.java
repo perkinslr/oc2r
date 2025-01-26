@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.common.ArrayUtil;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.common.ArrayUtil;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.LUMA_4x4_BLOCK_LUT;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.LUMA_4x4_POS_LUT;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.LUMA_4x4_BLOCK_LUT;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.LUMA_4x4_POS_LUT;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

@@ -1,35 +1,35 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.entity;
+package li.cil.oc2.common.entity;
 
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
-import li.cil.oc2r.api.bus.device.object.Parameter;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.api.capabilities.TerminalUserProvider;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.bus.AbstractDeviceBusElement;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.bus.device.util.Devices;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.container.FixedSizeItemStackHandler;
-import li.cil.oc2r.common.container.RobotInventoryContainer;
-import li.cil.oc2r.common.container.RobotTerminalContainer;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.entity.robot.*;
-import li.cil.oc2r.common.integration.Wrenches;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.*;
-import li.cil.oc2r.common.serialization.NBTSerialization;
-import li.cil.oc2r.common.util.LevelUtils;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.util.NBTUtils;
-import li.cil.oc2r.common.util.TerminalUtils;
-import li.cil.oc2r.common.vm.*;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.device.object.Parameter;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.api.capabilities.TerminalUserProvider;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.bus.AbstractDeviceBusElement;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.bus.device.util.Devices;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.container.FixedSizeItemStackHandler;
+import li.cil.oc2.common.container.RobotInventoryContainer;
+import li.cil.oc2.common.container.RobotTerminalContainer;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.entity.robot.*;
+import li.cil.oc2.common.integration.Wrenches;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.*;
+import li.cil.oc2.common.serialization.NBTSerialization;
+import li.cil.oc2.common.util.LevelUtils;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.util.NBTUtils;
+import li.cil.oc2.common.util.TerminalUtils;
+import li.cil.oc2.common.vm.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Cursor3D;
 import net.minecraft.core.Direction;
@@ -83,9 +83,9 @@ import java.util.*;
 import java.util.function.Consumer;
 
 import static java.util.Collections.singleton;
-import static li.cil.oc2r.common.Constants.*;
+import static li.cil.oc2.common.Constants.*;
 
-public final class Robot extends Entity implements li.cil.oc2r.api.capabilities.Robot, TerminalUserProvider {
+public final class Robot extends Entity implements li.cil.oc2.api.capabilities.Robot, TerminalUserProvider {
     public static final EntityDataAccessor<BlockPos> TARGET_POSITION = SynchedEntityData.defineId(Robot.class, EntityDataSerializers.BLOCK_POS);
     public static final EntityDataAccessor<Direction> TARGET_DIRECTION = SynchedEntityData.defineId(Robot.class, EntityDataSerializers.DIRECTION);
     public static final EntityDataAccessor<Byte> SELECTED_SLOT = SynchedEntityData.defineId(Robot.class, EntityDataSerializers.BYTE);

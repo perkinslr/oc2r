@@ -1,11 +1,11 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"particle": "oc2r:block/vxlan_hub/vxlan_hub_atlas0",
-		"atlas0": "oc2r:block/vxlan_hub/vxlan_hub_atlas0",
-		"atlas1": "oc2r:block/vxlan_hub/vxlan_hub_atlas1",
-		"atlas2": "oc2r:block/vxlan_hub/vxlan_hub_atlas2",
-		"atlas3": "oc2r:block/vxlan_hub/vxlan_hub_atlas3"
+		"particle": "oc2:block/vxlan_hub/vxlan_hub_atlas0",
+		"atlas0": "oc2:block/vxlan_hub/vxlan_hub_atlas0",
+		"atlas1": "oc2:block/vxlan_hub/vxlan_hub_atlas1",
+		"atlas2": "oc2:block/vxlan_hub/vxlan_hub_atlas2",
+		"atlas3": "oc2:block/vxlan_hub/vxlan_hub_atlas3"
 	},
 	"elements": [
 		{

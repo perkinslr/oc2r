@@ -9,16 +9,16 @@
       "tag": "forge:gems/diamond"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     },
     "E": {
       "tag": "forge:gems/emerald"
     }
   },
   "result": {
-    "item": "oc2r:hard_drive_large"
+    "item": "oc2:hard_drive_large"
   }
 }

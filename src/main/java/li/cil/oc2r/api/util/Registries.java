@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.util;
+package li.cil.oc2.api.util;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.device.data.BlockDeviceData;
-import li.cil.oc2r.api.bus.device.data.Firmware;
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceProvider;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.device.data.BlockDeviceData;
+import li.cil.oc2.api.bus.device.data.Firmware;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceProvider;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

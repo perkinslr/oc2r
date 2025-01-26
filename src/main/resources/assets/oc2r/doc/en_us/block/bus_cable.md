@@ -1,5 +1,5 @@
 # Bus Cable
-![Party Bus](block:oc2r:bus_cable)
+![Party Bus](block:oc2:bus_cable)
 
 The bus cable connects [bus interfaces](bus_interface.md) to a computer.
 

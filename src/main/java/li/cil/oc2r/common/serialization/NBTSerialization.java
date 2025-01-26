@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization;
+package li.cil.oc2.common.serialization;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import li.cil.ceres.Ceres;
 import li.cil.ceres.api.DeserializationVisitor;
 import li.cil.ceres.api.SerializationException;
 import li.cil.ceres.api.SerializationVisitor;
-import li.cil.oc2r.common.util.NBTTagIds;
+import li.cil.oc2.common.util.NBTTagIds;
 import net.minecraft.nbt.*;
 import org.jetbrains.annotations.Contract;
 

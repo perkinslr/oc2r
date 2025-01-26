@@ -1,5 +1,5 @@
 # Scrench
-![Screw it!](item:oc2r:wrench)
+![Screw it!](item:oc2:wrench)
 
 The wrench-screwdriver multi-tool, nicknamed "Scrench", can be used to directly access the configuration of some blocks, such as [computers](../block/computer.md).
 

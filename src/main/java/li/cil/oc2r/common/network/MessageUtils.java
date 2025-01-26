@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network;
+package li.cil.oc2.common.network;
 
-import li.cil.oc2r.common.util.LevelUtils;
+import li.cil.oc2.common.util.LevelUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;

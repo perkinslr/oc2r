@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.client.renderer.blockentity;
+package li.cil.oc2.client.renderer.blockentity;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

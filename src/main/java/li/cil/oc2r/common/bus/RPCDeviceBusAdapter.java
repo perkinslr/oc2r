@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus;
+package li.cil.oc2.common.bus;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import li.cil.ceres.api.Serialized;
-import li.cil.oc2r.api.bus.DeviceBusController;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.rpc.*;
-import li.cil.oc2r.api.util.Side;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.device.rpc.RPCDeviceList;
-import li.cil.oc2r.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
-import li.cil.oc2r.common.serialization.gson.*;
+import li.cil.oc2.api.bus.DeviceBusController;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.rpc.*;
+import li.cil.oc2.api.util.Side;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.device.rpc.RPCDeviceList;
+import li.cil.oc2.common.bus.device.rpc.RPCMethodParameterTypeAdapters;
+import li.cil.oc2.common.serialization.gson.*;
 import li.cil.sedna.api.device.Steppable;
 import li.cil.sedna.api.device.serial.SerialDevice;
 

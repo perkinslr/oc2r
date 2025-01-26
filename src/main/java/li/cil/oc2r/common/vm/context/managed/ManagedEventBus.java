@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.managed;
+package li.cil.oc2.common.vm.context.managed;
 
-import li.cil.oc2r.api.bus.device.vm.context.VMLifecycleEventBus;
-import li.cil.oc2r.common.vm.context.EventManager;
+import li.cil.oc2.api.bus.device.vm.context.VMLifecycleEventBus;
+import li.cil.oc2.common.vm.context.EventManager;
 
 import java.util.ArrayList;
 

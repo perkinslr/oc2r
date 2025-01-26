@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.imc;
+package li.cil.oc2.api.imc;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import li.cil.oc2r.api.bus.device.rpc.RPCDevice;
+import li.cil.oc2.api.bus.device.rpc.RPCDevice;
 
 import java.lang.reflect.Type;
 

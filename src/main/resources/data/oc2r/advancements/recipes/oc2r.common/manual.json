@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "oc2r:manual"
+      "oc2:manual"
     ]
   },
   "criteria": {
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "oc2r:wrench"
+              "oc2:wrench"
             ]
           }
         ]
@@ -33,7 +33,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "oc2r:manual"
+        "recipe": "oc2:manual"
       }
     }
   },

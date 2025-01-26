@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui.widget;
+package li.cil.oc2.client.gui.widget;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.ChatFormatting;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Objects;
 
 import static java.util.Collections.emptyList;
-import static li.cil.oc2r.common.util.TextFormatUtils.withFormat;
+import static li.cil.oc2.common.util.TextFormatUtils.withFormat;
 
 public abstract class ImageButton extends AbstractButton {
     private static final long PRESS_DURATION = 200;

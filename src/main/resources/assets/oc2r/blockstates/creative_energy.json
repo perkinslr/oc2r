@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "oc2r:block/creative_energy"
+      "model": "oc2:block/creative_energy"
     }
   }
 }

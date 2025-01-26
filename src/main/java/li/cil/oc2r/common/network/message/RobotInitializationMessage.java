@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.entity.Robot;
-import li.cil.oc2r.common.network.MessageUtils;
-import li.cil.oc2r.common.serialization.NBTSerialization;
-import li.cil.oc2r.common.vm.VMRunState;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.entity.Robot;
+import li.cil.oc2.common.network.MessageUtils;
+import li.cil.oc2.common.serialization.NBTSerialization;
+import li.cil.oc2.common.vm.VMRunState;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;

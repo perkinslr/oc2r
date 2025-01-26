@@ -1,5 +1,5 @@
 # Sound Card
-![Less sound of silence](item:oc2r:sound_card)
+![Less sound of silence](item:oc2:sound_card)
 
 The sound card enables playing back various sound effects from its vast library of life-like samples. Due to internal engineering constraints, playback of sequential effects requires a small pause. Attempts to play back additional effects in this time window will have no effect.
 

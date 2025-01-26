@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.util;
+package li.cil.oc2.api.util;
 
-import li.cil.oc2r.common.util.RunnableUtils;
+import li.cil.oc2.common.util.RunnableUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * Wrapper for objects which may become invalid, such as {@link li.cil.oc2r.api.bus.device.Device}s.
+ * Wrapper for objects which may become invalid, such as {@link li.cil.oc2.api.bus.device.Device}s.
  * <p>
  * This implementation allows listeners added via {@link #addListener(Consumer)} to be removed again
  * using the returned token. This allows avoiding memory leaks due to inversion of reference ownership,

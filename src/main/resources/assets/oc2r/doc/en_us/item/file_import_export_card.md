@@ -1,5 +1,5 @@
 # File Import/Export Card
-![Tear down this wall!](item:oc2r:file_import_export_card)
+![Tear down this wall!](item:oc2:file_import_export_card)
 
 The file import/export card allows breaking the fourth wall. It allows:
 - uploading files from your real computer into a virtual [computer](../block/computer.md).

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm.context.global;
+package li.cil.oc2.common.vm.context.global;
 
-import li.cil.oc2r.common.vm.context.InterruptValidator;
+import li.cil.oc2.common.vm.context.InterruptValidator;
 import li.cil.sedna.api.device.InterruptController;
 
 final class GlobalInterruptController implements InterruptController {

@@ -1,4 +1,4 @@
-package li.cil.oc2r.client.renderer;
+package li.cil.oc2.client.renderer;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -7,10 +7,10 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
-import li.cil.oc2r.common.bus.device.vm.block.MonitorDevice;
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.scale.Yuv420jToRgb;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.bus.device.vm.block.MonitorDevice;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.scale.Yuv420jToRgb;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.client.renderer.texture.DynamicTexture;

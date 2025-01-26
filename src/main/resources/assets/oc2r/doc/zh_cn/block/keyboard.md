@@ -1,5 +1,5 @@
 # 键盘
-![点击与否](block:oc2r:keyboard)
+![点击与否](block:oc2:keyboard)
 
 键盘允许 [计算机](computer.md) 捕捉按键输入。它的主要使用场景是在使用 Linux 系统时与 [投影仪](projector.md) 配合使用。
 

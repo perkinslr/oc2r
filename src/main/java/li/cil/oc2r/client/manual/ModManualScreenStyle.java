@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.manual;
+package li.cil.oc2.client.manual;
 
 import li.cil.manual.api.ManualScreenStyle;
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;

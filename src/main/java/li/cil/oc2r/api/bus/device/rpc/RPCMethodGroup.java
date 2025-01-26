@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.rpc;
+package li.cil.oc2.api.bus.device.rpc;
 
-import li.cil.oc2r.api.bus.DeviceBusController;
+import li.cil.oc2.api.bus.DeviceBusController;
 
 import java.util.Collections;
 import java.util.Optional;

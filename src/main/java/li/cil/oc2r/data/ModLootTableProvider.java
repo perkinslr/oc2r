@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.data;
+package li.cil.oc2.data;
 
-import li.cil.oc2r.common.block.Blocks;
+import li.cil.oc2.common.block.Blocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -24,7 +24,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static java.util.Collections.singletonList;
-import static li.cil.oc2r.common.Constants.*;
+import static li.cil.oc2.common.Constants.*;
 
 public final class ModLootTableProvider extends LootTableProvider {
     public ModLootTableProvider(final PackOutput output, final Set<ResourceLocation> additionalTables, final List<SubProviderEntry> subProviders) {

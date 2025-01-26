@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.integration.jei;
+package li.cil.oc2.common.integration.jei;
 
 import com.google.common.base.Strings;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.item.AbstractBlockDeviceItem;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.NBTUtils;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.item.AbstractBlockDeviceItem;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.NBTUtils;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -23,8 +23,8 @@ import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nullable;
 
-import static li.cil.oc2r.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
-import static li.cil.oc2r.common.Constants.ITEMS_TAG_NAME;
+import static li.cil.oc2.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
+import static li.cil.oc2.common.Constants.ITEMS_TAG_NAME;
 
 @JeiPlugin
 public class ExtraItemsJEIPlugin implements IModPlugin {

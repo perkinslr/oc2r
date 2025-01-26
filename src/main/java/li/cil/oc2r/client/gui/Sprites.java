@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
-import li.cil.oc2r.client.gui.widget.Sprite;
+import li.cil.oc2.client.gui.widget.Sprite;
 
-import static li.cil.oc2r.client.gui.Textures.*;
+import static li.cil.oc2.client.gui.Textures.*;
 
 public final class Sprites {
     public static final Sprite COMPUTER_CONTAINER = new Sprite(COMPUTER_CONTAINER_TEXTURE);

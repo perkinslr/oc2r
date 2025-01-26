@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred;
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
 
 import java.util.Arrays;
 

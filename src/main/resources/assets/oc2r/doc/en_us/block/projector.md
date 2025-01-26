@@ -1,5 +1,5 @@
 # Projector
-![Shadow on the wall](block:oc2r:projector)
+![Shadow on the wall](block:oc2:projector)
 
 The projector provides a framebuffer device to [computers](computer.md). They have a resolution of 640 by 480 pixels, with the color format r5g6b5: 5 bits for the red color component, 6 bits for the green color component and 5 bits for the blue color component.
 

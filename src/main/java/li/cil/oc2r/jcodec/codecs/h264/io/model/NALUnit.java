@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.io.model;
+package li.cil.oc2.jcodec.codecs.h264.io.model;
 
 import java.nio.ByteBuffer;
 

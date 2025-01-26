@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils.MvList;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.Frame;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils.MvList;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.codecs.h264.io.model.Frame;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.*;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred.*;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Utils.Mv.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Utils.Mv.*;
 
 /**
  * A decoder for B direct macroblocks

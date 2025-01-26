@@ -1,5 +1,5 @@
 # Network Tunnel Module
-![Tunnel vision?](item:oc2r:network_tunnel_module)
+![Tunnel vision?](item:oc2:network_tunnel_module)
 
 The network tunnel module allows [robots](robot.md) to send messages to and receive messages from another tunnel device (tunnel modules and [tunnel cards](network_tunnel_card.md)) linked to the module.
 

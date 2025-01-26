@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.rpc;
+package li.cil.oc2.api.bus.device.rpc;
 
-import li.cil.oc2r.api.bus.device.object.ObjectDevice;
+import li.cil.oc2.api.bus.device.object.ObjectDevice;
 
 import javax.annotation.Nullable;
 import java.util.Collections;
@@ -17,7 +17,7 @@ import java.util.Set;
  * <p>
  * Method parameters are serialized and deserialized using Gson. When using custom
  * parameter types it may be necessary to register a custom type adapter for them
- * via {@link li.cil.oc2r.api.API#IMC_ADD_RPC_METHOD_PARAMETER_TYPE_ADAPTER}.
+ * via {@link li.cil.oc2.api.API#IMC_ADD_RPC_METHOD_PARAMETER_TYPE_ADAPTER}.
  *
  * @see ObjectDevice
  */

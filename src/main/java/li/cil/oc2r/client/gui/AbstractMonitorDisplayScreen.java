@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import li.cil.oc2r.client.gui.widget.ToggleImageButton;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.container.AbstractMonitorContainer;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.client.gui.widget.ToggleImageButton;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.container.AbstractMonitorContainer;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
@@ -21,7 +21,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static li.cil.oc2r.common.util.TextFormatUtils.withFormat;
+import static li.cil.oc2.common.util.TextFormatUtils.withFormat;
 
 @OnlyIn(Dist.CLIENT)
 public abstract class AbstractMonitorDisplayScreen<T extends AbstractMonitorContainer> extends AbstractModContainerScreen<T> {

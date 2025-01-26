@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common;
+package li.cil.oc2.jcodec.common;
 
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import java.nio.ByteBuffer;
 

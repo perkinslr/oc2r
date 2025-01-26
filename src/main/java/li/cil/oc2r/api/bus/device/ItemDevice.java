@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device;
+package li.cil.oc2.api.bus.device;
 
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceProvider;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 

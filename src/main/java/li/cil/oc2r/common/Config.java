@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common;
+package li.cil.oc2.common;
 
-import li.cil.oc2r.common.ConfigManager.Path;
+import li.cil.oc2.common.ConfigManager.Path;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.common.TierSortingRegistry;

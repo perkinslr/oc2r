@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.model;
+package li.cil.oc2.client.model;
 
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.block.BusCableBlock;
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.util.ItemStackUtils;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.block.BusCableBlock;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.util.ItemStackUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.BlockModelShaper;

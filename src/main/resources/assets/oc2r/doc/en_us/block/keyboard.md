@@ -1,5 +1,5 @@
 # Keyboard
-![To click or not to click](block:oc2r:keyboard)
+![To click or not to click](block:oc2:keyboard)
 
 The keyboard allows key presses to be picked up by [computers](computer.md). Its primary use-case is in combination with a [projector](projector.md), when using a Linux system.
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.util;
+package li.cil.oc2.common.bus.device.util;
 
 import javax.annotation.Nullable;
 import java.util.Objects;

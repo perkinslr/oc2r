@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.util;
+package li.cil.oc2.common.util;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.mixin.ServerChunkCacheMixin;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.mixin.ServerChunkCacheMixin;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.SectionPos;
 import net.minecraft.world.level.ChunkPos;

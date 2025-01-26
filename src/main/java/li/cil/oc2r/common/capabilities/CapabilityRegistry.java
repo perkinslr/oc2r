@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.capabilities;
+package li.cil.oc2.common.capabilities;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.capabilities.NetworkInterface;
-import li.cil.oc2r.api.capabilities.RedstoneEmitter;
-import li.cil.oc2r.api.capabilities.Robot;
-import li.cil.oc2r.api.capabilities.TerminalUserProvider;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.capabilities.NetworkInterface;
+import li.cil.oc2.api.capabilities.RedstoneEmitter;
+import li.cil.oc2.api.capabilities.Robot;
+import li.cil.oc2.api.capabilities.TerminalUserProvider;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.CapabilityToken;

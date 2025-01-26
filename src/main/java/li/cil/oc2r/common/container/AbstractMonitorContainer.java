@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.common.block.Blocks;
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.*;
-import li.cil.oc2r.common.vm.VirtualMachine;
+import li.cil.oc2.common.block.Blocks;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.*;
+import li.cil.oc2.common.vm.VirtualMachine;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.MenuType;

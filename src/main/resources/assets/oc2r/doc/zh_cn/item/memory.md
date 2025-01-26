@@ -1,5 +1,5 @@
 # 内存条
-![随机访问记忆](item:oc2r:memory_large)
+![随机访问记忆](item:oc2:memory_large)
 
 随机访问内存（RAM）设备为[计算机](../block/computer.md)和[机器人](robot.md)提供工作内存。
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.io.model;
+package li.cil.oc2.jcodec.codecs.h264.io.model;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils.MvList2D;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils.MvList2D;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import java.util.Comparator;
 

@@ -1,5 +1,5 @@
 # Block Operations Module
-![Break it, quick replace it](item:oc2r:block_operations_module)
+![Break it, quick replace it](item:oc2:block_operations_module)
 
 The block operations module provides to [robots](robot.md) the ability to break and place blocks in the world.
 

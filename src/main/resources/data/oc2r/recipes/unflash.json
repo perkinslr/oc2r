@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "oc2r:flash_memory_custom"
+      "item": "oc2:flash_memory_custom"
     }
   ],
   "result": {
-    "item": "oc2r:flash_memory"
+    "item": "oc2:flash_memory"
   }
 }

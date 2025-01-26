@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred;
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils.MvList;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.Frame;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceHeader;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceType;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils.MvList;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.codecs.h264.io.model.Frame;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceHeader;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceType;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import java.util.Arrays;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred.L0;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.identityMapping4;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Utils.Mv.packMv;
-import static li.cil.oc2r.jcodec.codecs.h264.decode.MBlockDecoderUtils.*;
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.SliceType.P;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred.L0;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.identityMapping4;
+import static li.cil.oc2.jcodec.codecs.h264.H264Utils.Mv.packMv;
+import static li.cil.oc2.jcodec.codecs.h264.decode.MBlockDecoderUtils.*;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.SliceType.P;
 
 /**
  * A decoder for P skip macroblocks

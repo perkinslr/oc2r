@@ -1,5 +1,5 @@
 # 硬盘
-![转圈圈](item:oc2r:hard_drive_large)
+![转圈圈](item:oc2:hard_drive_large)
 
 硬盘是用于在[计算机](../block/computer.md)和[机器人](robot.md)中存储数据的主要存储设备。
 

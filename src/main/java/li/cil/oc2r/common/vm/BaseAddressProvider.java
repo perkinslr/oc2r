@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.vm;
+package li.cil.oc2.common.vm;
 
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
 
 import java.util.OptionalLong;
 

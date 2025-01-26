@@ -1,7 +1,7 @@
-package li.cil.oc2r.common.integration.projectred;
+package li.cil.oc2.common.integration.projectred;
 
-import li.cil.oc2r.common.blockentity.RedstoneInterfaceBlockEntity;
-import li.cil.oc2r.common.integration.util.BundledRedstone;
+import li.cil.oc2.common.blockentity.RedstoneInterfaceBlockEntity;
+import li.cil.oc2.common.integration.util.BundledRedstone;
 import mrtjp.projectred.api.IBundledTileInteraction;
 import mrtjp.projectred.api.ITransmissionAPI;
 import mrtjp.projectred.api.ProjectRedAPI;

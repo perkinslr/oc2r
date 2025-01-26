@@ -1,5 +1,5 @@
 # 红石接口
-![一切都是红色的](block:oc2r:redstone_interface)
+![一切都是红色的](block:oc2:redstone_interface)
 
 红石接口提供了一个全方向的总线，用于接收和发射红石信号。
 

@@ -1,5 +1,5 @@
 # Flash Memory Flasher
-![Flashes before your eyes](block:oc2r:flash_memory_flasher)
+![Flashes before your eyes](block:oc2:flash_memory_flasher)
 
 The memory flasher provides a way to flash custom compiled firmware onto a flash chip for your computer.
 

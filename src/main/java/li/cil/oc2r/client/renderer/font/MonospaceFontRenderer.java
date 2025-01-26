@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.font;
+package li.cil.oc2.client.renderer.font;
 
 import li.cil.manual.api.prefab.renderer.BitmapFontRenderer;
 import li.cil.manual.api.render.FontRenderer;
-import li.cil.oc2r.api.API;
+import li.cil.oc2.api.API;
 import net.minecraft.resources.ResourceLocation;
 
 public final class MonospaceFontRenderer extends BitmapFontRenderer {

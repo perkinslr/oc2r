@@ -1,5 +1,5 @@
 # The Computerists Handbook
-![Nobody reads me anyway...](item:oc2r:manual)
+![Nobody reads me anyway...](item:oc2:manual)
 
 You handy quick-reference for all topics concerning [computers](../block/computer.md) and devices related to them. It's what you're currently reading!
 

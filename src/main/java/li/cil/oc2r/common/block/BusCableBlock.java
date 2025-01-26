@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.block;
+package li.cil.oc2.common.block;
 
 import com.google.common.collect.Maps;
-import li.cil.oc2r.client.gui.BusInterfaceScreen;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.blockentity.BlockEntities;
-import li.cil.oc2r.common.blockentity.BusCableBlockEntity;
-import li.cil.oc2r.common.integration.Wrenches;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.LevelUtils;
+import li.cil.oc2.client.gui.BusInterfaceScreen;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.blockentity.BlockEntities;
+import li.cil.oc2.common.blockentity.BusCableBlockEntity;
+import li.cil.oc2.common.integration.Wrenches;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.LevelUtils;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -54,7 +54,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class BusCableBlock extends BaseEntityBlock {
     public enum ConnectionType implements StringRepresentable {

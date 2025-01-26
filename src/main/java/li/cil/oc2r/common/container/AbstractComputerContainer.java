@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.common.block.Blocks;
-import li.cil.oc2r.common.blockentity.ComputerBlockEntity;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.ComputerPowerMessage;
-import li.cil.oc2r.common.network.message.ComputerTerminalInputMessage;
-import li.cil.oc2r.common.network.message.OpenComputerInventoryMessage;
-import li.cil.oc2r.common.network.message.OpenComputerTerminalMessage;
-import li.cil.oc2r.common.vm.Terminal;
-import li.cil.oc2r.common.vm.VirtualMachine;
+import li.cil.oc2.common.block.Blocks;
+import li.cil.oc2.common.blockentity.ComputerBlockEntity;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.ComputerPowerMessage;
+import li.cil.oc2.common.network.message.ComputerTerminalInputMessage;
+import li.cil.oc2.common.network.message.OpenComputerInventoryMessage;
+import li.cil.oc2.common.network.message.OpenComputerTerminalMessage;
+import li.cil.oc2.common.vm.Terminal;
+import li.cil.oc2.common.vm.VirtualMachine;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.MenuType;

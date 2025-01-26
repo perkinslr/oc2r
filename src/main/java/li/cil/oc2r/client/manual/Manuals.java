@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.manual;
+package li.cil.oc2.client.manual;
 
 import li.cil.manual.api.ManualModel;
 import li.cil.manual.api.Tab;
@@ -12,9 +12,9 @@ import li.cil.manual.api.prefab.tab.TextureTab;
 import li.cil.manual.api.provider.DocumentProvider;
 import li.cil.manual.api.provider.PathProvider;
 import li.cil.manual.api.util.Constants;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.common.block.Blocks;
-import li.cil.oc2r.common.item.Items;
+import li.cil.oc2.api.API;
+import li.cil.oc2.common.block.Blocks;
+import li.cil.oc2.common.item.Items;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;

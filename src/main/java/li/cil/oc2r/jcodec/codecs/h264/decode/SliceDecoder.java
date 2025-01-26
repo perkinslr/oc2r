@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.MapManager;
-import li.cil.oc2r.jcodec.codecs.h264.decode.aso.Mapper;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.*;
-import li.cil.oc2r.jcodec.common.IntObjectMap;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.MapManager;
+import li.cil.oc2.jcodec.codecs.h264.decode.aso.Mapper;
+import li.cil.oc2.jcodec.codecs.h264.io.model.*;
+import li.cil.oc2.jcodec.common.IntObjectMap;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import static java.lang.System.arraycopy;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred.L0;
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.MBType.*;
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.SliceType.P;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred.L0;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.MBType.*;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.SliceType.P;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

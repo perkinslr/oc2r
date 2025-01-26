@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.block;
+package li.cil.oc2.common.block;
 
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.blockentity.BlockEntities;
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
-import li.cil.oc2r.common.blockentity.TickableBlockEntity;
-import li.cil.oc2r.common.integration.Wrenches;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.MonitorPowerMessageForwarded;
-import li.cil.oc2r.common.util.VoxelShapeUtils;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.blockentity.BlockEntities;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.blockentity.TickableBlockEntity;
+import li.cil.oc2.common.integration.Wrenches;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.MonitorPowerMessageForwarded;
+import li.cil.oc2.common.util.VoxelShapeUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;

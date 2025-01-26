@@ -1,4 +1,4 @@
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.renderer.blockentity;
+package li.cil.oc2.client.renderer.blockentity;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -10,14 +10,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.client.renderer.ModRenderType;
-import li.cil.oc2r.client.renderer.MonitorGUIRenderer;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.block.MonitorBlock;
-import li.cil.oc2r.common.blockentity.MonitorBlockEntity;
-import li.cil.oc2r.common.bus.device.vm.block.MonitorDevice;
-import li.cil.oc2r.common.util.ChainableVertexConsumer;
+import li.cil.oc2.api.API;
+import li.cil.oc2.client.renderer.ModRenderType;
+import li.cil.oc2.client.renderer.MonitorGUIRenderer;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.block.MonitorBlock;
+import li.cil.oc2.common.blockentity.MonitorBlockEntity;
+import li.cil.oc2.common.bus.device.vm.block.MonitorDevice;
+import li.cil.oc2.common.util.ChainableVertexConsumer;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;

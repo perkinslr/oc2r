@@ -1,5 +1,5 @@
 # 网卡
-![与陌生人交谈](item:oc2r:network_interface_card)
+![与陌生人交谈](item:oc2:network_interface_card)
 
 网卡（NIC）允许[计算机](../block/computer.md)向[网络连接口](../block/network_connector.md)发送和接收消息。
 

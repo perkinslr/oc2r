@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.data;
+package li.cil.oc2.common.bus.device.data;
 
-import li.cil.oc2r.api.bus.device.data.Firmware;
+import li.cil.oc2.api.bus.device.data.Firmware;
 import li.cil.sedna.api.memory.MemoryMap;
 import li.cil.sedna.buildroot.Buildroot;
 import li.cil.sedna.memory.MemoryMaps;

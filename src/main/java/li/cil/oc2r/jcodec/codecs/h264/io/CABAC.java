@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.io;
+package li.cil.oc2.jcodec.codecs.h264.io;
 
-import li.cil.oc2r.jcodec.codecs.common.biari.MDecoder;
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.H264Utils;
-import li.cil.oc2r.jcodec.codecs.h264.decode.CABACContst;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SliceType;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.common.biari.MDecoder;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.H264Utils;
+import li.cil.oc2.jcodec.codecs.h264.decode.CABACContst;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SliceType;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
-import static li.cil.oc2r.jcodec.codecs.h264.io.CABAC.BlockType.*;
+import static li.cil.oc2.jcodec.codecs.h264.io.CABAC.BlockType.*;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

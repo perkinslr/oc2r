@@ -12,13 +12,13 @@
       "tag": "forge:ingots/iron"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:redstone_interface_card"
+    "item": "oc2:redstone_interface_card"
   }
 }

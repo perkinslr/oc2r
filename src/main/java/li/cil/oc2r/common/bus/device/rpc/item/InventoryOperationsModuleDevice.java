@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.rpc.item;
+package li.cil.oc2.common.bus.device.rpc.item;
 
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.Parameter;
-import li.cil.oc2r.api.capabilities.Robot;
-import li.cil.oc2r.api.util.RobotOperationSide;
-import li.cil.oc2r.common.capabilities.Capabilities;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.Parameter;
+import li.cil.oc2.api.capabilities.Robot;
+import li.cil.oc2.api.util.RobotOperationSide;
+import li.cil.oc2.common.capabilities.Capabilities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;

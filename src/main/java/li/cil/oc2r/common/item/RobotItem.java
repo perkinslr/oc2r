@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.client.renderer.entity.RobotWithoutLevelRenderer;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.energy.EnergyStorageItemStack;
-import li.cil.oc2r.common.entity.Entities;
-import li.cil.oc2r.common.entity.Robot;
-import li.cil.oc2r.common.entity.robot.RobotActions;
-import li.cil.oc2r.common.util.LevelUtils;
-import li.cil.oc2r.common.util.NBTUtils;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.client.renderer.entity.RobotWithoutLevelRenderer;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.energy.EnergyStorageItemStack;
+import li.cil.oc2.common.entity.Entities;
+import li.cil.oc2.common.entity.Robot;
+import li.cil.oc2.common.entity.robot.RobotActions;
+import li.cil.oc2.common.util.LevelUtils;
+import li.cil.oc2.common.util.NBTUtils;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.BlockPos;
@@ -36,9 +36,9 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.function.Consumer;
 
-import static li.cil.oc2r.common.Constants.*;
-import static li.cil.oc2r.common.util.NBTUtils.makeInventoryTag;
-import static li.cil.oc2r.common.util.RegistryUtils.key;
+import static li.cil.oc2.common.Constants.*;
+import static li.cil.oc2.common.util.NBTUtils.makeInventoryTag;
+import static li.cil.oc2.common.util.RegistryUtils.key;
 
 public final class RobotItem extends ModItem {
     @Override

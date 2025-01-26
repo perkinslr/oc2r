@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.network.message;
+package li.cil.oc2.common.network.message;
 
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.item.NetworkInterfaceCardItem;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.item.NetworkInterfaceCardItem;
 import net.minecraft.core.Direction;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.provider.item;
+package li.cil.oc2.common.bus.device.provider.item;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.data.BlockDeviceData;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.device.provider.util.AbstractItemDeviceProvider;
-import li.cil.oc2r.common.bus.device.vm.item.HardDriveDeviceWithInitialData;
-import li.cil.oc2r.common.item.HardDriveWithExternalDataItem;
-import li.cil.oc2r.common.util.LocationSupplierUtils;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.data.BlockDeviceData;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.device.provider.util.AbstractItemDeviceProvider;
+import li.cil.oc2.common.bus.device.vm.item.HardDriveDeviceWithInitialData;
+import li.cil.oc2.common.item.HardDriveWithExternalDataItem;
+import li.cil.oc2.common.util.LocationSupplierUtils;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 

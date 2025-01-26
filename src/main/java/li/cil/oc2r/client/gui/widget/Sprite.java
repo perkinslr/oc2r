@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui.widget;
+package li.cil.oc2.client.gui.widget;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.Mth;

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.common.util.ItemStackUtils;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.util.TextFormatUtils;
+import li.cil.oc2.common.util.ItemStackUtils;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.util.TextFormatUtils;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

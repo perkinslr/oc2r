@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264;
+package li.cil.oc2.jcodec.codecs.h264;
 
-import li.cil.oc2r.jcodec.codecs.h264.encode.*;
-import li.cil.oc2r.jcodec.codecs.h264.io.CAVLC;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.*;
-import li.cil.oc2r.jcodec.codecs.h264.io.write.CAVLCWriter;
-import li.cil.oc2r.jcodec.codecs.h264.io.write.SliceHeaderWriter;
-import li.cil.oc2r.jcodec.common.VideoEncoder;
-import li.cil.oc2r.jcodec.common.io.BitWriter;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
-import li.cil.oc2r.jcodec.common.model.Size;
-import li.cil.oc2r.jcodec.common.tools.MathUtil;
+import li.cil.oc2.jcodec.codecs.h264.encode.*;
+import li.cil.oc2.jcodec.codecs.h264.io.CAVLC;
+import li.cil.oc2.jcodec.codecs.h264.io.model.*;
+import li.cil.oc2.jcodec.codecs.h264.io.write.CAVLCWriter;
+import li.cil.oc2.jcodec.codecs.h264.io.write.SliceHeaderWriter;
+import li.cil.oc2.jcodec.common.VideoEncoder;
+import li.cil.oc2.jcodec.common.io.BitWriter;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.common.model.Size;
+import li.cil.oc2.jcodec.common.tools.MathUtil;
 
 import java.nio.ByteBuffer;
 import java.util.LinkedList;
 import java.util.List;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Utils.escapeNAL;
+import static li.cil.oc2.jcodec.codecs.h264.H264Utils.escapeNAL;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

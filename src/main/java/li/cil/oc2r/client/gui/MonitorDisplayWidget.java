@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
-import li.cil.oc2r.client.renderer.MonitorGUIRenderer;
-import li.cil.oc2r.common.bus.device.vm.block.MonitorDevice;
-import li.cil.oc2r.common.container.AbstractMonitorContainer;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.MonitorInputMessage;
-import li.cil.oc2r.common.vm.Terminal;
+import li.cil.oc2.client.renderer.MonitorGUIRenderer;
+import li.cil.oc2.common.bus.device.vm.block.MonitorDevice;
+import li.cil.oc2.common.container.AbstractMonitorContainer;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.MonitorInputMessage;
+import li.cil.oc2.common.vm.Terminal;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;

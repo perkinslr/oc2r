@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.data;
+package li.cil.oc2.common.bus.device.data;
 
-import li.cil.oc2r.api.API;
-import li.cil.oc2r.api.bus.device.data.Firmware;
-import li.cil.oc2r.api.util.Registries;
+import li.cil.oc2.api.API;
+import li.cil.oc2.api.bus.device.data.Firmware;
+import li.cil.oc2.api.util.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;

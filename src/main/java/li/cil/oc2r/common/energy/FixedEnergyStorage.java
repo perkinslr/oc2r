@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.energy;
+package li.cil.oc2.common.energy;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

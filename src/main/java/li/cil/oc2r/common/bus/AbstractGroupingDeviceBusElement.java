@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus;
+package li.cil.oc2.common.bus;
 
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.common.util.NBTTagIds;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.common.util.NBTTagIds;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 

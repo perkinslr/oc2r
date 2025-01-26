@@ -1,5 +1,5 @@
 # Network Tunnel Card
-![Tunnel vision?](item:oc2r:network_tunnel_card)
+![Tunnel vision?](item:oc2:network_tunnel_card)
 
 The network tunnel card allows [computers](../block/computer.md) to send messages to and receive messages from another tunnel device (tunnel cards and [tunnel modules](network_tunnel_module.md)) linked to the card.
 

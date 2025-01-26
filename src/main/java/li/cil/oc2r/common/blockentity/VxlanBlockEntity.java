@@ -1,12 +1,12 @@
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.api.capabilities.NetworkInterface;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.util.LazyOptionalUtils;
-import li.cil.oc2r.common.util.LevelUtils;
-import li.cil.oc2r.common.vxlan.TunnelManager;
+import li.cil.oc2.api.capabilities.NetworkInterface;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.util.LazyOptionalUtils;
+import li.cil.oc2.common.util.LevelUtils;
+import li.cil.oc2.common.vxlan.TunnelManager;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

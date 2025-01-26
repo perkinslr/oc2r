@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.item;
+package li.cil.oc2.common.item;
 
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.block.Blocks;
-import li.cil.oc2r.common.block.BusCableBlock;
-import li.cil.oc2r.common.block.BusCableBlock.ConnectionType;
-import li.cil.oc2r.common.util.LevelUtils;
-import li.cil.oc2r.common.util.TooltipUtils;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.block.Blocks;
+import li.cil.oc2.common.block.BusCableBlock;
+import li.cil.oc2.common.block.BusCableBlock.ConnectionType;
+import li.cil.oc2.common.util.LevelUtils;
+import li.cil.oc2.common.util.TooltipUtils;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

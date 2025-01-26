@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.client.gui;
+package li.cil.oc2.client.gui;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -10,12 +10,12 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.item.ItemDisplayContext;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
-import li.cil.oc2r.client.gui.widget.Texture;
-import li.cil.oc2r.client.renderer.ModRenderType;
-import li.cil.oc2r.common.item.Items;
-import li.cil.oc2r.common.item.NetworkInterfaceCardItem;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.NetworkInterfaceCardConfigurationMessage;
+import li.cil.oc2.client.gui.widget.Texture;
+import li.cil.oc2.client.renderer.ModRenderType;
+import li.cil.oc2.common.item.Items;
+import li.cil.oc2.common.item.NetworkInterfaceCardItem;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.NetworkInterfaceCardConfigurationMessage;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -37,8 +37,8 @@ import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
 
-import static li.cil.oc2r.common.util.TranslationUtils.key;
-import static li.cil.oc2r.common.util.TranslationUtils.text;
+import static li.cil.oc2.common.util.TranslationUtils.key;
+import static li.cil.oc2.common.util.TranslationUtils.text;
 
 public final class NetworkInterfaceCardScreen extends Screen {
     private static final String SIDE_STATE_TEXT = key("gui.{mod}.network_interface_card.side_state");

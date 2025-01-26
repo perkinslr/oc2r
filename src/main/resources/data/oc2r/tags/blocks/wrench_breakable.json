@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "oc2r:computer",
-    "oc2r:bus_cable",
-    "oc2r:network_connector",
-    "oc2r:network_hub",
-    "oc2r:redstone_interface",
-    "oc2r:disk_drive",
-    "oc2r:charger",
-    "oc2r:projector"
+    "oc2:computer",
+    "oc2:bus_cable",
+    "oc2:network_connector",
+    "oc2:network_hub",
+    "oc2:redstone_interface",
+    "oc2:disk_drive",
+    "oc2:charger",
+    "oc2:projector"
   ]
 }

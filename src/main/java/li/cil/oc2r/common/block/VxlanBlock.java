@@ -1,8 +1,8 @@
-package li.cil.oc2r.common.block;
+package li.cil.oc2.common.block;
 
-import li.cil.oc2r.common.blockentity.BlockEntities;
-import li.cil.oc2r.common.blockentity.TickableBlockEntity;
-import li.cil.oc2r.common.blockentity.VxlanBlockEntity;
+import li.cil.oc2.common.blockentity.BlockEntities;
+import li.cil.oc2.common.blockentity.TickableBlockEntity;
+import li.cil.oc2.common.blockentity.VxlanBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;

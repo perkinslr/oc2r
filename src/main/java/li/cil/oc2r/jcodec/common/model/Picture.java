@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common.model;
+package li.cil.oc2.jcodec.common.model;
 
 import java.util.Arrays;
 

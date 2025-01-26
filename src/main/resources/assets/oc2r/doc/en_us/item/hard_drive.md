@@ -1,5 +1,5 @@
 # Hard Drive
-![Going in circles](item:oc2r:hard_drive_large)
+![Going in circles](item:oc2:hard_drive_large)
 
 Hard drives are the main storage device used for data storage in [computers](../block/computer.md) and [robots](robot.md).
 

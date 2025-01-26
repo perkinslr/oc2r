@@ -1,5 +1,5 @@
 # 充电器
-![代号：Leeroy](block:oc2r:charger)
+![代号：Leeroy](block:oc2:charger)
 
 充电器将能量从连接的电源传输到其上方的能量接收器。
 

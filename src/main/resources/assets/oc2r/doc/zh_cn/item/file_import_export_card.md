@@ -1,5 +1,5 @@
 # 文件导入/导出卡
-![拆除这堵墙！](item:oc2r:file_import_export_card)
+![拆除这堵墙！](item:oc2:file_import_export_card)
 
 文件导入/导出卡允许打破第四面墙。它允许：
 - 从您的真实计算机上传文件到虚拟 [计算机](../block/computer.md)。

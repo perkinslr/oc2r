@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.vm.block;
+package li.cil.oc2.common.bus.device.vm.block;
 
 import it.unimi.dsi.fastutil.booleans.BooleanConsumer;
-import li.cil.oc2r.api.bus.device.vm.VMDevice;
-import li.cil.oc2r.api.bus.device.vm.VMDeviceLoadResult;
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.bus.device.util.IdentityProxy;
-import li.cil.oc2r.common.bus.device.util.OptionalAddress;
-import li.cil.oc2r.common.serialization.BlobStorage;
-import li.cil.oc2r.common.util.NBTTagIds;
-import li.cil.oc2r.common.vm.device.PciRootPortDevice;
+import li.cil.oc2.api.bus.device.vm.VMDevice;
+import li.cil.oc2.api.bus.device.vm.VMDeviceLoadResult;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.bus.device.util.IdentityProxy;
+import li.cil.oc2.common.bus.device.util.OptionalAddress;
+import li.cil.oc2.common.serialization.BlobStorage;
+import li.cil.oc2.common.util.NBTTagIds;
+import li.cil.oc2.common.vm.device.PciRootPortDevice;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.entity.BlockEntity;
 

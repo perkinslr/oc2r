@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.capabilities;
+package li.cil.oc2.api.capabilities;
 
-import li.cil.oc2r.api.bus.device.provider.BlockDeviceQuery;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.api.bus.device.provider.BlockDeviceQuery;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.entity.BlockEntity;

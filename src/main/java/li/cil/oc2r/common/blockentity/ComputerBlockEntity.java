@@ -1,31 +1,31 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.api.bus.DeviceBusElement;
-import li.cil.oc2r.api.bus.device.Device;
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
-import li.cil.oc2r.api.capabilities.TerminalUserProvider;
-import li.cil.oc2r.client.audio.LoopingSoundManager;
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.block.ComputerBlock;
-import li.cil.oc2r.common.bus.AbstractBlockDeviceBusElement;
-import li.cil.oc2r.common.bus.BlockDeviceBusController;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.bus.device.util.Devices;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.container.ComputerInventoryContainer;
-import li.cil.oc2r.common.container.ComputerTerminalContainer;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.message.ComputerBootErrorMessage;
-import li.cil.oc2r.common.network.message.ComputerBusStateMessage;
-import li.cil.oc2r.common.network.message.ComputerRunStateMessage;
-import li.cil.oc2r.common.network.message.ComputerTerminalOutputMessage;
-import li.cil.oc2r.common.serialization.NBTSerialization;
-import li.cil.oc2r.common.util.*;
-import li.cil.oc2r.common.vm.*;
+import li.cil.oc2.api.bus.DeviceBusElement;
+import li.cil.oc2.api.bus.device.Device;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.api.capabilities.TerminalUserProvider;
+import li.cil.oc2.client.audio.LoopingSoundManager;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.block.ComputerBlock;
+import li.cil.oc2.common.bus.AbstractBlockDeviceBusElement;
+import li.cil.oc2.common.bus.BlockDeviceBusController;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.bus.device.util.Devices;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.container.ComputerInventoryContainer;
+import li.cil.oc2.common.container.ComputerTerminalContainer;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.message.ComputerBootErrorMessage;
+import li.cil.oc2.common.network.message.ComputerBusStateMessage;
+import li.cil.oc2.common.network.message.ComputerRunStateMessage;
+import li.cil.oc2.common.network.message.ComputerTerminalOutputMessage;
+import li.cil.oc2.common.serialization.NBTSerialization;
+import li.cil.oc2.common.util.*;
+import li.cil.oc2.common.vm.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -46,8 +46,8 @@ import java.nio.ByteBuffer;
 import java.time.Duration;
 import java.util.*;
 
-import static li.cil.oc2r.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
-import static li.cil.oc2r.common.Constants.ITEMS_TAG_NAME;
+import static li.cil.oc2.common.Constants.BLOCK_ENTITY_TAG_NAME_IN_ITEM;
+import static li.cil.oc2.common.Constants.ITEMS_TAG_NAME;
 
 public final class ComputerBlockEntity extends ModBlockEntity implements TerminalUserProvider, TickableBlockEntity {
     private static final String BUS_ELEMENT_TAG_NAME = "busElement";

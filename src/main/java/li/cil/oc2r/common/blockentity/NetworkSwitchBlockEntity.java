@@ -1,18 +1,18 @@
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 import com.google.gson.internal.LinkedTreeMap;
 import com.mojang.datafixers.util.Pair;
-import li.cil.oc2r.api.bus.device.object.Callback;
-import li.cil.oc2r.api.bus.device.object.DocumentedDevice;
-import li.cil.oc2r.api.bus.device.object.NamedDevice;
-import li.cil.oc2r.api.capabilities.NetworkInterface;
-import li.cil.oc2r.common.Constants;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.util.LazyOptionalUtils;
-import li.cil.oc2r.common.util.LevelUtils;
+import li.cil.oc2.api.bus.device.object.Callback;
+import li.cil.oc2.api.bus.device.object.DocumentedDevice;
+import li.cil.oc2.api.bus.device.object.NamedDevice;
+import li.cil.oc2.api.capabilities.NetworkInterface;
+import li.cil.oc2.common.Constants;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.util.LazyOptionalUtils;
+import li.cil.oc2.common.util.LevelUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.*;

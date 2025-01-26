@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.common.io;
+package li.cil.oc2.jcodec.common.io;
 
-import li.cil.oc2r.jcodec.common.IntArrayList;
+import li.cil.oc2.jcodec.common.IntArrayList;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

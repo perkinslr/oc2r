@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.decode;
+package li.cil.oc2.jcodec.codecs.h264.decode;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.model.*;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.RefPicMarking.InstrType;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.RefPicMarking.Instruction;
-import li.cil.oc2r.jcodec.common.IntArrayList;
-import li.cil.oc2r.jcodec.common.io.BitReader;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.codecs.h264.io.model.*;
+import li.cil.oc2.jcodec.codecs.h264.io.model.RefPicMarking.InstrType;
+import li.cil.oc2.jcodec.codecs.h264.io.model.RefPicMarking.Instruction;
+import li.cil.oc2.jcodec.common.IntArrayList;
+import li.cil.oc2.jcodec.common.io.BitReader;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
 
 import java.util.ArrayList;
 
-import static li.cil.oc2r.jcodec.codecs.h264.io.model.SeqParameterSet.getPicHeightInMbs;
+import static li.cil.oc2.jcodec.codecs.h264.io.model.SeqParameterSet.getPicHeightInMbs;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

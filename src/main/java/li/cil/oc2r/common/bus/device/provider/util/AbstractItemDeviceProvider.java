@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.provider.util;
+package li.cil.oc2.common.bus.device.provider.util;
 
-import li.cil.oc2r.api.bus.device.ItemDevice;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceProvider;
-import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
+import li.cil.oc2.api.bus.device.ItemDevice;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceProvider;
+import li.cil.oc2.api.bus.device.provider.ItemDeviceQuery;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.RegistryObject;

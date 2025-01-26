@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.blockentity;
+package li.cil.oc2.common.blockentity;
 
-import li.cil.oc2r.common.Config;
-import li.cil.oc2r.common.block.ProjectorBlock;
-import li.cil.oc2r.common.bus.device.vm.block.ProjectorDevice;
-import li.cil.oc2r.common.capabilities.Capabilities;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.network.Network;
-import li.cil.oc2r.common.network.ProjectorLoadBalancer;
-import li.cil.oc2r.common.network.message.ProjectorRequestFramebufferMessage;
-import li.cil.oc2r.common.network.message.ProjectorStateMessage;
-import li.cil.oc2r.jcodec.codecs.h264.H264Decoder;
-import li.cil.oc2r.jcodec.codecs.h264.H264Encoder;
-import li.cil.oc2r.jcodec.codecs.h264.encode.CQPRateControl;
-import li.cil.oc2r.jcodec.common.model.ColorSpace;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.common.Config;
+import li.cil.oc2.common.block.ProjectorBlock;
+import li.cil.oc2.common.bus.device.vm.block.ProjectorDevice;
+import li.cil.oc2.common.capabilities.Capabilities;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.network.Network;
+import li.cil.oc2.common.network.ProjectorLoadBalancer;
+import li.cil.oc2.common.network.message.ProjectorRequestFramebufferMessage;
+import li.cil.oc2.common.network.message.ProjectorStateMessage;
+import li.cil.oc2.jcodec.codecs.h264.H264Decoder;
+import li.cil.oc2.jcodec.codecs.h264.H264Encoder;
+import li.cil.oc2.jcodec.codecs.h264.encode.CQPRateControl;
+import li.cil.oc2.jcodec.common.model.ColorSpace;
+import li.cil.oc2.jcodec.common.model.Picture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.SectionPos;

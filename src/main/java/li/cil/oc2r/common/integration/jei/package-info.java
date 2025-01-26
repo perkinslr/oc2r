@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.common.integration.jei;
+package li.cil.oc2.common.integration.jei;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264.encode;
+package li.cil.oc2.jcodec.codecs.h264.encode;
 
-import li.cil.oc2r.jcodec.codecs.h264.H264Const;
-import li.cil.oc2r.jcodec.codecs.h264.H264Encoder.NonRdVector;
-import li.cil.oc2r.jcodec.codecs.h264.decode.BlockInterpolator;
-import li.cil.oc2r.jcodec.codecs.h264.decode.CoeffTransformer;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.codecs.h264.io.model.SeqParameterSet;
-import li.cil.oc2r.jcodec.codecs.h264.io.write.CAVLCWriter;
-import li.cil.oc2r.jcodec.common.io.BitWriter;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.H264Const;
+import li.cil.oc2.jcodec.codecs.h264.H264Encoder.NonRdVector;
+import li.cil.oc2.jcodec.codecs.h264.decode.BlockInterpolator;
+import li.cil.oc2.jcodec.codecs.h264.decode.CoeffTransformer;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.codecs.h264.io.model.SeqParameterSet;
+import li.cil.oc2.jcodec.codecs.h264.io.write.CAVLCWriter;
+import li.cil.oc2.jcodec.common.io.BitWriter;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import java.util.Arrays;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.MB_DISP_OFF_LEFT;
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.MB_DISP_OFF_TOP;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.MB_DISP_OFF_LEFT;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.MB_DISP_OFF_TOP;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

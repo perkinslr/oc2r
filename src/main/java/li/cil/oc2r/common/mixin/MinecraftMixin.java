@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.mixin;
+package li.cil.oc2.common.mixin;
 
 import com.mojang.blaze3d.pipeline.RenderTarget;
-import li.cil.oc2r.client.renderer.ProjectorDepthRenderer;
-import li.cil.oc2r.common.ext.MinecraftExt;
+import li.cil.oc2.client.renderer.ProjectorDepthRenderer;
+import li.cil.oc2.common.ext.MinecraftExt;
 import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;

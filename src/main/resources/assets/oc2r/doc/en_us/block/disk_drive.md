@@ -1,5 +1,5 @@
 # Disk Drive
-![Taking it for a spin](block:oc2r:disk_drive)
+![Taking it for a spin](block:oc2:disk_drive)
 
 The disk drive provides an option for quick media exchange. [Floppy disks](../item/floppy.md) can be added and removed
 at runtime, unlike [hard drives](../item/hard_drive.md).

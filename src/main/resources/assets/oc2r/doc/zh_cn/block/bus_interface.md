@@ -1,5 +1,5 @@
 # 总线接口
-![即插即用](item:oc2r:bus_interface)
+![即插即用](item:oc2:bus_interface)
 
 总线接口将外部设备连接到 [计算机](computer.md)。这包括显式设备方块，例如 [红石接口](redstone_interface.md)。还提供了一些通用功能方块，例如能量存储信息。
 

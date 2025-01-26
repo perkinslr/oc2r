@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.serialization.gson;
+package li.cil.oc2.common.serialization.gson;
 
 import com.google.gson.*;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethod;
-import li.cil.oc2r.api.bus.device.rpc.RPCParameter;
+import li.cil.oc2.api.bus.device.rpc.RPCMethod;
+import li.cil.oc2.api.bus.device.rpc.RPCParameter;
 
 import java.lang.reflect.Type;
 

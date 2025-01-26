@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.bus.device.vm.item;
+package li.cil.oc2.common.bus.device.vm.item;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
-import li.cil.oc2r.api.bus.device.vm.VMDeviceLoadResult;
-import li.cil.oc2r.api.bus.device.vm.context.VMContext;
-import li.cil.oc2r.api.capabilities.NetworkInterface;
-import li.cil.oc2r.common.item.NetworkTunnelItem;
-import li.cil.oc2r.common.util.TickUtils;
+import li.cil.oc2.api.bus.device.vm.VMDeviceLoadResult;
+import li.cil.oc2.api.bus.device.vm.context.VMContext;
+import li.cil.oc2.api.capabilities.NetworkInterface;
+import li.cil.oc2.common.item.NetworkTunnelItem;
+import li.cil.oc2.common.util.TickUtils;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.capabilities.Capability;

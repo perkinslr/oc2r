@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: BSD 2-Clause "Simplified" License */
 
-package li.cil.oc2r.jcodec.codecs.h264;
+package li.cil.oc2.jcodec.codecs.h264;
 
-import li.cil.oc2r.jcodec.codecs.h264.io.model.MBType;
-import li.cil.oc2r.jcodec.common.io.VLC;
-import li.cil.oc2r.jcodec.common.io.VLCBuilder;
-import li.cil.oc2r.jcodec.common.model.Picture;
+import li.cil.oc2.jcodec.codecs.h264.io.model.MBType;
+import li.cil.oc2.jcodec.common.io.VLC;
+import li.cil.oc2.jcodec.common.io.VLCBuilder;
+import li.cil.oc2.jcodec.common.model.Picture;
 
 import java.util.Arrays;
 
-import static li.cil.oc2r.jcodec.codecs.h264.H264Const.PartPred.*;
+import static li.cil.oc2.jcodec.codecs.h264.H264Const.PartPred.*;
 
 /**
  * This class is part of JCodec ( www.jcodec.org ) This software is distributed

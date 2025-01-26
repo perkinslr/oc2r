@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oc2r:charger"
+          "name": "oc2:charger"
         }
       ],
       "conditions": [

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.api.bus.device.object;
+package li.cil.oc2.api.bus.device.object;
 
-import li.cil.oc2r.api.bus.device.rpc.AbstractRPCMethod;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethod;
-import li.cil.oc2r.api.bus.device.rpc.RPCMethodGroup;
-import li.cil.oc2r.api.bus.device.rpc.RPCParameter;
+import li.cil.oc2.api.bus.device.rpc.AbstractRPCMethod;
+import li.cil.oc2.api.bus.device.rpc.RPCMethod;
+import li.cil.oc2.api.bus.device.rpc.RPCMethodGroup;
+import li.cil.oc2.api.bus.device.rpc.RPCParameter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.util.Strings;

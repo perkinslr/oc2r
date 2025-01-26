@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: MIT */
 
-package li.cil.oc2r.common.container;
+package li.cil.oc2.common.container;
 
-import li.cil.oc2r.api.bus.device.DeviceTypes;
-import li.cil.oc2r.common.bus.CommonDeviceBusController;
-import li.cil.oc2r.common.energy.FixedEnergyStorage;
-import li.cil.oc2r.common.entity.Robot;
-import li.cil.oc2r.common.vm.VMItemStackHandlers;
+import li.cil.oc2.api.bus.device.DeviceTypes;
+import li.cil.oc2.common.bus.CommonDeviceBusController;
+import li.cil.oc2.common.energy.FixedEnergyStorage;
+import li.cil.oc2.common.entity.Robot;
+import li.cil.oc2.common.vm.VMItemStackHandlers;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;

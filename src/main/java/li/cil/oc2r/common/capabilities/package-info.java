@@ -2,7 +2,7 @@
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package li.cil.oc2r.common.capabilities;
+package li.cil.oc2.common.capabilities;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

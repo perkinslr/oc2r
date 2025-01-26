@@ -13,16 +13,16 @@
       "tag": "minecraft:buttons"
     },
     "T": {
-      "item": "oc2r:transistor"
+      "item": "oc2:transistor"
     },
     "X": {
-      "item": "oc2r:bus_interface"
+      "item": "oc2:bus_interface"
     },
     "B": {
-      "item": "oc2r:circuit_board"
+      "item": "oc2:circuit_board"
     }
   },
   "result": {
-    "item": "oc2r:keyboard"
+    "item": "oc2:keyboard"
   }
 }

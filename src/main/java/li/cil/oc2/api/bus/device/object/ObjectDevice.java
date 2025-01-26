@@ -6,6 +6,7 @@ import li.cil.oc2.api.bus.device.ItemDevice;
 import li.cil.oc2.api.bus.device.rpc.RPCDevice;
 import li.cil.oc2.api.bus.device.rpc.RPCMethod;
 import li.cil.oc2.api.bus.device.rpc.RPCMethodGroup;
+import li.cil.oc2.api.bus.device.rpc.RPCEventSource;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -83,6 +84,12 @@ public final class ObjectDevice implements RPCDevice, ItemDevice {
     }
 
     ///////////////////////////////////////////////////////////////////
+    public RPCEventSource asEventSource() {
+        if (object instanceof RPCEventSource res) {
+            return res;
+        }
+        return null;
+    }
 
     @Override
     public List<String> getTypeNames() {

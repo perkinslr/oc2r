@@ -287,6 +287,7 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
     public byte[] getBundledSignal(Direction direction) {
         final int index = direction.get3DDataValue();
         return this.bundled_output[index];
+    }
 
     @Override
     public void subscribe(IEventSink sink, UUID myid) {
@@ -318,7 +319,6 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         msg.addProperty("side", ""+direction);
         msg.addProperty("level", sl);
 
-        System.out.println("updating redstone interface block with level: "+sl);
         for (var subscriber : subscribers.entrySet()) {
             subscriber.getKey().postEvent(subscriber.getValue(), msg);
         }

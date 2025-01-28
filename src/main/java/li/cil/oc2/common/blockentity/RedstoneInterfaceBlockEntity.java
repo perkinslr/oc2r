@@ -348,7 +348,6 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         msg.addProperty("side", ""+direction);
         msg.addProperty("level", sl);
 
-        System.out.println("updating redstone interface block with level: "+sl);
         for (var subscriber : subscribers.entrySet()) {
             subscriber.getKey().postEvent(subscriber.getValue(), msg);
         }

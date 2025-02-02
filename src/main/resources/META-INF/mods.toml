@@ -6,8 +6,9 @@ license = "MIT"
 [[mods]]
 modId = "oc2"
 version = "${file.jarVersion}"
-displayName = "OpenComputers II: Reimagined"
-authors = "North Western Development (Originally by Sangar)"
+displayName = "Libre Computers"
+logoFile="logo.png"
+authors = "Libre Computers Team .... Continuation of North Western Development (Originally by Sangar)"
 description = '''
 Modern computers for the modern player.
 

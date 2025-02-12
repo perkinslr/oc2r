@@ -37,3 +37,9 @@ modId = "markdown_manual"
 mandatory = true
 versionRange = "[1.2.1,)"
 side = "CLIENT"
+[[dependencies.oc2]]
+modId = "projectred_transmission"
+mandatory = false
+versionRange = "[4.19.0,)"
+side = "BOTH"
+ordering = "AFTER"

@@ -9,6 +9,7 @@ import li.cil.oc2.api.bus.device.object.Parameter;
 import li.cil.oc2.api.util.Side;
 import li.cil.oc2.common.Constants;
 import li.cil.oc2.common.util.HorizontalBlockUtils;
+import li.cil.oc2.common.integration.util.BundledRedstone;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -27,18 +28,24 @@ import java.util.Collection;
 
 public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implements NamedDevice, DocumentedDevice, RPCEventSource {
     private static final String OUTPUT_TAG_NAME = "output";
+    private static final String BUNDLED_TAG_NAME = "bundled";
 
     private static final String GET_REDSTONE_INPUT = "getRedstoneInput";
     private static final String GET_REDSTONE_OUTPUT = "getRedstoneOutput";
     private static final String SET_REDSTONE_OUTPUT = "setRedstoneOutput";
+    private static final String GET_BUNDLED_INPUT = "getBundledInput";
+    private static final String GET_BUNDLED_OUTPUT = "getBundledOutput";
+    private static final String SET_BUNDLED_OUTPUT = "setBundledOutput";
     private static final String SIDE = "side";
     private static final String VALUE = "value";
+    private static final String COLOUR = "colour";
 
     private final HashMap<IEventSink, UUID> subscribers = new HashMap();
 
     ///////////////////////////////////////////////////////////////////
 
     private final byte[] output = new byte[Constants.BLOCK_FACE_COUNT];
+    private final byte[][] bundled_output = new byte[Constants.BLOCK_FACE_COUNT][16];
 
     ///////////////////////////////////////////////////////////////////
 
@@ -53,6 +60,11 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         super.saveAdditional(tag);
 
         tag.putByteArray(OUTPUT_TAG_NAME, output);
+        CompoundTag tag_bundled_output = new CompoundTag();
+        for (Direction dir : Direction.values()) {
+            tag_bundled_output.putByteArray(dir.getName(), bundled_output[dir.get3DDataValue()]);
+        }
+        tag.put(BUNDLED_TAG_NAME, tag_bundled_output);
     }
 
     @Override
@@ -60,6 +72,13 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         super.load(tag);
         final byte[] serializedOutput = tag.getByteArray(OUTPUT_TAG_NAME);
         System.arraycopy(serializedOutput, 0, output, 0, Math.min(serializedOutput.length, output.length));
+
+        final CompoundTag tag_bundled_output = tag.getCompound(BUNDLED_TAG_NAME);
+        for (Direction dir : Direction.values()) {
+            final byte[] serializedBundledOutput = tag_bundled_output.getByteArray(dir.getName());
+            byte[] dest_output = bundled_output[dir.get3DDataValue()];
+            System.arraycopy(serializedBundledOutput, 0, dest_output, 0, Math.min(serializedBundledOutput.length, dest_output.length));
+        }
     }
 
     public int getOutputForDirection(final Direction direction) {
@@ -118,6 +137,46 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         setChanged();
     }
 
+    @Callback(name = GET_BUNDLED_INPUT)
+    public byte[] getBundledInput(@Parameter(SIDE) @Nullable final Side side) {
+        BundledRedstone bundledRedstone = BundledRedstone.getInstance();
+        if (bundledRedstone.isAvailable()) {
+            return bundledRedstone.getBundledInput(this.level, this.getBlockPos(), side.getDirection());
+        } else {
+            return new byte[Constants.BLOCK_FACE_COUNT];
+        }
+    }
+
+    @Callback(name = GET_BUNDLED_OUTPUT)
+    public byte[] getBundledOutput(@Parameter(SIDE) @Nullable final Side side) {
+        final int index = side.getDirection().get3DDataValue();
+        return bundled_output[index];
+    }
+
+    @Callback(name = SET_BUNDLED_OUTPUT)
+    public void setBundledOutput(@Parameter(SIDE) @Nullable final Side side, @Parameter(VALUE) final int[] values) {
+        if (side == null) throw new IllegalArgumentException();
+
+        boolean changed = false;
+        final int index = side.getDirection().get3DDataValue();
+        for (int i=0; i < values.length; i++) {
+            final byte clampedValue = (byte) Mth.clamp(values[i], 0, 255);
+            if (clampedValue != bundled_output[index][i]) {
+                bundled_output[index][i] = clampedValue;
+                changed = true;
+            }
+        }
+
+        if (changed) {
+            final Direction direction = HorizontalBlockUtils.toGlobal(getBlockState(), side);
+            if (direction != null) {
+                notifyNeighbor(direction);
+            }
+
+            setChanged();
+        }
+    }
+
     @Override
     public Collection<String> getDeviceTypeNames() {
         return singletonList("redstone");
@@ -147,6 +206,20 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
                 "the side depends on the orientation of the device.")
             .parameterDescription(SIDE, "the side to write the output level to.")
             .parameterDescription(VALUE, "the output level to set, will be clamped to [0, 15].");
+
+        visitor.visitCallback(GET_BUNDLED_INPUT)
+            .description("Get the current bundled level received on the specified side.")
+            .parameterDescription(SIDE, "the side to read the bundled input level from");
+        visitor.visitCallback(GET_BUNDLED_OUTPUT)
+            .description("Get the current bundled level sent out on the specified side.")
+            .parameterDescription(SIDE, "the side to read the bundled output level from");
+        visitor.visitCallback(SET_BUNDLED_OUTPUT)
+            .description("Set the new bundled level transmitted on the specified side.\n" +
+                "Sides may be specified by name or zero-based index. Please note that " +
+                "the side depends on the orientation of the device.")
+            .parameterDescription(SIDE, "the side to write the output level to.")
+            .parameterDescription(VALUE, "the output level to set, will be clamped to [0, 255].")
+            .parameterDescription(COLOUR, "the colour wire this sets, as int [0, 15]");
     }
 
     ///////////////////////////////////////////////////////////////////
@@ -193,5 +266,10 @@ public final class RedstoneInterfaceBlockEntity extends ModBlockEntity implement
         for (var subscriber : subscribers.entrySet()) {
             subscriber.getKey().postEvent(subscriber.getValue(), msg);
         }
+    }
+    @Nullable
+    public byte[] getBundledSignal(Direction direction) {
+        final int index = direction.get3DDataValue();
+        return this.bundled_output[index];
     }
 }

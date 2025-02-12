@@ -8,6 +8,7 @@ import li.cil.oc2.common.integration.IMC;
 import li.cil.oc2.common.network.Network;
 import li.cil.oc2.common.util.ServerScheduler;
 import li.cil.oc2.common.vxlan.TunnelManager;
+import li.cil.oc2.common.integration.Integrations;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
@@ -17,6 +18,7 @@ public final class CommonSetup {
         IMC.initialize();
         Network.initialize();
         InternetManagerImpl.initialize();
+        Integrations.initialize();
         RPCMethodParameterTypeAdapters.initialize();
         ServerScheduler.initialize();
         TunnelManager.initialize();

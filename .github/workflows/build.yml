@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir -p libs
           wget https://github.com/perkinslr/oc2r/releases/latest/download/sedna.jar -O libs/sedna.jar
+          wget https://proxy-maven.covers1624.net/repository/maven-public/mrtjp/ProjectRed/1.19.2-4.19.0-beta%2B33/ProjectRed-1.19.2-4.19.0-beta%2B33-api.jar -O libs/ProjectRed.jar
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - uses: actions/cache@v2

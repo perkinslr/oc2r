@@ -24,7 +24,7 @@ jobs:
       - name: prebuild
         run: |
           mkdir -p libs
-          wget https://github.com/perkinslr/oc2r/releases/download/latest/sedna.jar -O libs/sedna.jar
+          wget https://github.com/perkinslr/oc2r/releases/latest/download/sedna.jar -O libs/sedna.jar
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - uses: actions/cache@v2

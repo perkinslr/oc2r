@@ -25,4 +25,5 @@ jobs:
           git checkout 1.20.1
           ./gradlew build
           git checkout 1.19.2
+          wget https://proxy-maven.covers1624.net/repository/maven-public/mrtjp/ProjectRed/1.19.2-4.19.0-beta%2B33/ProjectRed-1.19.2-4.19.0-beta%2B33-api.jar -O libs/ProjectRed.jar
           ./gradlew build

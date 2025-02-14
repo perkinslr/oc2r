@@ -3,7 +3,7 @@ name: build
 on:
   workflow_dispatch:
   push:
-    branches: [ '**' ]
+    branches: [ '1.19.2' ]
 
 jobs:
   build:

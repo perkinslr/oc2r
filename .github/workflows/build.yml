@@ -17,7 +17,7 @@ jobs:
       - name: build
         run: |
           wget https://raw.githubusercontent.com/perkinslr/buildroot-sedna/refs/heads/main/build.sh
-          sh build.sh
+          bash build.sh
       
         
       - name: Upload 1.18 Build Artifact

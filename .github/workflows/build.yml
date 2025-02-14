@@ -14,28 +14,29 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK ${{ matrix.java }}
-        uses: actions/setup-java@v1
-        with:
-          java-version: ${{ matrix.java }}
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - name: prebuild
+      - name: build
         run: |
-          mkdir -p libs
-          wget https://github.com/perkinslr/oc2r/releases/latest/download/sedna.jar -O libs/sedna.jar
-          wget https://proxy-maven.covers1624.net/repository/maven-public/mrtjp/ProjectRed/1.19.2-4.19.0-beta%2B33/ProjectRed-1.19.2-4.19.0-beta%2B33-api.jar -O libs/ProjectRed.jar
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
-      - uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: ${{ runner.os }}-gradle-
+          wget https://raw.githubusercontent.com/perkinslr/buildroot-sedna/refs/heads/main/build.sh
+          sh build.sh
       
-      - name: Build with Gradle
-        run: ./gradlew build
         
+      - name: Upload 1.18 Build Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: OC2-1.18
+          path: oc2r/build/libs/oc2-1.18.2-*all.jar
+      - name: Upload 1.19 Build Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: OC2-1.19
+          path: oc2r/build/libs/oc2-1.19-*all.jar
+      - name: Upload 1.20 Build Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: OC2-1.20
+          path: oc2r/build/libs/oc2-1.20-*all.jar
+      - name: Upload sedna Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: OC2-Sedna
+          path: oc2r/libs/sedna.jar

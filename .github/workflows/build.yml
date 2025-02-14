@@ -16,27 +16,13 @@ jobs:
     steps:
       - name: build
         run: |
-          wget https://raw.githubusercontent.com/perkinslr/buildroot-sedna/refs/heads/main/build.sh
-          bash build.sh
-      
-        
-      - name: Upload 1.18 Build Artifact
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          name: OC2-1.18
-          path: oc2r/build/libs/oc2-1.18.2-*all.jar
-      - name: Upload 1.19 Build Artifact
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          name: OC2-1.19
-          path: oc2r/build/libs/oc2-1.19-*all.jar
-      - name: Upload 1.20 Build Artifact
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          name: OC2-1.20
-          path: oc2r/build/libs/oc2-1.20-*all.jar
-      - name: Upload sedna Artifact
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          name: OC2-Sedna
-          path: oc2r/libs/sedna.jar
+          git clone https://github.com/perkinslr/oc2r/
+          cd oc2r
+          git checkout 1.18.x
+          mkdir libs
+          wget https://github.com/perkinslr/oc2r/download/latest/sedna.jar -O libs/sedna.jar
+          ./gradlew build
+          git checkout 1.20.1
+          ./gradlew build
+          git checkout 1.19.2
+          ./gradlew build

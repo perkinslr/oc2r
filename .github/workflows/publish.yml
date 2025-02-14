@@ -1,101 +1,35 @@
 name: publish
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
-  publish-github:
-    runs-on: ubuntu-latest
+  build:
+    strategy:
+      matrix:
+        java: [ 17 ]
+        os: [ ubuntu-22.04 ]
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Extract Version from Tag
-        uses: rishabhgupta/split-by@v1
-        id: split_tag
-        with:
-          string: ${{ github.event.release.tag_name }}
-          split-by: '/'
-
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 17
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
-      - uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ubuntu-latest-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: ubuntu-latest-gradle-
-      - name: Build with Gradle
-        run: ./gradlew -Psemver='${{ steps.split_tag.outputs._1 }}' build
-        env:
-          GPR_USER: ${{ secrets.GPR_USER }}
-          GPR_KEY: ${{ secrets.GPR_KEY }}
-
-      - name: Add Artifacts to Github Release
-        uses: alexellis/upload-assets@0.3.0
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          asset_paths: '["./build/libs/*.jar"]'
-
-      - name: Publish to Github Packages
-        run: gradle -Psemver='${{ steps.split_tag.outputs._1 }}' publish
-        env:
-          GPR_USER: ${{ secrets.GPR_USER }}
-          GPR_KEY: ${{ secrets.GPR_KEY }}
-          GITHUB_MAVEN_URL: 'https://maven.pkg.github.com/${{ github.repository }}'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  publish-curse:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Extract Version from Tag
-        uses: rishabhgupta/split-by@v1
-        id: split_tag
-        with:
-          string: ${{ github.event.release.tag_name }}
-          split-by: '/'
-
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 17
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
-      - uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ubuntu-latest-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: ubuntu-latest-gradle-
-
-      # Set Curseforge release type based on pre-release flag.
-      - name: Set release type to 'release'
+      - name: build
         run: |
-          echo "CURSEFORGE_RELEASE_TYPE=release" >> $GITHUB_ENV
-        if: github.event.release.prerelease == false
-      - name: Set release type to 'alpha'
+          wget https://raw.githubusercontent.com/perkinslr/buildroot-sedna/refs/heads/main/build.sh
+          bash build.sh
+      
+        
+      - name: Update Manifest
         run: |
-          echo "CURSEFORGE_RELEASE_TYPE=alpha" >> $GITHUB_ENV
-        if: github.event.release.prerelease == true
+          cat oc2r/gradle.properties  | grep semver >> $GITHUB_ENV
 
-      - name: Publish to Curseforge
-        run: ./gradlew -Psemver='${{ steps.split_tag.outputs._1 }}' curseforge
-        env:
-          GPR_USER: ${{ secrets.GPR_USER }}
-          GPR_KEY: ${{ secrets.GPR_KEY }}
-          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-          CURSEFORGE_RELEASE_TYPE: ${{ env.CURSEFORGE_RELEASE_TYPE }}
-          CHANGELOG: ${{ github.event.release.body }}
+      - name: Create Version Release
+        id: create_version_release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ env.semver }}
+          allowUpdates: false
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "oc2r/build/libs/*.jar,oc2r/libs/sedna.jar"
+          tag: ${{ env.semver }}

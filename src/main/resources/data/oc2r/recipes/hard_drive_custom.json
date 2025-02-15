@@ -1,0 +1,14 @@
+{
+  "type": "oc2r:wrench",
+  "ingredients": [
+    {
+      "item": "oc2r:wrench"
+    },
+    {
+      "item": "oc2r:hard_drive_large"
+    }
+  ],
+  "result": {
+    "item": "oc2r:hard_drive_custom"
+  }
+}

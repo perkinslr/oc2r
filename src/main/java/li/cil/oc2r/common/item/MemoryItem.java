@@ -1,0 +1,29 @@
+/* SPDX-License-Identifier: MIT */
+
+package li.cil.oc2r.common.item;
+
+import li.cil.oc2r.api.API;
+import net.minecraft.Util;
+import net.minecraft.resources.ResourceLocation;
+
+import javax.annotation.Nullable;
+
+public final class MemoryItem extends AbstractStorageItem {
+    @Nullable private String descriptionId;
+
+    ///////////////////////////////////////////////////////////////////
+
+    public MemoryItem(final int defaultCapacity) {
+        super(defaultCapacity);
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    @Override
+    protected String getOrCreateDescriptionId() {
+        if (descriptionId == null) {
+            descriptionId = Util.makeDescriptionId("item", new ResourceLocation(API.MOD_ID, "memory"));
+        }
+        return descriptionId;
+    }
+}

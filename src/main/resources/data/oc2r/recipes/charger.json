@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "XTX",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "X": {
+      "item": "oc2r:bus_interface"
+    },
+    "R": {
+      "tag": "forge:storage_blocks/redstone"
+    }
+  },
+  "result": {
+    "item": "oc2r:charger"
+  }
+}

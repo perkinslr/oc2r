@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "oc2r:projector"
+    ]
+  },
+  "criteria": {
+    "has_transistor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oc2r:transistor"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oc2r:projector"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_transistor",
+      "has_the_recipe"
+    ]
+  ]
+}

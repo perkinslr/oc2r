@@ -36,7 +36,7 @@ def getGitRef() {
 }
 
 version = "${semver}+${getGitRef()}"
-group = 'li.cil.oc2'
+group = 'li.cil.oc2r'
 
 java.toolchain {
     languageVersion = JavaLanguageVersion.of(17)
@@ -84,7 +84,7 @@ dependencies {
 
 task packageScripts(type: Zip) {
     archiveFileName = 'scripts.zip'
-    destinationDirectory = file("$buildDir/resources/main/data/oc2/file_systems")
+    destinationDirectory = file("$buildDir/resources/main/data/oc2r/file_systems")
     from 'src/main/scripts'
 }
 
@@ -111,7 +111,7 @@ minecraft {
             property 'forge.logging.console.level', 'info'
 
             mods {
-                oc2 {
+                oc2r {
                     source sourceSets.main
                 }
             }
@@ -128,14 +128,14 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
-            args '--mod', 'oc2', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources')
+            args '--mod', 'oc2r', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources')
         }
     }
 }
 
 mixin {
-    add sourceSets.main, 'mixins.oc2.refmap.json'
-    config 'mixins.oc2.json'
+    add sourceSets.main, 'mixins.oc2r.refmap.json'
+    config 'mixins.oc2r.json'
 
 //    quiet
 }
@@ -152,14 +152,14 @@ jar {
     manifest {
         attributes([
             'FMLAT'                   : 'accesstransformer.cfg',
-            'Specification-Title'     : 'oc2',
+            'Specification-Title'     : 'oc2r',
             'Specification-Vendor'    : 'Sangar',
             'Specification-Version'   : '1',
             'Implementation-Title'    : project.name,
             'Implementation-Version'  : "${semver}",
             'Implementation-Vendor'   : 'Sangar',
             'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            'MixinConfigs'            : 'mixins.oc2.json',
+            'MixinConfigs'            : 'mixins.oc2r.json',
         ])
     }
 }
@@ -168,7 +168,7 @@ task apiJar(type: Jar) {
     archiveClassifier.set('api')
     from sourceSets.main.allSource
     from sourceSets.main.output
-    include 'li/cil/oc2/api/**'
+    include 'li/cil/oc2r/api/**'
 }
 
 artifacts {

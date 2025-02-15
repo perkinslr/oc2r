@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TCG",
+    " B "
+  ],
+  "key": {
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "C": {
+      "tag": "forge:chests/wooden"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2r:inventory_operations_module"
+  }
+}

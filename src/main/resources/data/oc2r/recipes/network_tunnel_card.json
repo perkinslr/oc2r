@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IET",
+    " B "
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:ender_pearls"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2r:network_tunnel_card"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "GTG",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:string"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    }
+  },
+  "result": {
+    "item": "oc2r:network_cable",
+    "count": 8
+  }
+}

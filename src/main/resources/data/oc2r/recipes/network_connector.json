@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "ITI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    }
+  },
+  "result": {
+    "item": "oc2r:network_connector",
+    "count": 4
+  }
+}

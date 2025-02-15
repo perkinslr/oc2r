@@ -37,7 +37,7 @@ def getGitRef() {
 }
 
 version = "${semver}+${getGitRef()}"
-group = "li.cil.oc2"
+group = "li.cil.oc2r"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -98,7 +98,7 @@ dependencies {
         compileOnly "li.cil.sedna:sedna:2.0.8"
         compileOnly "li.cil.sedna:sedna-buildroot:0.0.8"
     }
-    implementation "curse.maven:sedna-511276:3885542"
+//    implementation "curse.maven:sedna-511276:3885542"
     minecraftLibrary "org.apache.commons:commons-collections4:4.4"
 
     implementation fg.deobf("curse.maven:markdownmanual-502485:4306669")
@@ -119,7 +119,7 @@ dependencies {
 
 task packageScripts(type: Zip) {
     archiveFileName = "scripts.zip"
-    destinationDirectory = file("$buildDir/resources/main/data/oc2/file_systems")
+    destinationDirectory = file("$buildDir/resources/main/data/oc2r/file_systems")
     from "src/main/scripts"
 }
 
@@ -154,18 +154,18 @@ minecraft {
 
         client {
             workingDirectory project.file("runclient")
-            property "forge.enabledGameTestNamespaces", "oc2"
+            property "forge.enabledGameTestNamespaces", "oc2r"
         }
 
         server {
             workingDirectory project.file("run")
-            property "forge.enabledGameTestNamespaces", "oc2"
+            property "forge.enabledGameTestNamespaces", "oc2r"
             arg "--nogui"
         }
 
         gameTestServer {
             workingDirectory project.file('run')
-            property "forge.enabledGameTestNamespaces", "oc2"
+            property "forge.enabledGameTestNamespaces", "oc2r"
         }
 
         data {
@@ -177,7 +177,7 @@ minecraft {
 
 mixin {
     add sourceSets.main, "mixins.oc2.refmap.json"
-    config "mixins.oc2.json"
+    config "mixins.oc2r.json"
 
 //    quiet
 }
@@ -194,14 +194,14 @@ jar {
     manifest {
         attributes([
             "FMLAT"                   : "accesstransformer.cfg",
-            "Specification-Title"     : "oc2",
+            "Specification-Title"     : "oc2r",
             "Specification-Vendor"    : "Sangar",
             "Specification-Version"   : "1",
             "Implementation-Title"    : project.name,
             "Implementation-Version"  : "${semver}",
             "Implementation-Vendor"   : "Sangar",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            "MixinConfigs"            : "mixins.oc2.json",
+            "MixinConfigs"            : "mixins.oc2r.json",
             "ContainedDeps"           : "commons-collections4-4.4.jar"
         ])
     }
@@ -211,7 +211,7 @@ task apiJar(type: Jar) {
     archiveClassifier.set("api")
     from sourceSets.main.allSource
     from sourceSets.main.output
-    include "li/cil/oc2/api/**"
+    include "li/cil/oc2r/api/**"
 }
 
 artifacts {

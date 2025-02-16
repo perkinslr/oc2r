@@ -56,6 +56,9 @@ repositories {
 
     mavenCentral()
     maven {
+        url "https://nexus.covers1624.net/repository/maven-hosted/"
+    }
+    maven {
         url "https://cursemaven.com"
     }
     maven {
@@ -108,7 +111,13 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-1.19.2-forge-api:11.6.0.1015")
 
     runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.6.0.1015")
-    compileOnly fg.deobf("curse.maven:project-red-core-228702:6128081")
+    implementation fg.deobf("mrtjp:ProjectRed:1.19.2-${pr_version}:api")
+    implementation fg.deobf("mrtjp:ProjectRed:1.19.2-${pr_version}:core")
+    implementation fg.deobf("mrtjp:ProjectRed:1.19.2-${pr_version}:transmission")
+
+    implementation fg.deobf("codechicken:CodeChickenLib:1.19.2-4.3.2.490:universal")
+    implementation fg.deobf("codechicken:CBMultipart:1.19.2-3.2.0.139:universal")
+
     testImplementation "org.mockito:mockito-inline:4.3.1"
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.8.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.2"

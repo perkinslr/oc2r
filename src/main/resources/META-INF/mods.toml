@@ -40,6 +40,6 @@ side = "CLIENT"
 [[dependencies.oc2r]]
 modId = "projectred_transmission"
 mandatory = false
-versionRange = "[4.19.0,)"
+versionRange = "[4.18.0,)"
 side = "BOTH"
 ordering = "AFTER"

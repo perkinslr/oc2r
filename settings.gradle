@@ -7,7 +7,7 @@ pluginManagement {
 }
 
 apply from: 'minecraft.gradle'
-rootProject.name = "oc2-${minecraft_version}-${minecraft_sdk}"
+rootProject.name = "oc2r-${minecraft_version}-${minecraft_sdk}"
 
 def substituteLocal(final directoryName, final libraryName) {
     final def path = new File("../${directoryName}");

@@ -17,11 +17,11 @@ public access token with `read:packages` permissions into your `~/.gradle/gradle
 named `gpr.user` and `gpr.key`.
 
 [OpenComputers]: https://github.com/MightyPirates/OpenComputers
-[RPC Device]: src/main/java/li/cil/oc2/api/bus/device/rpc/RPCDevice.java
-[redstone interface]: src/main/java/li/cil/oc2/common/blockentity/RedstoneInterfaceBlockEntity.java
-[sound card]: src/main/java/li/cil/oc2/common/bus/device/rpc/item/SoundCardItemDevice.java
-[VM Device]: src/main/java/li/cil/oc2/api/bus/device/vm/VMDevice.java
-[disk drive]: src/main/java/li/cil/oc2/common/blockentity/DiskDriveBlockEntity.java
-[network card]: src/main/java/li/cil/oc2/common/bus/device/vm/item/NetworkInterfaceCardDevice.java
+[RPC Device]: src/main/java/li/cil/oc2r/api/bus/device/rpc/RPCDevice.java
+[redstone interface]: src/main/java/li/cil/oc2r/common/blockentity/RedstoneInterfaceBlockEntity.java
+[sound card]: src/main/java/li/cil/oc2r/common/bus/device/rpc/item/SoundCardItemDevice.java
+[VM Device]: src/main/java/li/cil/oc2r/api/bus/device/vm/VMDevice.java
+[disk drive]: src/main/java/li/cil/oc2r/common/blockentity/DiskDriveBlockEntity.java
+[network card]: src/main/java/li/cil/oc2r/common/bus/device/vm/item/NetworkInterfaceCardDevice.java
 [documentation]: src/main/resources/assets/oc2/doc/en_us/index.md
 [GithubPackagesGradle]: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry

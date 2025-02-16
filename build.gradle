@@ -204,7 +204,7 @@ jar {
         attributes([
             "FMLAT"                   : "accesstransformer.cfg",
             "Specification-Title"     : "oc2r",
-            "Specification-Vendor"    : "Sangar",
+            "Specification-Vendor"    : "North Western Development (Originally by Sangar)",
             "Specification-Version"   : "1",
             "Implementation-Title"    : project.name,
             "Implementation-Version"  : "${semver}",

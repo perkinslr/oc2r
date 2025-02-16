@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: build
         run: |
-          git clone https://github.com/perkinslr/oc2r/
+          git clone https://github.com/TheRealM18/oc2r/
           cd oc2r
           git checkout 1.18.x
           mkdir libs
